@@ -13,14 +13,18 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en">
       
-      <body className={`{inter.className} relative`}>
+      <body className={`{inter.className} relative h-[100vh]`}>
       <GlobalProvider>
       <Navbar/>
-      <Welcome/>
-      <Footer/>
+      <div className="fixed top-[8%] w-full h-[92%]">
+      {children}
+      </div>
+      {/* <Welcome/> */}
+      {/* <Footer/> */}
       </GlobalProvider>
       </body>
     </html>
