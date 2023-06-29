@@ -3,6 +3,7 @@ import Footer from '@/components/Footer'
 import  GlobalProvider from '@/context/Globalcontext'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Welcome from '@/components/Welcome'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
       <body className={`{inter.className} relative`}>
       <GlobalProvider>
       <Navbar/>
-        {children}
+      <Welcome/>
       <Footer/>
       </GlobalProvider>
       </body>
