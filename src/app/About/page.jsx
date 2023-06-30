@@ -1,4 +1,5 @@
 'use client'
+import ZigBox from '@/components/ZigBox';
 import { GlobalContext } from '@/context/Globalcontext';
 import React from 'react'
 import { useContext } from 'react';
@@ -7,8 +8,7 @@ function About() {
   const [Themecolor,setThemecolor] = theme;
   return (
     <div>
-      About Page
-Theme ({Themecolor})
+       <ZigBox/>
     </div>
   )
 }
