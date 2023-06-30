@@ -12,14 +12,14 @@ function Home() {
   return (
     <div className='grid sm:grid-cols-10  h-[100%] overflow-y-auto sm:overflow-hidden'>
      <div className=' col-span-10 sm:col-span-7 flex flex-col justify-around p-5'>
-      <div className="h-[33] overflow-hidden flex justify-center items-center p-4">
+      <div className="h-[43%] overflow-hidden flex justify-center items-center p-2">
         <Welcome/>
       </div>
-      <div className="h-[33%]  overflow-hidden flex justify-center items-center"><Nhd_section/></div>
+      <div className="h-[40%]  overflow-hidden flex justify-center items-center"><Nhd_section/></div>
       <div className="h-[33%]  overflow-hidden flex justify-center items-center">3</div>
      </div>
      <div className=' col-span-10 sm:col-span-3 flex flex-col justify-between '>
-      <div className="h-[67%] overflow-hidden flex justify-center items-center"><Nhd_gallery/></div>
+      <div className="h-[55%] overflow-hidden flex justify-center items-center p-4"><Nhd_gallery/></div>
       <div className="h-[33%]  overflow-hidden flex justify-center items-center">5</div>
      </div>
     </div>
