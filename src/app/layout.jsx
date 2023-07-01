@@ -23,11 +23,9 @@ export default function RootLayout({ children }) {
       <body className={`{inter.className} relative h-[100vh]`}>
       <GlobalProvider>
       <Navbar/>
-      <div className="fixed top-[8%] w-full h-[92%]">
+      <div className="mt-[5rem] w-full">
       {children}
       </div>
-      {/* <Welcome/> */}
-      {/* <Footer/> */}
       </GlobalProvider>
       </body>
     </html>
