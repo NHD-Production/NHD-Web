@@ -7,12 +7,13 @@ import Welcome from '@/components/Welcome';
 import Nhd_gallery from '@/components/Nhd_gallery';
 import Nhd_section from '@/components/Nhd_section';
 import AudioPlayer from '@/components/AudioPlayer';
+import ContactUs from '@/components/ContactUs';
 function Home() {
     const {theme} = useContext(GlobalContext)
     const [Themecolor,setThemecolor] = theme;
   return (
     <div className='flex flex-col'>
-    <div className='grid sm:grid-cols-12 h-[93vh] overflow-y-auto '>
+    <div className='grid sm:grid-cols-12 sm:h-[93vh] overflow-y-auto '>
      <div className='col-span-10 sm:col-span-9 flex flex-col  justify-between'>
       <div className="h-[calc(100%/3)] sm:h-auto overflow-hidden flex justify-center items-center p-2">
         <Welcome/>
@@ -32,6 +33,7 @@ function Home() {
       </div>
      </div>
     </div>
+    <ContactUs/>
     <div>
       
   </div>
