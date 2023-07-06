@@ -7,6 +7,7 @@ html {
 
 body {
     background: linear-gradient(134deg, #640973 53.65%, #0B0054 64.06%);
+    background-attachment: fixed;
 }
 
 .audioplayer:after {
@@ -20,4 +21,10 @@ body {
     width: 100%;
     background-color: rgb(177, 17, 192);
     opacity: .5;
+}
+
+.mapcont {
+    top: 50%;
+    left: 66%;
+    transform: translate(-50%, -50%);
 }
