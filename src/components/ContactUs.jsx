@@ -14,8 +14,8 @@ function ContactUs() {
           </div>
         </div>
         <div className="w-full sm:w-1/2 bg-slate-400">
-            <div className="w-full sm:w-[45%] h-[80%] bg-white sm:absolute ms:mapcont flex flex-col-reverse sm:flex-row  justify-start items-center ">
-                <div className="add flex flex-col w-full sm:w-[30%] h-full  p-10">
+            <div className="w-full sm:w-[45%] h-[80%] bg-white sm:absolute sm:top-1/2 sm:left-2/3 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 flex flex-col-reverse sm:flex-row  justify-start items-center ">
+                <div className="add flex flex-col w-full sm:w-[30%] h-full  p-5 sm:p-10">
                     <h2 className='font-semibold uppercase text-[1.3rem] py-5'>Address</h2>
                     <p className='text-slate-600 text-xl py-2'>123 Mg road ,21 Avenue , Kolkata , 700009 </p>
                     <h2 className='uppercase font-semibold text-[1.3rem] py-5'>Call Us</h2>

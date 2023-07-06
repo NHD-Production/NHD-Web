@@ -22,9 +22,3 @@ body {
     background-color: rgb(177, 17, 192);
     opacity: .5;
 }
-
-.mapcont {
-    top: 50%;
-    left: 66%;
-    transform: translate(-50%, -50%);
-}
