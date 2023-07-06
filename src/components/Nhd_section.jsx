@@ -9,9 +9,9 @@ function Nhd_section() {
   return (
     <div className="flex flex-wrap sm:h-full">
       <div className="w-full sm:w-1/2 md:w-1/4 px-2 py-2 sm:h-full ">
-        <div className=" h-full flex flex-col rounded-xl bg-gradient-to-r backdrop-blur-md bg-white/20 items-start hover:scale-[1.01] transform transition-scale duration-200 cursor-pointer p-4">
+        <div className=" h-full flex flex-col rounded-xl bg-gradient-to-r backdrop-blur-md bg-white/20 items-start hover:scale-[1.06] transform transition-scale duration-200 cursor-pointer p-4">
         <div className='flex justify-between w-full'>
-           <div className="text-3xl">
+           <div className="text-5xl text-white">
                   <RiLiveLine/>
             </div>
            <div className="text-6xl text-gray-400">
@@ -26,9 +26,9 @@ function Nhd_section() {
         </div>
       </div>
       <div className="w-full sm:w-1/2  md:w-1/4 px-2  py-2 sm:h-full">
-        <div className="flex h-full  flex-col rounded-xl bg-gradient-to-r backdrop-blur-md bg-white/20 items-start hover:scale-[1.01] transform transition-scale duration-200 cursor-pointer p-4">
+        <div className="flex h-full  flex-col rounded-xl bg-gradient-to-r backdrop-blur-md bg-white/20 items-start hover:scale-[1.06] transform transition-scale duration-200 cursor-pointer p-4">
         <div className='flex justify-between w-full'>
-           <div className="text-3xl">
+           <div className="text-5xl text-white">
                   <SiYoutubestudio/>
             </div>
            <div className="text-6xl text-gray-400">
@@ -43,9 +43,9 @@ function Nhd_section() {
         </div>
       </div>
       <div className="w-full sm:w-1/2 md:w-1/4 px-2 py-2  sm:h-full">
-        <div className="flex h-full  flex-col rounded-xl bg-gradient-to-r backdrop-blur-md bg-white/20 items-start hover:scale-[1.01] transform transition-scale duration-200 cursor-pointer p-4">
+        <div className="flex h-full  flex-col rounded-xl bg-gradient-to-r backdrop-blur-md bg-white/20 items-start hover:scale-[1.06] transform transition-scale duration-200 cursor-pointer p-4">
         <div className='flex justify-between w-full'>
-           <div className="text-3xl">
+           <div className="text-5xl text-white">
                   <SiMusicbrainz/>
             </div>
            <div className="text-6xl text-gray-400">
@@ -60,9 +60,9 @@ function Nhd_section() {
         </div>
       </div>
       <div className="w-full sm:w-1/2  md:w-1/4 px-2 py-2  sm:h-full">
-        <div className="flex h-full  flex-col rounded-xl bg-gradient-to-r backdrop-blur-md bg-white/20 items-start hover:scale-[1.01] transform transition-scale duration-200 cursor-pointer p-4">
+        <div className="flex h-full  flex-col rounded-xl bg-gradient-to-r backdrop-blur-md bg-white/20 items-start hover:scale-[1.06] transform transition-scale duration-200 cursor-pointer p-4">
         <div className='flex justify-between w-full'>
-           <div className="text-3xl">
+           <div className="text-5xl text-white ">
                   <SiGoogleclassroom/>
             </div>
            <div className="text-6xl text-gray-400">
