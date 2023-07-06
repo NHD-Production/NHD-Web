@@ -7,6 +7,8 @@ import Welcome from '@/components/Welcome';
 import Nhd_gallery from '@/components/Nhd_gallery';
 import Nhd_section from '@/components/Nhd_section';
 import AudioPlayer from '@/components/AudioPlayer';
+import GalleryApp from '@/components/ImageSlider';
+import ImageSlider from '@/components/ImageSlider';
 function Home() {
     const {theme} = useContext(GlobalContext)
     const [Themecolor,setThemecolor] = theme;
@@ -17,8 +19,8 @@ function Home() {
       <div className="h-[33%] sm:h-auto overflow-hidden flex justify-center items-center p-2">
         <Welcome/>
       </div>
-      <div className="h-[160vh] sm:h-[33%] p-2 overflow-hidden flex justify-center items-center">
-        <Nhd_section/>
+      <div className="h-[200vh] sm:h-[33%] overflow-hidden flex justify-center items-center">
+        <ImageSlider/>
 
         </div>
       <div className="h-[33.33%] p-2  overflow-hidden flex justify-center items-center">
@@ -26,8 +28,8 @@ function Home() {
       </div>
      </div>
      <div className='h-[150vh] sm:h-auto col-span-10 sm:col-span-3 flex flex-col justify-between '>
-      <div className="h-[67%] overflow-hidden flex justify-center items-center p-2"><Nhd_gallery/></div>
-      <div className="h-[33%]  overflow-hidden flex justify-center items-center p-2">
+      <div className="h-[60%] overflow-hidden flex justify-center items-center p-4"><Nhd_gallery/></div>
+      <div className="h-[40%]  overflow-hidden flex justify-center items-center p-2">
         <AudioPlayer/>
       </div>
      </div>
