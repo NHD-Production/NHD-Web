@@ -13,15 +13,15 @@ function Home() {
   return (
     <div className='flex flex-col'>
     <div className='grid sm:grid-cols-12 h-[93vh] overflow-y-auto '>
-     <div className='col-span-10 sm:col-span-9 flex flex-col justify-between'>
-      <div className="h-[33%] sm:h-auto overflow-hidden flex justify-center items-center p-2">
+     <div className='col-span-10 sm:col-span-9 flex flex-col  justify-between'>
+      <div className="h-[calc(100%/3)] sm:h-auto overflow-hidden flex justify-center items-center p-2">
         <Welcome/>
       </div>
-      <div className="h-[160vh] sm:h-[33%] p-2 overflow-hidden flex justify-center items-center">
+      <div className="h-[160vh] sm:h-[calc(100%/3)] flex-grow-2 p-2 overflow-hidden flex justify-center items-center">
         <Nhd_section/>
 
         </div>
-      <div className="h-[33.33%] p-2  overflow-hidden flex justify-center items-center">
+      <div className="h-[calc(100%/3)] p-2 overflow-hidden flex justify-center items-center">
       <AudioPlayer/>
       </div>
      </div>
