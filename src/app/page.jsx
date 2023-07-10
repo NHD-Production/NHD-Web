@@ -29,7 +29,7 @@ function Home() {
      <div className='h-[150vh] sm:h-auto col-span-10 sm:col-span-3 flex flex-col justify-between '>
       <div className="h-[67%] overflow-hidden flex justify-center items-center p-2"><Nhd_gallery/></div>
       <div className="h-[33%]  overflow-hidden flex justify-center items-center p-2">
-        <AudioPlayer/>
+        <AudioPlayer />
       </div>
      </div>
     </div>
