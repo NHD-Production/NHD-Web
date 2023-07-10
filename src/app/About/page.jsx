@@ -19,7 +19,7 @@ function About() {
         
        <ZigBox data={demoData}/>
       </div>
-      <ContactUs/>
+      {/* <ContactUs/> */}
     </div>
   )
 }

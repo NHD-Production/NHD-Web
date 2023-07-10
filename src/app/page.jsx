@@ -11,6 +11,7 @@ import GalleryApp from '@/components/ImageSlider';
 import ImageSlider from '@/components/ImageSlider';
 import ContactUs from '@/components/ContactUs';
 import Nhd_music from '@/components/Nhd_music';
+import About_nhd from '@/app/About/page'
 function Home() {
     const {theme} = useContext(GlobalContext)
     const [Themecolor,setThemecolor] = theme;
@@ -36,7 +37,9 @@ function Home() {
       </div>
      </div>
     </div>
-   <div className='h-[50vh] w-[full]'> <ImageSlider/></div>
+  {/* <div className='h-[50vh] w-[full]'> <ImageSlider/></div> */}
+   <About_nhd/>
+   <Nhd_music/>
     <ContactUs/>
     <div>
       

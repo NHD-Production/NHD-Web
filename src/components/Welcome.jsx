@@ -10,7 +10,7 @@ function Welcome() {
           <Image src={img} className="h-36 w-36 rounded-full ml-10 " alt="logo" />
         </div>
         <div className='h-auto md:h-68 text-center md:text-left md:p-6 md:w-2/3'>
-          <h1 className='text-white text-2xl md:text-4xl mb-2'>Welcome All</h1>
+          <h1 className='text-white text-2xl md:text-3xl mb-2'>Welcome All</h1>
           <h2 className='text-white text-base md:text-base'>
             Greetings one and all. I, Nirmalya Humtoo Dey the Founder and Director of NHD warmly welcome you to our website. We through our website will be taking you through a harmonic ride of symphony creation, presentation, and even live coaching sessions.
           </h2>
