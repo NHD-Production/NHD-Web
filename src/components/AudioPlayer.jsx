@@ -2,7 +2,7 @@
 import React ,{useEffect, useRef, useState} from 'react';
 import {HiPlay,HiPause} from 'react-icons/hi2';
 
-function AudioPlayer() {
+function AudioPlayer({type,bgimage}) {
   const audioRef = useRef(null);
   const playAudio = () => {
     audioRef?.current?.play();
@@ -26,10 +26,6 @@ function AudioPlayer() {
     }
   }
 
-  useEffect(()=>{
-    handlePlay(true)
-  return()=> handlePlay(false)
-  },[])
 
    return (
     <div className='audioplayer h-full w-full  rounded-2xl  relative overflow-hidden border-purple-500 border-[.05rem]'>

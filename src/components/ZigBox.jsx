@@ -3,7 +3,7 @@ import React from "react";
 
 function ZigBox({ title, description, data }) {
   return (
-    <div className="flex flex-col w-full items-center justify-center">
+    <div className="flex flex-col w-full items-center justify-center text-white">
       <div className="header text-center">
         {title && <h2 className="text-[2.5rem] font-bold">{title}</h2>}
         {description && (
@@ -42,7 +42,7 @@ function ZigBox({ title, description, data }) {
                   src={image}
                   alt={title}
                   height={200}
-                  width={300}
+                  width={400}
                   className="bg-blue-600"
                 />
               </div>

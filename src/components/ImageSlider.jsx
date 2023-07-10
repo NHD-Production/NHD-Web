@@ -2,7 +2,7 @@
 import React from 'react';
 // import Swiper JS
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination,Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -22,11 +22,15 @@ export default function ImageSlider() {
         slidesPerView={3}
         spaceBetween={1}
         loop={true}
+        autoplay={{
+          "delay": 100,
+        "disableOnInteraction": false
+        }}
         pagination={{
           clickable: true,
         }}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation,Autoplay]}
         className="mySwiper"
       >
         {imageUrls.map((imageUrl, index) => (
