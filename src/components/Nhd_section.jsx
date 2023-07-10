@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '@/assets/nhd_logo.png';
 import {RiLiveLine} from "react-icons/ri"
-import {LiaGreaterThanSolid} from "react-icons/lia"
+import {MdOutlineArrowForwardIos} from "react-icons/md"
 import {SiYoutubestudio} from 'react-icons/si'
 import {SiMusicbrainz} from 'react-icons/si'
 import {SiGoogleclassroom} from 'react-icons/si'
@@ -11,11 +11,11 @@ function Nhd_section() {
       <div className="w-full sm:w-1/2 md:w-1/4 px-2 py-2 sm:h-full ">
         <div className=" h-full flex flex-col rounded-xl bg-gradient-to-r backdrop-blur-md bg-white/20 items-start hover:scale-[1.06] transform transition-scale duration-200 cursor-pointer p-4">
         <div className='flex justify-between w-full'>
-           <div className="text-5xl text-white">
-                  <RiLiveLine/>
+           <div className="">
+                  <RiLiveLine size={50} color='white'/>
             </div>
-           <div className="text-6xl text-gray-400">
-              <LiaGreaterThanSolid/>
+           <div className="bg-white/20 h-[34px] w-[34px] rounded-full flex items-center justify-center ">
+              <MdOutlineArrowForwardIos size={20} />
           </div>
         </div>
           <h2 className="text-lg font-bold ">NHD</h2>
@@ -32,7 +32,7 @@ function Nhd_section() {
                   <SiYoutubestudio/>
             </div>
            <div className="text-6xl text-gray-400">
-              <LiaGreaterThanSolid/>
+              <MdOutlineArrowForwardIos/>
           </div>
         </div>
           <h2 className="text-lg font-bold">NHD</h2>
@@ -49,7 +49,7 @@ function Nhd_section() {
                   <SiMusicbrainz/>
             </div>
            <div className="text-6xl text-gray-400">
-              <LiaGreaterThanSolid/>
+              <MdOutlineArrowForwardIos/>
           </div>
         </div>
           <h2 className="text-lg font-bold">NHD</h2>
@@ -66,7 +66,7 @@ function Nhd_section() {
                   <SiGoogleclassroom/>
             </div>
            <div className="text-6xl text-gray-400">
-              <LiaGreaterThanSolid/>
+              <MdOutlineArrowForwardIos/>
           </div>
         </div>
           <h2 className="text-lg font-bold">NHD</h2>

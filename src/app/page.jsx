@@ -36,7 +36,7 @@ function Home() {
       </div>
      </div>
     </div>
-    <ImageSlider/>
+   <div className='h-[50vh] w-[full]'> <ImageSlider/></div>
     <ContactUs/>
     <div>
       

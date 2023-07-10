@@ -19,7 +19,10 @@ export default function RootLayout({ children }) {
   
   return (
     <html lang="en">
-      
+      <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
       <body className={`{inter.className} relative h-[100vh]`}>
       <GlobalProvider>
       <Navbar/>
