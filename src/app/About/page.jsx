@@ -1,4 +1,5 @@
 'use client'
+import Nhd_gallery from '@/components/Nhd_gallery';
 import ZigBox from '@/components/ZigBox';
 import { GlobalContext } from '@/context/Globalcontext';
 import Image from 'next/image';
@@ -18,7 +19,7 @@ function About() {
         
        <ZigBox data={demoData}/>
       </div>
-      <ContactUs/>
+      {/* <ContactUs/> */}
     </div>
   )
 }

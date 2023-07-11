@@ -14,8 +14,8 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="w-full bg-white relative z-10 h-[3rem]">
-        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+      <nav className="w-full bg-white relative z-10 h-[4.5rem]">
+        <div className="justify-between bg-white md:items-center md:flex md:px-8  w-full">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               {/* LOGO */}
@@ -45,7 +45,7 @@ function Navbar() {
           </div>
           <div>
             <div
-              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+              className={`flex-1 justify-self-center pb-3  md:block md:pb-0 md:mt-0 ${
                 navbar ? 'p-12 md:p-0 block' : 'hidden'
               }`}
             >
