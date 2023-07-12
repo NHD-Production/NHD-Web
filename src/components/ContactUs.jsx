@@ -8,11 +8,11 @@ function ContactUs() {
           <p className='text-[3rem] sm:text-[4rem] text-white'>Get in touch !</p>
           <span className='bg-white h-1 w-10'></span>
           <div className="flex flex-col py-7 gap-4 justify-center items-start w-full sm:w-[80%] ">
-            <input type="text" className='w-full h-[3rem] text-[1.3rem] px-2 bg-white/20 shadow-lg rounded-sm' name="" id="" placeholder='Enter Your Name'/>
-            <input type="text" className='w-full h-[3rem] text-[1.3rem] px-2 bg-white/20 shadow-lg rounded-sm' name="" id="" placeholder='Enter a valid email address'/>
+            <input type="text" className='w-full h-[3rem] text-[1.3rem] px-2 bg-white/20 shadow-lg rounded-sm placeholder-black/75 focus:placeholder-black/95' name="" id="" placeholder='Enter Your Name'/>
+            <input type="text" className='w-full h-[3rem] text-[1.3rem] px-2 bg-white/20 shadow-lg rounded-sm  placeholder-black/75 focus:placeholder-black/95' name="" id="" placeholder='Enter a valid email address'/>
            <div className='flex justify-between w-full'> <Dropdown/> 
-            <input type="text" className='w-[80%] h-[3rem] text-[1.3rem] px-2 mt-3 bg-white/20 shadow-lg rounded-sm ' name="" id="" placeholder='Subject'/></div>
-            <textarea resize name="" className='w-full resize-none text-[1.3rem] p-2  bg-white/20 shadow-xl rounded-sm' id="" cols="30" rows="10" placeholder='Enter your message'></textarea>
+            <input type="text" className='w-[80%] h-[3rem] text-[1.3rem] px-2 mt-3 bg-white/20 shadow-lg rounded-sm  placeholder-black/75 focus:placeholder-black/95' name="" id="" placeholder='Subject'/></div>
+            <textarea resize name="" className='w-full resize-none text-[1.3rem] p-2  bg-white/20 shadow-xl rounded-sm  placeholder-black/75 focus:placeholder-black/95' id="" cols="30" rows="10" placeholder='Enter your message'></textarea>
             <input className='bg-white/20 shadow-xl rounded-sm text-white px-8 py-2 hover:scale-[1.09] cursor-pointer' type="button" value="Submit" />
           </div>
         </div>
