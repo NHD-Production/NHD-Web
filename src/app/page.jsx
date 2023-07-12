@@ -15,6 +15,12 @@ import About_nhd from '@/app/About/page'
 function Home() {
     const {theme} = useContext(GlobalContext)
     const [Themecolor,setThemecolor] = theme;
+    const images = [
+      'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
+      'https://cdn.pixabay.com/photo/2016/11/29/06/17/audience-1867754_640.jpg',
+      'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_640.jpg',
+      'https://cdn.pixabay.com/photo/2016/11/22/21/36/audience-1850665_640.jpg',
+    ];
   return (
     <div className='flex flex-col'>
     <div className='grid sm:grid-cols-12 sm:h-[93vh] overflow-y-auto '>
@@ -31,7 +37,7 @@ function Home() {
       </div>
      </div>
      <div className='h-[150vh] sm:h-auto col-span-10 sm:col-span-3 flex flex-col justify-between '>
-      <div className="h-[67%] overflow-hidden flex justify-center items-center p-2"><Nhd_gallery/></div>
+      <div className="h-[67%] overflow-hidden flex justify-center items-center p-2"><Nhd_gallery images={images} /></div>
       <div className="h-[33%]  overflow-hidden flex justify-center items-center p-2">
         <AudioPlayer />
       </div>

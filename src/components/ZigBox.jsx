@@ -35,7 +35,7 @@ function ZigBox({ title, description, data }) {
                   </p>
                 </div>}
                 <p className="text-[.8rem] md:text-[1rem] font-[500] mt-4 text-slate-500">{description}</p>
-                {extraButton && <button className="border-2 rounded-full px-3 my-3  hover:bg-[#1d50c3] hover:border-white hover:text-white">{extraButton.name}</button>}
+                {extraButton && <button className="border-2 rounded-full px-3 my-3 shadow-lg  hover:bg-white/50 hover:border-white hover:text-white">{extraButton.name}</button>}
               </div>
               <div className="image mb-5 md:mb-0">
                 <Image

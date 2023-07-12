@@ -1,41 +1,77 @@
-import React from 'react';
-import Modal from 'react-modal';
-import Image from 'next/image';
-import img1 from '@/assets/DSC02015.JPG';
+"use client"
+import React, { useState } from 'react';
+import { AiOutlineCloseSquare } from 'react-icons/ai';
 
-function Nhd_gallery() {
-  const [modalIsOpen, setModalIsOpen] = React.useState(false);
-  const [selectedImage, setSelectedImage] = React.useState(null);
+const Nhd_gallery = ({ images }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
-  const openModal = (image) => {
+  const handleShowDialog = (image) => {
+    setIsOpen(!isOpen);
     setSelectedImage(image);
-    setModalIsOpen(true);
   };
 
-  return (
-    <div className="grid grid-cols-2 grid-rows-10 gap-1 h-full w-full p-5 shadow-sm">
-      <div className="row-span-4 cursor-pointer" onClick={() => openModal(img1)}>
-        <Image src={img1} className="h-full" />
-      </div>
-      <div className="row-span-5 bg-red-500 cursor-pointer" onClick={() => openModal(img1)}>
-        <Image src={img1} className="h-full" />
-      </div>
-      <div className="row-span-6 bg-slate-200 cursor-pointer" onClick={() => openModal(img1)}>
-        <Image src={img1} className="h-full" />
-      </div>
-      <div className="row-span-5 bg-yellow-100 cursor-pointer" onClick={() => openModal(img1)}>
-        <Image src={img1} className="h-full" />
-      </div>
+  const handleCloseDialog = () => {
+    setIsOpen(false);
+    setSelectedImage(null);
+  };
 
-      <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
-        {selectedImage && (
-          <div>
-            <Image src={selectedImage} className="w-full" />
+  const chunkArray = (arr, size) => {
+    const chunkedArr = [];
+    let index = 0;
+    while (index < arr.length) {
+      chunkedArr.push(arr.slice(index, size + index));
+      index += size;
+    }
+    return chunkedArr;
+  };
+
+  const imageRows = chunkArray(images, 4);
+
+  return (
+    <div className="grid grid-cols-2 gap-1 h-full w-full p-5 shadow-sm">
+      {imageRows.map((row, rowIndex) => (
+        <React.Fragment key={rowIndex}>
+          {row.map((image, index) => (
+            <div
+              key={index}
+              className={`cursor-pointer ${
+                index === 0
+                  ? 'row-span-4 hover:scale-[1.01] rounded-sm'
+                  : index === 1
+                  ? 'row-span-5 hover:scale-[1.01] rounded-sm'
+                  : index === 2
+                  ? 'row-span-6 hover:scale-[1.01] rounded-sm'
+                  : 'row-span-5 hover:scale-[1.01] rounded-sm'
+              }`}
+              onClick={() => handleShowDialog(image)}
+            >
+              <img className="w-full h-full object-cover " src={image} alt="no image" />
+            </div>
+          ))}
+        </React.Fragment>
+      ))}
+      {isOpen && (
+        <div
+          className="fixed top-0 left-0 right-0 bottom-0  flex items-center justify-center bg-black bg-opacity-0"
+          onClick={handleCloseDialog}
+        >
+          <div className="relative w-full md:w-1/2 lg:w-1/3 h-auto">
+            <img className="w-full h-full object-contain outline outline-white outline-8" src={selectedImage} alt="no image" />
+            <AiOutlineCloseSquare
+              size={30}
+              color="white"
+              onClick={handleCloseDialog}
+              className="absolute top-2 right-2 cursor-pointer"
+            />
           </div>
-        )}
-      </Modal>
+        </div>
+      )}
     </div>
   );
-}
+};
 
 export default Nhd_gallery;
+
+
+
