@@ -44,7 +44,7 @@ function Home() {
       </div>
      </div>
     </div>
-  {/* <div className='h-[50vh] w-[full]'> <ImageSlider/></div> */}
+  <div className='h-[50vh] w-[full]'> <ImageSlider/></div>
    <About_nhd/>
    <Nhd_music/>
     <ContactUs/>
