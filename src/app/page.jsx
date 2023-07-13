@@ -12,6 +12,7 @@ import ImageSlider from '@/components/ImageSlider';
 import ContactUs from '@/components/ContactUs';
 import Nhd_music from '@/components/Nhd_music';
 import About_nhd from '@/app/About/page'
+import About_humtoo from '@/components/About_humtoo';
 function Home() {
     const {theme} = useContext(GlobalContext)
     const [Themecolor,setThemecolor] = theme;
@@ -47,6 +48,7 @@ function Home() {
    <About_nhd/>
    <Nhd_music/>
     <ContactUs/>
+    <About_humtoo/>
     <div>
       
   </div>
