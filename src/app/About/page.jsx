@@ -9,6 +9,7 @@ import { useContext } from 'react';
 import ContactUs from '@/components/ContactUs';
 import Navbar from '@/components/Navbar';
 import About_humtoo from '@/components/About_humtoo';
+import ImageSlider from '@/components/ImageSlider';
 function About() {
   const {theme} = useContext(GlobalContext)
   const [Themecolor,setThemecolor] = theme;
@@ -21,8 +22,12 @@ function About() {
         
        <ZigBox data={demoData}/>
       </div> */}
-      {/* <ContactUs/> */}
-      {/* <About_humtoo/> */}
+      
+      <div className='mt-10'>
+      <About_humtoo/>
+      </div>
+      <ImageSlider/>
+      <ContactUs/>
     </div>
   )
 }

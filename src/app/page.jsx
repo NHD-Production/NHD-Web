@@ -2,7 +2,7 @@
 import React, { useEffect,useContext } from 'react'
 import { GlobalContext } from '@/context/Globalcontext';
 import ZigBox from '@/components/ZigBox';
-import { data } from '@/assets/content';
+import { data, demoData } from '@/assets/content';
 import Welcome from '@/components/Welcome';
 import Nhd_gallery from '@/components/Nhd_gallery';
 import Nhd_section from '@/components/Nhd_section';
@@ -45,10 +45,10 @@ function Home() {
      </div>
     </div>
   <div className='h-[50vh] w-[full]'> <ImageSlider/></div>
-   <About_nhd/>
+   {/* <About_nhd/> */}
+   <ZigBox images={demoData}/>
    <Nhd_music/>
     <ContactUs/>
-    <About_humtoo/>
     <div>
       
   </div>

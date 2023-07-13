@@ -8,12 +8,15 @@ import ImageSlider from './ImageSlider';
 function About_humtoo() {
   const images = [
     'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
+  'https://cdn.pixabay.com/photo/2016/11/29/06/17/audience-1867754_640.jpg',
+  'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_640.jpg',
+  'https://cdn.pixabay.com/photo/2016/11/22/21/36/audience-1850665_640.jpg',
   ];
   return (
     <div>
       <div className='w-full flex flex-col items-center md:flex-row justify-center md:gap-10 '>
         <div className='md:w-1/2 m-auto'>
-          <h1 className='text-3xl text-white'>Niramalya Humtoo Dey</h1>
+          <h1 className='text-3xl text-white font-semibold xl:pl-4'>Niramalya Humtoo Dey</h1>
           <p className='text-white p-5'>
             N-H-D got introduced to the flute at the age of 6. He started playing professionally at the age of 13 and is the sixth generation musician in his family. He got his initial training from his Grandfather Lt. Aloke Nath Dey (renowned flautist and music composer) and Pandit Ajay Chakravorty. Acclaimed artist having experience of 100+ national and international performances. N-H-D has performed with the stalwarts like Ustad Amjad Ali Khan, Manna Dey, Arati Mukherjee, Richa Sharma, Rahat Fateh Ali Khan, Arijit Singh, Sukhwinder Singh, Adnan Sami, Shreya Ghosal, Bhupinder and Mitali Singh, and Mohit Chauhan. N-H-D have also been a part of various directorial ventures by Sandeep Ray, Mrinal Sen, Goutam Ghose, Rituparno Ghosh, Karan Johar, Sanjay Leela Bhansali, Ram Gopal Verma to name a few.
           </p>
@@ -85,9 +88,6 @@ function About_humtoo() {
               </p>
             </div>
           </div>
-        </div>
-        <div className='w-full'>
-          <ContactUs />
         </div>
        
       </div>
