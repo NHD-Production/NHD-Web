@@ -9,6 +9,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay'
+import Image from 'next/image';
 const imageUrls = [
   'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
   'https://cdn.pixabay.com/photo/2016/11/29/06/17/audience-1867754_640.jpg',
@@ -35,7 +36,7 @@ export default function ImageSlider() {
       >
         {imageUrls.map((imageUrl, index) => (
           <SwiperSlide key={index}>
-            <img className='w-[500px] h-[350px] shadow-2xl' src={imageUrl} alt={`Slide ${index + 1}`} />
+            <Image className='w-[500px] h-[350px] shadow-2xl' src={imageUrl} alt={`Slide ${index + 1}`} />
           </SwiperSlide>
         ))}
       </Swiper>

@@ -13,8 +13,6 @@ import ContactUs from '@/components/ContactUs';
 import Nhd_music from '@/components/Nhd_music';
 import About_nhd from '@/app/About/page'
 function Home() {
-    const {theme} = useContext(GlobalContext)
-    const [Themecolor,setThemecolor] = theme;
     const images = [
       'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
       'https://cdn.pixabay.com/photo/2016/11/29/06/17/audience-1867754_640.jpg',
@@ -25,7 +23,7 @@ function Home() {
     <div className='flex flex-col'>
     <div className='grid sm:grid-cols-12 sm:h-[93vh] overflow-y-auto '>
      <div className='col-span-10 sm:col-span-9 flex flex-col  justify-between'>
-      <div className="h-[calc(100%/3)] sm:h-auto overflow-hidden flex justify-center items-center p-2">
+      <div className="sm:h-[calc(100%/3)] h-auto overflow-hidden flex justify-center items-center p-2">
         <Welcome/>
       </div>
       <div className="h-[160vh] sm:h-[calc(100%/3)] flex-grow-2 p-2 overflow-hidden flex justify-center items-center">
@@ -45,7 +43,7 @@ function Home() {
     </div>
   {/* <div className='h-[50vh] w-[full]'> <ImageSlider/></div> */}
    <About_nhd/>
-   <Nhd_music/>
+   {/* <Nhd_music/> */}
     <ContactUs/>
     <div>
       
