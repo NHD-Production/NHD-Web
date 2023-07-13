@@ -4,7 +4,7 @@ import Dropdown from './Dropdown'
 function ContactUs() {
   return (
     <div className='flex flex-col p-2 sm:flex-row sm:p-5 relative'>
-        <div className="w-full bg-white/20  sm:w-1/2 flex flex-col justify-center items-start p-8">
+        <div className="w-full bg-white/20  flex flex-col justify-center items-start p-8">
           <p className='text-[3rem] sm:text-[4rem] text-white'>Get in touch !</p>
           <span className='bg-white h-1 w-10'></span>
           <div className="flex flex-col py-7 gap-4 justify-center items-start w-full sm:w-[80%] ">
@@ -16,7 +16,7 @@ function ContactUs() {
             <input className='bg-white/20 shadow-xl rounded-sm text-white px-8 py-2 hover:scale-[1.09] cursor-pointer' type="button" value="Submit" />
           </div>
         </div>
-        <div className="w-full sm:w-1/2 bg-white/20">
+        <div className="w-full bg-white/20 ">
             <div className="w-full sm:w-[45%] h-[80%]  bg-white/50 sm:absolute sm:top-1/2 sm:left-2/3 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 flex flex-col-reverse sm:flex-row  justify-start items-center ">
                 <div className="add flex flex-col w-full sm:w-[30%] h-full  p-5 sm:p-10">
                     <h2 className='font-semibold uppercase text-[1.3rem] py-5'>Address</h2>

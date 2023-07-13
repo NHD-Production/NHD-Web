@@ -12,6 +12,7 @@ import ImageSlider from '@/components/ImageSlider';
 import ContactUs from '@/components/ContactUs';
 import Nhd_music from '@/components/Nhd_music';
 import About_nhd from '@/app/About/page'
+import About_humtoo from '@/components/About_humtoo';
 function Home() {
     const images = [
       'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
@@ -21,8 +22,8 @@ function Home() {
     ];
   return (
     <div className='flex flex-col'>
-    <div className='grid sm:grid-cols-12 sm:h-[93vh] overflow-y-auto '>
-     <div className='col-span-10 sm:col-span-9 flex flex-col  justify-between'>
+    <div className='grid sm:grid-cols-12 xl:h-[93vh] overflow-y-auto '>
+     <div className='col-span-12 xl:col-span-9 flex flex-col  justify-between'>
       <div className="sm:h-[calc(100%/3)] h-auto overflow-hidden flex justify-center items-center p-2">
         <Welcome/>
       </div>
@@ -34,7 +35,7 @@ function Home() {
       <AudioPlayer/>
       </div>
      </div>
-     <div className='h-[150vh] sm:h-auto col-span-10 sm:col-span-3 flex flex-col justify-between '>
+     <div className='h-[150vh] xl:h-auto col-span-12 xl:col-span-3 flex flex-col justify-between '>
       <div className="h-[67%] overflow-hidden flex justify-center items-center p-2"><Nhd_gallery images={images} /></div>
       <div className="h-[33%]  overflow-hidden flex justify-center items-center p-2">
         <AudioPlayer />
@@ -42,9 +43,10 @@ function Home() {
      </div>
     </div>
   {/* <div className='h-[50vh] w-[full]'> <ImageSlider/></div> */}
-   <About_nhd/>
+   {/* <About_nhd/> */}
    {/* <Nhd_music/> */}
     <ContactUs/>
+    {/* <About_humtoo/> */}
     <div>
       
   </div>

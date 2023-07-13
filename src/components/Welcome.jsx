@@ -7,7 +7,7 @@ function Welcome() {
     <div className='w-full h-full backdrop-blur-sm bg-white/10 rounded-2xl drop-shadow-2xl'>
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/3 flex justify-evenly  md:justify-start md:items-center">
-          <Image src={img} className="h-36 w-36 rounded-full ml-10 " alt="logo" />
+          <Image src={img} width={36} className="h-36 w-36 rounded-full ml-10 " alt="logo" />
         </div>
         <div className='h-auto md:h-68 text-center md:text-left md:p-6 md:w-2/3'>
           <h1 className='text-white text-2xl md:text-3xl mb-2'>Welcome All</h1>

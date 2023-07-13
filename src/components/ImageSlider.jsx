@@ -1,4 +1,5 @@
 // ImageSlider.jsx
+import { useEffect, useState } from 'react';
 import React from 'react';
 // import Swiper JS
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -20,9 +21,14 @@ const imageUrls = [
 ];
 
 export default function ImageSlider() {
+  const [slider,setSlider] = useState(false)
+  useEffect(()=>{
+    setSlider(true)
+  })
+
   return (
     <>
-      <Swiper
+      {slider&&< Swiper 
         slidesPerView={3}
         spaceBetween={1}
         loop={true}
@@ -36,10 +42,10 @@ export default function ImageSlider() {
       >
         {imageUrls.map((imageUrl, index) => (
           <SwiperSlide key={index}>
-            <Image className='w-[500px] h-[350px] shadow-2xl' src={imageUrl} alt={`Slide ${index + 1}`} />
+            <Image className='w-[500px] h-[350px] shadow-2xl' width={200} src={imageUrl} alt={`Slide ${index + 1}`} />
           </SwiperSlide>
         ))}
-      </Swiper>
+      </Swiper>}
     </>
   );
 }
