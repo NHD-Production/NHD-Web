@@ -12,7 +12,7 @@ const Dropdown = () => {
       <h3 className="text-sm text-yellow-50/50 font-semibold mb-4">Select an option:</h3>
       <select
         className="block w-[60%] bg-white/10 py-2 px-4 border border-fuchsia-700 shadow-xl rounded-lg focus:outline-none focus:border-blue-500"
-        value={selectedOption}
+        value={selectedOption || ''}
         onChange={(e) => handleOptionSelect(e.target.value)}
       >
         <option value="">Choose Any</option>

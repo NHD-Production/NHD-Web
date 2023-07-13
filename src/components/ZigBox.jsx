@@ -15,7 +15,7 @@ function ZigBox({ title, description, data }) {
       <div className="zigBody w-full md:w-70 ">
         {data?.map(({ title, description, image, extraButton, date, wing, isUpcoming, isClub }, index) => {
           {if(!isUpcoming || isClub){return (
-            <div
+            <div key={index+title}
               className={`flex ${index % 2 ? "flex-col-reverse md:flex-row" : "flex-col-reverse md:flex-row-reverse"
                 } justify-evenly my-5 items-center`}
             >
