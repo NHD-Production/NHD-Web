@@ -43,8 +43,8 @@ function Home() {
      </div>
     </div>
   {/* <div className='h-[50vh] w-[full]'> <ImageSlider/></div> */}
-   {/* <About_nhd/> */}
-   {/* <Nhd_music/> */}
+   <About_nhd/>
+   <Nhd_music/>
     <ContactUs/>
     {/* <About_humtoo/> */}
     <div>
