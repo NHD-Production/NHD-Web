@@ -4,14 +4,14 @@ import img from '@/assets/humtoo.jpeg';
 
 function Welcome() {
   return (
-    <div className='w-full h-full backdrop-blur-sm bg-white/10 rounded-2xl drop-shadow-2xl'>
-      <div className="flex flex-col md:flex-row">
-        <div className="md:w-1/3 flex justify-evenly  md:justify-start md:items-center">
-          <Image src={img} width={36} className="h-36 w-36 rounded-full ml-10 " alt="logo" />
+    <div className='w-full h-[30rem] sm:h-full backdrop-blur-sm bg-white/10 rounded-2xl drop-shadow-2xl'>
+      <div className="flex flex-col md:flex-row h-full">
+        <div className="md:w-1/3 h-full  flex justify-center items-center">
+          <Image src={img} width={100} className="h-100 w-[15rem] h-[15rem] rounded-full" alt="logo" />
         </div>
-        <div className='h-auto md:h-68 text-center md:text-left md:p-6 md:w-2/3'>
-          <h1 className='text-white text-2xl md:text-3xl mb-2'>Welcome All</h1>
-          <h2 className='text-white text-base md:text-base'>
+        <div className='h-auto md:h-100  text-center md:text-left md:p-6 md:w-2/3'>
+          <h1 className='text-white text-2xl md:text-[3rem] mb-2'>Welcome All</h1>
+          <h2 className='text-white text-base md:text-base md:text-[1.5 rem]'>
             Greetings one and all. I, Nirmalya Humtoo Dey the Founder and Director of NHD warmly welcome you to our website. We through our website will be taking you through a harmonic ride of symphony creation, presentation, and even live coaching sessions.
           </h2>
         </div>
