@@ -25,6 +25,20 @@ body {
     opacity: .5;
 }
 
+.audioplayerlg:after {
+    background: url('/apudurga.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(177, 17, 192);
+    opacity: .5;
+}
+
 
 /* width */
 

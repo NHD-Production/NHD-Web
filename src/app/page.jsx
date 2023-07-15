@@ -13,6 +13,7 @@ import ContactUs from '@/components/ContactUs';
 import Nhd_music from '@/components/Nhd_music';
 import About_nhd from '@/app/About/page'
 import About_humtoo from '@/components/About_humtoo';
+import AudioPlayerLarge from '@/components/AudioPlayerLarge';
 function Home() {
     const images = [
       'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
@@ -31,13 +32,13 @@ function Home() {
         <Nhd_section/>
       </div>
       <div className="sm:h-[40vh] xl:h-[calc(100%/3)] h-[30vh] p-2 overflow-hidden  flex justify-center items-center">
-      <AudioPlayer/>
+        <AudioPlayerLarge />
       </div>
      </div>
      <div className='h-[150vh] xl:h-auto col-span-12 xl:col-span-3 flex flex-col justify-between '>
       <div className="h-[67%] overflow-hidden flex justify-center items-center p-2"><Nhd_gallery images={images} /></div>
       <div className="h-[33%]  overflow-hidden flex justify-center items-center p-2">
-        <AudioPlayer />
+      <AudioPlayer/>
       </div>
      </div>
     </div>
