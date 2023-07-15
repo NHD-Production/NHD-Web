@@ -11,23 +11,23 @@ import Navbar from '@/components/Navbar';
 import About_humtoo from '@/components/About_humtoo';
 import ImageSlider from '@/components/ImageSlider';
 function About() {
-  const {theme} = useContext(GlobalContext)
-  const [Themecolor,setThemecolor] = theme;
   return (
-    <div className='h-full w-full'>
+    <div className='h-full w-full nhd-profile'>
       {/* <div className=" w-full h-[40vh] relative">
        <Image src="/cover1.jpg" alt='cover'  fill={true} />
       </div>
-      <div className="content">
-        
-       <ZigBox data={demoData}/>
+      
+      <ContactUs/>
+      <About_humtoo/>
       </div> */}
       
       <div className='mt-10'>
       <About_humtoo/>
       </div>
-      <ImageSlider/>
+      <div className='mt-10'><ImageSlider/></div>
+      <div className='mt-20'>
       <ContactUs/>
+      </div>
     </div>
   )
 }

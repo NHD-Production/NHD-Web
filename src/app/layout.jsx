@@ -3,10 +3,6 @@ import Footer from '@/components/Footer'
 import  GlobalProvider from '@/context/Globalcontext'
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Welcome from '@/components/Welcome'
-import Nhd_gallery from '@/components/Nhd_gallery'
-import Nhd_section from '@/components/Nhd_section'
-import Nhd_music from '@/components/Nhd_music'
 
 const inter = Inter({ subsets: ['latin'] })
 

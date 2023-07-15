@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import { AiOutlineCloseSquare } from 'react-icons/ai';
+import Image from 'next/image';
 
 const Nhd_gallery = ({ images }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,7 +47,7 @@ const Nhd_gallery = ({ images }) => {
               }`}
               onClick={() => handleShowDialog(image)}
             >
-              <img className="w-full h-full object-cover " src={image} alt="no image" />
+              <Image width={500} height={200} className="w-full h-full object-cover " src={image} alt="no image" />
             </div>
           ))}
         </React.Fragment>
@@ -56,8 +57,8 @@ const Nhd_gallery = ({ images }) => {
           className="fixed top-0 left-0 right-0 bottom-0  flex items-center justify-center bg-black bg-opacity-0"
           onClick={handleCloseDialog}
         >
-          <div className="relative w-full md:w-1/2 lg:w-1/3 h-auto">
-            <img className="w-full h-full object-contain outline outline-white outline-8" src={selectedImage} alt="no image" />
+          <div className="relative w-full md:w-1/2 lg:w-1/3 ">
+            <Image className="w-full h-full object-contain outline outline-white outline-8" height={300} width={500} src={selectedImage} alt="no image" />
             <AiOutlineCloseSquare
               size={30}
               color="white"

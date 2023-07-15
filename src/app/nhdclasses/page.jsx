@@ -10,6 +10,7 @@ import ContactUs from '@/components/ContactUs';
 import Navbar from '@/components/Navbar';
 import About_humtoo from '@/components/About_humtoo';
 import ImageSlider from '@/components/ImageSlider';
+import Welcome from '@/components/Welcome';
 function About() {
   const {theme} = useContext(GlobalContext)
   const [Themecolor,setThemecolor] = theme;
@@ -18,9 +19,10 @@ function About() {
       <div className=" w-full h-[40vh] relative">
        <Image src="/cover1.jpg" alt='cover'  fill={true} />
       </div>
+      <ImageSlider/>
       <div className="content">
         
-       {/* <ZigBox data={demoData}/> */}
+       <ZigBox data={demoData}/>
       </div>
       <ImageSlider/>
       <ContactUs/>

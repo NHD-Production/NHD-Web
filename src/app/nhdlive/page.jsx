@@ -20,7 +20,7 @@ function About() {
       </div>
       <div className="content">
         
-       {/* <ZigBox data={demoData}/> */}
+       <ZigBox data={demoData}/>
       </div>
       <ImageSlider/>
       <ContactUs/>
