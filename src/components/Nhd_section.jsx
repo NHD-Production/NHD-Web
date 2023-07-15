@@ -8,8 +8,8 @@ import { SiGoogleclassroom } from 'react-icons/si'
 import Link from 'next/link';
 function Nhd_section() {
   return (
-    <div className="flex  flex-wrap h-[15rem]  xl:h-full">
-      <a href="/nhdlive" className="w-full h-full md:w-1/2 xl:w-1/4 px-2 py-2 sm:h-full " target="_blank" rel="noopener noreferrer">
+    <div className="flex  flex-wrap h-auto  xl:h-full">
+      <a href="/nhdlive" className="w-full h-[15rem] md:w-1/2 xl:w-1/4 px-2 py-2 sm:h-full " target="_blank" rel="noopener noreferrer">
        
           <div className=" h-full flex flex-col rounded-xl shadow-2xl backdrop-blur-lg bg-gradient-to-t from-indigo-100/10 via-purple-500/50 to-pink-500/50 items-start hover:scale-[1.02] transform transition-scale duration-200 cursor-pointer p-4">
             <div className='flex justify-between w-full'>
@@ -28,7 +28,7 @@ function Nhd_section() {
             </p>
           </div>
       </a>
-      <a href="/nhdstudio" className="w-full h-full md:w-1/2 xl:w-1/4 px-2  py-2 sm:h-full" target="_blank" rel="noopener noreferrer">
+      <a href="/nhdstudio" className="w-full h-[15rem] md:w-1/2 xl:w-1/4 px-2  py-2 sm:h-full" target="_blank" rel="noopener noreferrer">
 
           <div className="flex h-full  flex-col rounded-xl shadow-2xl backdrop-blur-md bg-gradient-to-t from-indigo-100/10 via-purple-500/50 to-pink-500/50 items-start hover:scale-[1.02] transform transition-scale duration-200 cursor-pointer p-4">
             <div className='flex justify-between w-full'>
@@ -46,7 +46,7 @@ function Nhd_section() {
             </p>
           </div>
       </a>
-      <a href="/nhdproduction" className="w-full h-full md:w-1/2 xl:w-1/4 px-2 py-2  sm:h-full" target="_blank" rel="noopener noreferrer">
+      <a href="/nhdproduction" className="w-full h-[15rem] md:w-1/2 xl:w-1/4 px-2 py-2  sm:h-full" target="_blank" rel="noopener noreferrer">
        
           <div className="flex h-full  flex-col rounded-xl backdrop-blur-md shadow-2xl bg-gradient-to-t from-indigo-100/10 via-purple-500/50 to-pink-500/50 items-start hover:scale-[1.02] transform transition-scale duration-200 cursor-pointer p-4">
             <div className='flex justify-between w-full'>
@@ -64,7 +64,7 @@ function Nhd_section() {
             </p>
           </div>
       </a>
-      <a href="/nhdclasses" target="_blank" className="w-full h-full md:w-1/2 xl:w-1/4 px-2 py-2  sm:h-full" rel="noopener noreferrer">
+      <a href="/nhdclasses" target="_blank" className="w-full h-[15rem] md:w-1/2 xl:w-1/4 px-2 py-2  sm:h-full" rel="noopener noreferrer">
         
           <div className="flex h-full  flex-col rounded-xl shadow-2xl backdrop-blur-md bg-gradient-to-t from-indigo-100/10 via-purple-500/50 to-pink-500/50 items-start hover:scale-[1.02] transform transition-scale duration-200 cursor-pointer p-4">
             <div className='flex justify-between w-full'>
