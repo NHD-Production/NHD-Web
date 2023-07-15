@@ -17,10 +17,10 @@ function Navbar() {
       <nav className="w-full bg-white relative z-10 h-[4.5rem]">
         <div className="justify-between bg-white md:items-center md:flex md:px-8  w-full">
           <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block">
+            <div className="flex items-center justify-between py-3 md:py-3 md:block">
               {/* LOGO */}
-              <Link href="/">
-              <Image src={logo} width={30} height={30} alt="logo" />
+              <Link href="/" shallow>
+              <Image src={logo} width={40} height={40} alt="logo" />
               </Link>
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="md:hidden">
@@ -50,23 +50,23 @@ function Navbar() {
               }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="pb-6 text-xl text-purple-900 py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="/" onClick={() => setNavbar(!navbar)}>
+                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link shallow href="/" onClick={() => setNavbar(!navbar)}>
                     Home
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-purple-900 py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="About" onClick={() => setNavbar(!navbar)}>
+                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link shallow href="About" onClick={() => setNavbar(!navbar)}>
                     About
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-purple-900 py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="#music" onClick={() => setNavbar(!navbar)}>
+                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link shallow href="#music" onClick={() => setNavbar(!navbar)}>
                     Music
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-purple-900 py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="#contact" onClick={() => setNavbar(!navbar)}>
+                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link shallow href="#contact" onClick={() => setNavbar(!navbar)}>
                     Contact
                   </Link>
                 </li>

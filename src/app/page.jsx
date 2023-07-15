@@ -46,7 +46,7 @@ function Home() {
    <About_nhd/>
    <Nhd_music/>
     <ContactUs/>
-    {/* <About_humtoo/> */}
+    <About_humtoo/>
     <div>
       
   </div>
