@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
 html {
     font-size: 16px;
 }
@@ -8,6 +9,7 @@ html {
 body {
     background: linear-gradient(134deg, #640973 53.65%, #0B0054 64.06%);
     background-attachment: fixed;
+    font-family: 'Judson', serif;
 }
 
 .audioplayer:after {
@@ -22,23 +24,46 @@ body {
     background-color: rgb(177, 17, 192);
     opacity: .5;
 }
-/* width */
-::-webkit-scrollbar {
-	width: 12px;
+
+.audioplayerlg:after {
+    background: url('/apudurga.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(177, 17, 192);
+    opacity: .5;
 }
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
 
 /* Track */
+
 ::-webkit-scrollbar-track {
-	background: #f1f1f1;
+    background: #f1f1f1;
 }
+
 
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
-	background: #888;
-	border-radius: 5px;
+    background: #888;
+    border-radius: 5px;
 }
 
+
 /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-	background: #555;
+    background: #555;
 }
