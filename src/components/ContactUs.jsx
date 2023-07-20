@@ -8,7 +8,7 @@ function ContactUs() {
   console.log(event.target)
   }
   return (
-    <div className='flex flex-col p-2 xl:flex-row xl:p-5 relative'>
+    <div className='flex flex-col p-2 xl:flex-row xl:p-5 relative' id='contact'>
         <div className="w-full xl:w-1/2 bg-white/20  flex flex-col justify-center items-start p-8">
           <p className='text-[3rem] xl:text-[4rem] text-white'>Get in touch !</p>
           <span className='bg-white h-1 w-10'></span>
