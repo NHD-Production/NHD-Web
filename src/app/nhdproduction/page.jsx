@@ -18,9 +18,10 @@ function About() {
       <div className=" w-full h-[40vh] relative">
        <Image src="/cover1.jpg" alt='cover'  fill={true} />
       </div>
+      <ImageSlider/>
       <div className="content">
         
-       {/* <ZigBox data={demoData}/> */}
+       <ZigBox data={demoData}/>
       </div>
       <ImageSlider/>
       <ContactUs/>

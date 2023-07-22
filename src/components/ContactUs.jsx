@@ -13,7 +13,7 @@ function ContactUs() {
            <div className='flex justify-between w-full'> <Dropdown/> 
             <input type="text" className='w-[80%] h-[3rem] text-[1.3rem] px-2 mt-3 bg-white/20 shadow-lg rounded-sm  placeholder-black/75 focus:placeholder-black/95' name="" id="" placeholder='Subject'/></div>
             <textarea name="" className='w-full resize-none text-[1.3rem] p-2  bg-white/20 shadow-xl rounded-sm  placeholder-black/75 focus:placeholder-black/95' id="" cols="30" rows="10" placeholder='Enter your message'></textarea>
-            <input className='bg-white/20 shadow-xl rounded-sm text-white px-8 py-2 hover:scale-[1.09] cursor-pointer' type="button" value="Submit" />
+            <input className='bg-white/20 shadow-xl rounded-sm text-white px-8 py-2 hover:scale-[1.09] hover:shadow-2xl cursor-pointer' type="button" value="Submit" />
           </div>
         </div>
         <div className="w-full xl:w-1/2 bg-white/20 ">
@@ -29,7 +29,7 @@ function ContactUs() {
                 </div>
                 <div className="map w-full xl:w-[70%] h-[20rem] xl:h-full bg-slate-200">
 
-                <iframe className="h-full w-full" frameBorder="0"   src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=mumbai&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                <iframe className="h-full w-full" frameBorder="0"   src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=NHD Productions and studios&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                 </div>
             </div>
         </div>

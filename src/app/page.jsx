@@ -3,6 +3,7 @@ import React, { useEffect,useContext } from 'react'
 import { GlobalContext } from '@/context/Globalcontext';
 import ZigBox from '@/components/ZigBox';
 import { data, demoData } from '@/assets/content';
+import {Nhd_data} from '@/assets/content';
 import Welcome from '@/components/Welcome';
 import Nhd_gallery from '@/components/Nhd_gallery';
 import Nhd_section from '@/components/Nhd_section';
@@ -42,15 +43,15 @@ function Home() {
       </div>
      </div>
     </div>
-    <div className="content">
+    <div className="content mt-28">
         
-       <ZigBox data={demoData}/>
+       <ZigBox data={Nhd_data}/>
       </div>
-  <div className='h-[50vh] w-[full]'> <ImageSlider/></div>
+     <div className='mt-28'><Nhd_music/></div>
+  <div className='h-[50vh] w-[full] mt-16'> <ImageSlider/></div>
    {/* <About_nhd/> */}
    {/* <Nhd_music/> */}
     <ContactUs/>
-    <About_humtoo/>
     <div>
       
   </div>

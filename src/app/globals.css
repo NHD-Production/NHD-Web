@@ -7,9 +7,21 @@ html {
 }
 
 body {
-    background: linear-gradient(134deg, #640973 53.65%, #0B0054 64.06%);
-    background-attachment: fixed;
+    background: linear-gradient(45deg, #810394,#0B0054,#810394);
+    background-size:300% 300%;
+    animation: color 12s ease-in-out infinite;
     font-family: 'Judson', serif;
+}
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position:0 50%;
+    }
 }
 
 .audioplayer:after {

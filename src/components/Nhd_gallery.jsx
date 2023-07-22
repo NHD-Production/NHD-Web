@@ -38,12 +38,12 @@ const Nhd_gallery = ({ images }) => {
               key={index}
               className={`cursor-pointer ${
                 index === 0
-                  ? 'row-span-4 hover:scale-[1.01] rounded-sm'
+                  ? 'row-span-4 hover:scale-[1.01] rounded-lg'
                   : index === 1
-                  ? 'row-span-5 hover:scale-[1.01] rounded-sm'
+                  ? 'row-span-5 hover:scale-[1.01] rounded-lg'
                   : index === 2
-                  ? 'row-span-6 hover:scale-[1.01] rounded-sm'
-                  : 'row-span-5 hover:scale-[1.01] rounded-sm'
+                  ? 'row-span-6 hover:scale-[1.01] rounded-lg'
+                  : 'row-span-5 hover:scale-[1.01] rounded-lg'
               }`}
               onClick={() => handleShowDialog(image)}
             >
