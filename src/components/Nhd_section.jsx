@@ -76,7 +76,7 @@ function Nhd_section() {
               </div>
             </div>
             <h2 className="text-base font-bold">NHD</h2>
-            <h4 className="font-bold text-fuchsia-500 relative">Institute</h4>
+            <h4 className="font-bold text-fuchsia-500 relative">Classes</h4>
             <p className="text-[13px] text-white ">
               A unique blend of woodwinds, flute, audio-production, sound engineering and playback-vocal master level classes and specialization.
             </p>

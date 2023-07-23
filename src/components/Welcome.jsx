@@ -4,7 +4,7 @@ import img from '@/assets/humtoo.jpeg';
 
 function Welcome() {
   return (
-    <div className='w-full h-[30rem] sm:h-full backdrop-blur-sm bg-white/10 rounded-2xl drop-shadow-2xl'>
+    <div className='w-full h-[30rem] sm:h-full backdrop-blur-sm bg-white/20 rounded-2xl drop-shadow-2xl'>
       <div className="flex flex-col md:flex-row h-full">
         <div className="md:w-1/3 h-full  flex justify-center items-center">
           <Image src={img} className="h-100 w-[10rem] h-[10rem] rounded-full" alt="logo" />

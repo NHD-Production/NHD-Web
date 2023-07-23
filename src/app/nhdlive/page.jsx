@@ -10,6 +10,9 @@ import ContactUs from '@/components/ContactUs';
 import Navbar from '@/components/Navbar';
 import About_humtoo from '@/components/About_humtoo';
 import ImageSlider from '@/components/ImageSlider';
+import {Nhdlive_data} from '@/assets/content';
+import ZigzagBullate from '@/components/zigzagBullate';
+import {nhdlive} from '@/assets/content';
 function About() {
   const {theme} = useContext(GlobalContext)
   const [Themecolor,setThemecolor] = theme;
@@ -19,10 +22,9 @@ function About() {
        <Image src="/cover1.jpg" alt='cover'  fill={true} />
       </div>
       <ImageSlider/>
-      <div className="content">
-        
-       <ZigBox data={demoData}/>
-      </div>
+   <div className='flex flex-col justify-center items-center'>
+   <ZigzagBullate data={nhdlive}></ZigzagBullate>
+   </div>
       <ImageSlider/>
       <ContactUs/>
       
