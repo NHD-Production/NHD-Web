@@ -42,7 +42,7 @@ function AudioPlayer({type,bgimage}) {
        <HiPause size={60} color='white' onClick={()=>handlePlay(false)} />}
      </div>
      <div className="text-[#fff]">
-     Renowned throughout the world, the flute - in the famous theme of 'Pather Panchali', by Satyajit Ray had been played by N-H-D's grandfather Late Alok Nath Dey.
+     59 Years later N-H-D plays the same leif motif in flute for the theme of Kaushik Ganguly's celebrated feature film "Apur Panchali" as a tribute.
      </div>
    </div>
     </div>

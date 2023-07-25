@@ -17,7 +17,7 @@ function ContactUs() {
             <input type="text" className='w-full h-[3rem] text-[1.3rem] px-2 bg-white/20 shadow-lg rounded-sm  placeholder-black/75 focus:placeholder-black/95' name="email" id="email" placeholder='Enter a valid email address'/>
            <div className='flex gap-4 md:gap-2 flex-col md:flex-row justify-between w-full items-center'>
            <select
-        className="block w-full  md:w-[20%] h-[3rem] bg-white/20  border border-fuchsia-700 shadow-xl px-1 focus:outline-none focus:border-blue-500" name="select">
+        className="block w-full  md:w-[30%] h-[3rem] bg-white/20  border border-fuchsia-700 shadow-xl px-1 focus:outline-none focus:border-blue-500" name="select">
         <option value="">Choose Any</option>
         <option value="Nhd_Live">Nhd_Live</option>
         <option value="Nhd_Studio">Nhd_Studio</option>
@@ -29,11 +29,12 @@ function ContactUs() {
             <input className='bg-white/20 shadow-xl rounded-sm text-white w-full md:w-auto px-8 py-2 hover:scale-[1.09] cursor-pointer' type="submit" value="Submit" />
         </form>
           </div>
+          <div/>
         <div className="w-full xl:w-1/2 bg-white/20 ">
             <div className="w-full xl:w-[45%] h-[80%]  bg-white/50 xl:absolute xl:top-1/2 xl:left-2/3 xl:transform xl:-translate-x-1/2 xl:-translate-y-1/2 flex flex-col-reverse xl:flex-row  justify-start items-center ">
                 <div className="add flex flex-col w-full xl:w-[30%] h-full  p-5 xl:p-10">
                     <h2 className='font-semibold uppercase text-[1.3rem] py-5'>Address</h2>
-                    <p className='text-slate-600 text-xl py-2'>123 Mg road ,21 Avenue , Kolkata , 700009 </p>
+                    <p className='text-slate-600 text-xl py-2'>76 Jyotish roy road, top floor, Kolkata, West Bengal 700053, India</p>
                     <h2 className='uppercase font-semibold text-[1.3rem] py-5'>Call Us</h2>
                     <p className='text-slate-600 text-xl py-2'> +91 84587 45474 </p>
                     <p className='text-slate-600 text-xl py-2'> +911 94587 45474 </p>
@@ -42,7 +43,7 @@ function ContactUs() {
                 </div>
                 <div className="map w-full xl:w-[70%] h-[20rem] xl:h-full bg-slate-200">
 
-                <iframe className="h-full w-full" frameBorder="0"   src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=mumbai&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                <iframe className="h-full w-full" frameBorder="0"   src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=NHD Productions and studios&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                 </div>
             </div>
         </div>

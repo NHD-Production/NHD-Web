@@ -38,12 +38,12 @@ const Nhd_gallery = ({ images }) => {
               key={index}
               className={`cursor-pointer ${
                 index === 0
-                  ? 'row-span-4 hover:scale-[1.01] rounded-sm'
+                  ? 'row-span-4 hover:scale-[1.01] rounded-lg'
                   : index === 1
-                  ? 'row-span-5 hover:scale-[1.01] rounded-sm'
+                  ? 'row-span-5 hover:scale-[1.01] rounded-lg'
                   : index === 2
-                  ? 'row-span-6 hover:scale-[1.01] rounded-sm'
-                  : 'row-span-5 hover:scale-[1.01] rounded-sm'
+                  ? 'row-span-6 hover:scale-[1.01] rounded-lg'
+                  : 'row-span-5 hover:scale-[1.01] rounded-lg'
               }`}
               onClick={() => handleShowDialog(image)}
             >
@@ -57,7 +57,7 @@ const Nhd_gallery = ({ images }) => {
           className="fixed top-0 left-0 right-0 bottom-0  flex items-center justify-center bg-black bg-opacity-0"
           onClick={handleCloseDialog}
         >
-          <div className="relative w-full md:w-1/2 lg:w-1/3 h-auto">
+          <div className="relative w-full md:w-1/2 lg:w-1/3 ">
             <Image className="w-full h-full object-contain outline outline-white outline-8" height={300} width={500} src={selectedImage} alt="no image" />
             <AiOutlineCloseSquare
               size={30}

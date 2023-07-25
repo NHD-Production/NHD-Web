@@ -56,9 +56,9 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link shallow href="About" onClick={() => setNavbar(!navbar)}>
-                    About
-                  </Link>
+                  <a href="/About" target="_blank" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
+                     About
+                  </a>
                 </li>
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link shallow href="#music" onClick={() => setNavbar(!navbar)}>

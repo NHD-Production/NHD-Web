@@ -2,7 +2,8 @@
 import React, { useEffect,useContext } from 'react'
 import { GlobalContext } from '@/context/Globalcontext';
 import ZigBox from '@/components/ZigBox';
-import { data } from '@/assets/content';
+import { data, demoData } from '@/assets/content';
+import {Nhd_data} from '@/assets/content';
 import Welcome from '@/components/Welcome';
 import Nhd_gallery from '@/components/Nhd_gallery';
 import Nhd_section from '@/components/Nhd_section';
@@ -14,12 +15,21 @@ import Nhd_music from '@/components/Nhd_music';
 import About_nhd from '@/app/About/page'
 import About_humtoo from '@/components/About_humtoo';
 import AudioPlayerLarge from '@/components/AudioPlayerLarge';
+
 function Home() {
     const images = [
-      'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
-      'https://cdn.pixabay.com/photo/2016/11/29/06/17/audience-1867754_640.jpg',
+      'https://i.ibb.co/S6ZMjwJ/90-A3708-min.jpg',
+      'https://i.ibb.co/479NmxY/90A4147.jpg',
+      'https://i.ibb.co/HVhjJ1n/90-A3794-min.jpg',
+      'https://i.ibb.co/Ht510Z9/90A3855.jpg',
+    ];
+    const imageUrls = [
       'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_640.jpg',
-      'https://cdn.pixabay.com/photo/2016/11/22/21/36/audience-1850665_640.jpg',
+      'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_640.jpg',
+      'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_640.jpg',
+      'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_640.jpg',
+      'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_640.jpg',
+      'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_640.jpg',
     ];
   return (
     <div className='flex flex-col'>
@@ -36,17 +46,25 @@ function Home() {
       </div>
      </div>
      <div className='h-[150vh] xl:h-auto col-span-12 xl:col-span-3 flex flex-col justify-between '>
-      <div className="h-[67%] overflow-hidden flex justify-center items-center p-2"><Nhd_gallery images={images} /></div>
+      <div className="h-[67%] overflow-hidden flex justify-center items-center"><Nhd_gallery images={images} /></div>
       <div className="h-[33%]  overflow-hidden flex justify-center items-center p-2">
       <AudioPlayer/>
       </div>
      </div>
     </div>
-  {/* <div className='h-[50vh] w-[full]'> <ImageSlider/></div> */}
-   <About_nhd/>
-   <Nhd_music/>
+    <div className="content mt-28">
+        
+       <ZigBox data={Nhd_data}/>
+      </div>
+     <div className='mt-28'><Nhd_music/></div>
+  <div className='h-[50vh] w-[full] mt-16'> <ImageSlider imageUrls={imageUrls}/></div>
+  
+   <div className='flex flex-col justify-center items-center m-10'>
+      <a href={<Nhd_music/>} targer='_blank'>
+        <button className='bg-blue-600/50 text-cyan-50 hover:bg-slate-50 hover:text-black p-2 flex justify-center items-center rounded-md'>Visit to the Gallery</button>
+      </a>
+   </div>
     <ContactUs/>
-    <About_humtoo/>
     <div>
       
   </div>
