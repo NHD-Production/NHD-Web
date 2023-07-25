@@ -11,7 +11,7 @@ import Navbar from '@/components/Navbar';
 import About_humtoo from '@/components/About_humtoo';
 import ImageSlider from '@/components/ImageSlider';
 import {Nhdlive_data} from '@/assets/content';
-import ZigzagBullate from '@/components/zigzagBullate';
+import ZigzagBullate from '@/components/ZigzagBullate';
 import {nhdlive} from '@/assets/content';
 function About() {
   const {theme} = useContext(GlobalContext)
@@ -30,10 +30,10 @@ function About() {
        <Image src="/cover1.jpg" alt='cover'  fill={true} />
       </div>
      <div className='mt-20'>
-     <ImageSlider imageUrls={imageUrls}/>
+     {/* <ImageSlider imageUrls={imageUrls}/> */}
      </div>
-   <div className='flex flex-col justify-center items-center'>
-   <ZigzagBullate data={nhdlive}></ZigzagBullate>
+   <div className='flex flex-col justify-center items-center '>
+   <ZigzagBullate data={nhdlive}/>
    </div>
       <ImageSlider imageUrls={imageUrls}/>
       <ContactUs/>

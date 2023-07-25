@@ -6,7 +6,7 @@ const ZigzagBullate = ({ data }) => {
       {data.map((item, index) => (
         <div
           key={index}
-          className={`flex flex-col h-auto w-full m-20 ${
+          className={`flex flex-col h-auto w-full my-20 ${
             index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
           } items-center justify-between p-10`}
         >
