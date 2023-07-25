@@ -30,24 +30,24 @@ const Nhd_gallery = ({ images }) => {
   const imageRows = chunkArray(images, 4);
 
   return (
-    <div className="grid grid-cols-2 gap-1 h-full w-full p-5 shadow-sm">
+    <div className="grid  grid-cols-12 gap-1 h-full w-full p-2 shadow-sm ">
       {imageRows.map((row, rowIndex) => (
         <React.Fragment key={rowIndex}>
           {row.map((image, index) => (
             <div
               key={index}
-              className={`cursor-pointer ${
+              className={`relative cursor-pointer ${
                 index === 0
-                  ? 'row-span-4 hover:scale-[1.01] rounded-lg'
+                  ? 'row-span-2 col-span-7 hover:scale-[1.01] rounded-lg'
                   : index === 1
-                  ? 'row-span-5 hover:scale-[1.01] rounded-lg'
+                  ? 'row-span-4 col-span-5 hover:scale-[1.01] rounded-lg'
                   : index === 2
-                  ? 'row-span-6 hover:scale-[1.01] rounded-lg'
-                  : 'row-span-5 hover:scale-[1.01] rounded-lg'
+                  ? 'row-span-5 col-span-7 hover:scale-[1.01] rounded-lg'
+                  : 'row-span-3 col-span-5 hover:scale-[1.01] rounded-lg'
               }`}
               onClick={() => handleShowDialog(image)}
             >
-              <Image width={500} height={200} className="w-full h-full object-cover " src={image} alt="no image" />
+              <Image  className="w-full h-full object-cover " src={image}  alt="no image" loading="lazy" fill={true}/>
             </div>
           ))}
         </React.Fragment>
