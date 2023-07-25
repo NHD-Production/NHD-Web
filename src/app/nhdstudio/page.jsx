@@ -13,6 +13,7 @@ import ImageSlider from '@/components/ImageSlider';
 import { Nhdstudio_data } from '@/assets/content';
 import BullateList from '@/components/BullateList';
 function About() {
+  
   const studioService = [
     'Studio rental for voice recording',
     'Instrument Recording',
@@ -52,6 +53,13 @@ function About() {
 
   const { theme } = useContext(GlobalContext)
   const [Themecolor, setThemecolor] = theme;
+  const imageUrls = [
+    'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
+    'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
+    'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
+    'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
+    
+  ];
   return (
     <div className='h-full w-full'>
       <div className=" w-full h-[40vh] relative mb-20">
@@ -103,14 +111,16 @@ function About() {
           </BullateList>
         </div>
       </div>
+    <div className=""> <ImageSlider imageUrls={imageUrls}/></div>
+     
+      <div className="">
+        <ContactUs />
+      </div>
       <div className='flex flex-col justify-center items-center m-10'>
         <BullateList items={booking} bullatetype={false} desc={'Booking Charges:'} />
       </div>
 
-      <ImageSlider />
-      <div className="mt-20">
-        <ContactUs />
-      </div>
+      
 
     </div>
   )

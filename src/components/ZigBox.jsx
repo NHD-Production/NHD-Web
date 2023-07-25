@@ -43,7 +43,7 @@ function ZigBox({ title, description, data }) {
                   alt={title}
                   height={200}
                   width={400}
-                  className="bg-blue-600"
+                  className=""
                 />
               </div>
             </div>
