@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect } from 'react';
 
 function NhdImageGallery() {
@@ -28,22 +29,6 @@ function NhdImageGallery() {
       alt: 'Image 5',
     }
   ];
-
-//   useEffect(() => {
-//     const resizeImages = () => {
-//       const containers = document.querySelectorAll('.image-container');
-//       containers.forEach(container => {
-//         const containerWidth = container.offsetWidth;
-//         const height = containerWidth / (16 / 9); 
-//         container.style.height = `${height}px`;
-//       });
-//     };
-//     resizeImages();
-//     window.addEventListener('resize', resizeImages);
-//     return () => {
-//       window.removeEventListener('resize', resizeImages);
-//     };
-//   }, []);
 
   return (
     <div className="image-gallery m-auto rounded-lg w-11/12 bg-gradient-to-r backdrop-blur-lg bg-white/30">
