@@ -15,6 +15,8 @@ import Nhd_music from '@/components/Nhd_music';
 import About_nhd from '@/app/About/page'
 import About_humtoo from '@/components/About_humtoo';
 import AudioPlayerLarge from '@/components/AudioPlayerLarge';
+import SocialMediaContainer from '@/components/SocialMediaContainer';
+import NhdImageGallery from '@/components/NhdImageGalley';
 
 function Home() {
     const images = [
@@ -52,18 +54,23 @@ function Home() {
       </div>
      </div>
     </div>
+    <div className='mt-10'><SocialMediaContainer/></div>
     <div className="content mt-28">
         
        <ZigBox data={Nhd_data}/>
       </div>
-     <div className='mt-28'><Nhd_music/></div>
-  <div className='h-[50vh] w-[full] mt-16'> <ImageSlider imageUrls={imageUrls}/></div>
-  
-   <div className='flex flex-col justify-center items-center m-10'>
+      <div className='h-[50vh] w-[full] mt-16'> <ImageSlider imageUrls={imageUrls}/></div>
+      <div className='flex flex-col justify-center items-center m-10'>
       <a href={<Nhd_music/>} targer='_blank'>
         <button className='bg-blue-600/50 text-cyan-50 hover:bg-slate-50 hover:text-black p-2 flex justify-center items-center rounded-md'>Visit to the Gallery</button>
       </a>
    </div>
+     <div className='mt-28'><Nhd_music/></div>
+    <div className='mt-20 h-full mb-20'>
+      <NhdImageGallery/>
+    </div>
+  
+   
     <ContactUs/>
     <div>
       

@@ -54,11 +54,12 @@ function About() {
   const { theme } = useContext(GlobalContext)
   const [Themecolor, setThemecolor] = theme;
   const imageUrls = [
-    'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
-    'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
-    'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
-    'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
-    
+    'https://res.cloudinary.com/dct1gazgb/image/upload/v1690313968/_90A3708_nawda5.jpg',
+    'https://i.ibb.co/P9nyfcG/E7-A3420-HDR-1-1.png',
+    'https://i.ibb.co/hXFm9tZ/E7-A3638-1.png',
+    'https://i.ibb.co/qr1vZ6X/E7-A3575-HDR-1.png',
+    'https://i.ibb.co/tb1Yqpm/E7-A3600-1.png',
+    'https://i.ibb.co/LNWVb5h/E7-A3668-1-1.png',
   ];
   return (
     <div className='h-full w-full'>

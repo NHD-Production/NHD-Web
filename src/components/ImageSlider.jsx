@@ -54,8 +54,8 @@ export default function ImageSlider({ imageUrls }) {
             <SwiperSlide key={index}>
               <Image
                 className='w-[500px] h-[350px] shadow-2xl'
-                height={300}
-                width={200}
+                height={200}
+                width={150}
                 src={imageUrl}
                 alt={`Slide ${index + 1}`}
               />
