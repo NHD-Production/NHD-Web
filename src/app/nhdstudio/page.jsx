@@ -54,19 +54,19 @@ function About() {
   const { theme } = useContext(GlobalContext)
   const [Themecolor, setThemecolor] = theme;
   const imageUrls = [
-    'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
-    'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
-    'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
-    'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
-    
+    'https://res.cloudinary.com/dct1gazgb/image/upload/v1690384063/_E7A3575-HDR_uaztz8.jpg',
+    'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380938/_E7A3600_ffrmy9.jpg',
+    'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380941/_E7A3638_phhlw3.jpg',
+    'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380363/_90A3708_lmn8eq.jpg',
+    'https://res.cloudinary.com/dct1gazgb/image/upload/v1690384052/_E7A3547-HDR_knh5sj.jpg',
+    'https://res.cloudinary.com/dct1gazgb/image/upload/v1690384058/_E7A3668_jrffr0.jpg',
   ];
   return (
     <div className='h-full w-full'>
-      <div className=" w-full h-[40vh] relative mb-20">
-        <Image src="/cover1.jpg" alt='cover' fill={true} />
+      <div className=" w-full h-[50vh] relative">
+        <Image src="https://res.cloudinary.com/dct1gazgb/image/upload/v1690380769/nhd_production_banner_showreel_u3g7so.jpg" alt='cover' fill={true} />
       </div>
-      <ImageSlider />
-      <div className="content mt-20 mb-20">
+      <div className="content mt-10 mb-20">
 
         <ZigBox data={Nhdstudio_data} />
       </div>
@@ -112,13 +112,13 @@ function About() {
         </div>
       </div>
     <div className=""> <ImageSlider imageUrls={imageUrls}/></div>
-     
+    <div className='flex flex-col justify-center items-center m-10'>
+        <BullateList items={booking} bullatetype={false} desc={'Booking Charges:'} />
+      </div>
       <div className="">
         <ContactUs />
       </div>
-      <div className='flex flex-col justify-center items-center m-10'>
-        <BullateList items={booking} bullatetype={false} desc={'Booking Charges:'} />
-      </div>
+     
 
       
 

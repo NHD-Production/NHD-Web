@@ -27,12 +27,12 @@ function About() {
       <div className=" w-full h-[40vh] relative mb-20">
        <Image src="/cover1.jpg" alt='cover'  fill={true} />
       </div>
-      <ImageSlider imageUrls={imageUrls}/>
+      
       <div className="content mt-20 mb-40">
         
        <ZigBox data={Nhdprod_data}/>
       </div>
-      <ImageSlider/>
+      <ImageSlider imageUrls={imageUrls}/>
      <div className='mt-20'>
      <ContactUs />
      </div>

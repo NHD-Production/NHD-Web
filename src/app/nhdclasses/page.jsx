@@ -28,7 +28,6 @@ function About() {
       <div className=" w-full h-[40vh] relative mb-20">
        <Image src="/cover1.jpg" alt='cover'  fill={true} />
       </div>
-      <ImageSlider imageUrls={imageUrls}/>
       <div className="content mt-40 mb-40">
         
        <ZigBox data={Nhdclasses_data}/>

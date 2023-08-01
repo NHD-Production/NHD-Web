@@ -62,7 +62,7 @@ export const demoData = [{
     }
 ]
 export const Nhd_data = [{
-    image: 'https://i.ibb.co/nbnZ2gw/90-A7443-min.jpg',
+    image: 'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380369/_90A7443_uxdwnr.jpg',
     title: 'What is NHD ?',
     description: 'NHD Music and Art Pvt. Ltd.  founded by Mr. Nirmalya Humtoo Dey caters to a wide range of musical solutions, from melodic band performances to mastering playback vocals and professional woodwinds.From music production to independent studio rental experiences at a better value, both financially and in kind.Our work seeks to create, reiterate, and profess music that stirs the minds of many and touches the soul of many more. With a team of renowned band members, music composers, sound engineers and artists, we create a symphony that breathes life into music.',
     extraButton: {
@@ -72,7 +72,7 @@ export const Nhd_data = [{
     isCLub: true
 },
 {
-    image: 'https://i.ibb.co/VYmT4Q1/Logo-Final.png',
+    image: 'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380364/Logo_Final__fuxxvg.png',
     title: 'How NHD operates',
     description: 'An expert management  and public relations team indulge in creating a seamless and thriving venture, modelled exclusively according to the need of particular clients. We herein provide services adhering to our well-analysed and documented principles, after a full-fledged agreement between the company and related parties.NHD Live, Studio, Productions and Classes provide industry-level quality services with a hint of exclusive freshness in all genres. '
     ,
@@ -98,7 +98,7 @@ export const Nhdclasses_data = [{
     isCLub: true
 },
 {
-    image: 'https://i.ibb.co/HYMZRjG/Flute.jpg',
+    image: 'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380469/Flute_uayerb.jpg',
     title: 'Flute and Woodwinds:',
     description: 'Trained by Lt. Aloke Nath Dey, a renowned flautist and music composer (grandfather of Nirmalya Humtoo Dey), and Pandit Ajay Chakravorty, Mr Dey is a renowned flautist and woodwinds player with over 19 years of industry experience and over 100 national and international performances. Chief flautist and woodwinds player in stalwart Arijit Singh’s Live band and his noteworthy performances with several renowned singers of Bollywood shall make it a lifetime experience to receive his guidance. Flute and woodwinds players who have been trained earlier can join this course for expert-level advancement.'
     ,
@@ -109,7 +109,7 @@ export const Nhdclasses_data = [{
     },
     isCLub: true
 },{
-    image: 'https://i.ibb.co/KDRDzXW/E7-A3716-min.jpg',
+    image: 'https://res.cloudinary.com/dct1gazgb/image/upload/v1690383432/_E7A3716_mcb8o0.jpg',
     title: 'Music Production and Audio Engineering:',
     description: 'If you think we just train voices for playback, you have surely mistaken. To all my instrumentally trained friends, your hard work would not go in vain. NHD Music production classes shall cater to transforming your instrumental training into recording production-worthy pieces. Alongside this, independent sound recording and engineering expertise will be provided on the same palate through the joint course training.'
     ,
@@ -122,7 +122,7 @@ export const Nhdclasses_data = [{
 }
 ]
 export const Nhdprod_data = [{
-    image: 'https://m.economictimes.com/thumb/msid-87577205,width-1200,height-900,resizemode-4,imgsize-75004/travis-scott.jpg',
+    image: 'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380769/Logo_Final__cugcxh.png',
     title: 'About :',
     description: 'NHD Productions serves you with music arrangement, recording and mastering for both Singles and Albums. It provides an amalgamation of quality facilities starting with background scoring, foley and sound design. It delivers mixing mastering for movies and web series in Stereo and 5.1 formats. The supervision and prowess of our professional composers, artists and sound engineers and designers make this place the safe haven for your sound projects.',
     extraButton: {
@@ -132,7 +132,7 @@ export const Nhdprod_data = [{
     isCLub: true
 },
 {
-    image: 'https://media.npr.org/assets/img/2017/12/21/_harlan_nprmusic10years-149_wide-78a7596027f7b4c023a21ad85f078e8a4165c230-s800-c85.jpg',
+    image: 'https://res.cloudinary.com/dct1gazgb/image/upload/v1690383683/_E7A3690-2_m9fbyl.jpg',
     title: 'Music Production :',
     description: 'The client’s Single compositions or Songs for an Album are given clarity by music arrangement, recording (usage of instruments according to the specific requirements), mixing and mastering. Our task is to bring fruition and guide your composition along the way through a multi-genre approach.'
     ,
@@ -156,7 +156,7 @@ export const Nhdprod_data = [{
 }
 ]
 export const Nhdstudio_data = [{
-    image: 'https://i.ibb.co/fQv35Dr/E7-A3399-HDR-min.jpg',
+    image: 'https://res.cloudinary.com/dct1gazgb/image/upload/v1690384053/_E7A3399-HDR_hbryu4.jpg',
     title: 'About :',
     description: 'NHD Studios is the one-stop studio rental destination for vocal recording, instrument recording or dialogue dubbing for movies. The Studio is based in New Alipore, Kolkata, wherein we shall provide a set of professional-level studio equipment and a wide range of mic pre-amps to choose from. The studio has a hybrid recording set-up where we deliver the best of both worlds, i.e., Analog as well as Digital.  The Studio hours shall be monitored and guided by our expert Sound Engineer. Even if the party renting the studio opts for having their own project audio engineer, our in-house audio engineer shall be there to guide regarding the usage of equipment and recording.',
     extraButton: {
@@ -168,21 +168,21 @@ export const Nhdstudio_data = [{
 ]
 export const nhdlive = [
     {
-      image: 'https://i.ibb.co/wgmh32z/90-A7312-min.jpg',
+      image: 'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380618/_90A7312_lw3fcl.jpg',
       title: '5 - 6 Piece',
       description: 'The 5-6 Piece band is the most compact line-up by NHD. The line-up consists of :',
       bulletPoints: ['Flute and Multi Woodwinds','Drums','Guitars','Keyboard','Bass','The performances are also stringed by the addition of Strokes Instruments (Mandolin, Bouzouki, etc.)The 5-piece band provides a limited edition instrumental journey and balances between the rhythmic subtleness and the frisky wilderness.' ],
       buttonText: 'Book Now'
     },
     {
-      image: 'https://i.ibb.co/S6ZMjwJ/90-A3708-min.jpg',
+      image: 'https://res.cloudinary.com/dct1gazgb/image/upload/v1690313968/_90A3708_nawda5.jpg',
       title: '10 Piece:',
       description: 'One of the most wanted line-ups remains to be the 10-piece line-up, consisting of :       ',
       bulletPoints: ['Flute and Multi Woodwinds','Drums','Bass','Acoustic Guitar','Electric Guitar','Keyboards','Mandolin','Buzouki','Percussions','Vocals.',],
       buttonText: 'Book Now'
     },
     {
-      image: 'https://i.ibb.co/hg1QKyR/Screen-Shot-2023-07-24-at-11-04-51-PM.png',
+      image: 'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380611/Screen_Shot_2023-07-24_at_11.04.51_PM_vpcrvs.png',
       title: '25 - Piece ',
       description: 'The 25-Piece line-up, popularly  known as the Grand Set-Up is an absolute pleasure to the senses, wherein we present :       ',
       bulletPoints: ['Drums','Flute and Multi Woodwinds','Bass','Keyboards','Acoustic Guitar','Electric Guitar','Solo Violin','Group Violin','Octapad','Sitar','Mandolin','Buzouki','Percussion','2 female and 2 male vocalists'

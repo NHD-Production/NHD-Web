@@ -15,13 +15,15 @@ import Nhd_music from '@/components/Nhd_music';
 import About_nhd from '@/app/About/page'
 import About_humtoo from '@/components/About_humtoo';
 import AudioPlayerLarge from '@/components/AudioPlayerLarge';
+import SocialMediaContainer from '@/components/SocialMediaContainer';
+import NhdImageGallery from '@/components/NhdImageGalley';
 
 function Home() {
     const images = [
-      'https://i.ibb.co/S6ZMjwJ/90-A3708-min.jpg',
-      'https://i.ibb.co/479NmxY/90A4147.jpg',
-      'https://i.ibb.co/HVhjJ1n/90-A3794-min.jpg',
-      'https://i.ibb.co/Ht510Z9/90A3855.jpg',
+      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380363/_90A3708_lmn8eq.jpg',
+      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380361/_90A4147_dyhvl6.jpg',
+      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380365/_90A3794_ihfqdy.jpg',
+      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380368/_90A3855_vyfjhx.jpg',
     ];
     const imageUrls = [
       'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_640.jpg',
@@ -52,18 +54,21 @@ function Home() {
       </div>
      </div>
     </div>
+    <div className='mt-10'><SocialMediaContainer/></div>
     <div className="content mt-28">
         
        <ZigBox data={Nhd_data}/>
       </div>
-     <div className='mt-28'><Nhd_music/></div>
   <div className='h-[50vh] w-[full] mt-16'> <ImageSlider imageUrls={imageUrls}/></div>
   
    <div className='flex flex-col justify-center items-center m-10'>
-      <a href={<Nhd_music/>} targer='_blank'>
+      <a href='/Gallery' target='_blank'>
         <button className='bg-blue-600/50 text-cyan-50 hover:bg-slate-50 hover:text-black p-2 flex justify-center items-center rounded-md'>Visit to the Gallery</button>
       </a>
    </div>
+     <div className='mt-28'><Nhd_music/></div>
+  
+   
     <ContactUs/>
     <div>
       

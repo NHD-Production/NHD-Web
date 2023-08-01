@@ -7,7 +7,7 @@ function Welcome() {
     <div className='w-full h-[30rem] sm:h-full backdrop-blur-sm bg-white/20 rounded-2xl drop-shadow-2xl'>
       <div className="flex flex-col md:flex-row h-full">
         <div className="md:w-1/3 h-full  flex justify-center items-center">
-          <Image src='https://i.ibb.co/7GhvRhb/E7A3683.jpg' width={100} height={100}  className="h-100 w-[10rem] h-[10rem] rounded-full outline outline-white outline-4 shadow-lg" alt="logo" />
+          <Image src='https://res.cloudinary.com/dct1gazgb/image/upload/v1690380371/_E7A3683_a8shga.jpg' width={100} height={100}  className="h-100 w-[10rem] h-[10rem] rounded-full outline outline-white outline-4 shadow-lg" alt="logo" />
         </div>
         <div className='h-auto md:h-100  text-center md:text-left md:p-6 md:w-2/3 sm:mb-10'>
           <h1 className='text-white text-2xl md:text-[3rem] mb-2'>Welcome All</h1>

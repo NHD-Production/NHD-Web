@@ -26,10 +26,10 @@ function About() {
   ];
   return (
     <div className='h-full w-full'>
-      <div className=" w-full h-[40vh] relative ">
-       <Image src="/cover1.jpg" alt='cover'  fill={true} />
+      <div className=" w-full h-[50vh] relative ">
+       <Image src="https://res.cloudinary.com/dct1gazgb/image/upload/v1690380769/nhd_production_banner_showreel_u3g7so.jpg" alt='cover'  fill={true} />
       </div>
-     <div className='mt-20'>
+     <div className=''>
      {/* <ImageSlider imageUrls={imageUrls}/> */}
      </div>
    <div className='flex flex-col justify-center items-center '>

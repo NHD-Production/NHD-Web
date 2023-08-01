@@ -58,6 +58,7 @@ export default function ImageSlider({ imageUrls }) {
                 height={300}
                 width={1000}
                 src={imageUrl}
+                quality={100}
                 alt={`Slide ${index + 1}`}
               />
             </SwiperSlide>
