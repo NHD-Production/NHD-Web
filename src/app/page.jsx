@@ -26,12 +26,12 @@ function Home() {
       'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380368/_90A3855_vyfjhx.jpg',
     ];
     const imageUrls = [
-      'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_640.jpg',
-      'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_640.jpg',
-      'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_640.jpg',
-      'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_640.jpg',
-      'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_640.jpg',
-      'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_640.jpg',
+      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380363/_90A3708_lmn8eq.jpg',
+      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380361/_90A4147_dyhvl6.jpg',
+      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380365/_90A3794_ihfqdy.jpg',
+      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380368/_90A3855_vyfjhx.jpg',
+      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380365/_90A3794_ihfqdy.jpg',
+      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380368/_90A3855_vyfjhx.jpg',
     ];
   return (
     <div className='flex flex-col'>

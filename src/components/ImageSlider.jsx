@@ -41,7 +41,7 @@ export default function ImageSlider({ imageUrls }) {
       {slider && (
         <Swiper
           slidesPerView={scount}
-          spaceBetween={.1}
+          spaceBetween={30}
           loop={true}
           autoplay={true}
           pagination={{
