@@ -57,7 +57,7 @@ function Home() {
        <ZigBox data={Nhd_data}/>
       </div>
      <div className='mt-28'><Nhd_music/></div>
-  {/* <div className='h-[50vh] w-[full] mt-16'> <ImageSlider imageUrls={imageUrls}/></div> */}
+  <div className='h-[50vh] w-[full] mt-16'> <ImageSlider imageUrls={imageUrls}/></div>
   
    <div className='flex flex-col justify-center items-center m-10'>
       <a href={<Nhd_music/>} targer='_blank'>
