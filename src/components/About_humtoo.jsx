@@ -6,27 +6,27 @@ import Nhd_gallery from '@/components/Nhd_gallery';
 import ImageSlider from './ImageSlider';
 
 function About_humtoo() {
-  const images = [
-    'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
-    'https://cdn.pixabay.com/photo/2016/11/29/06/17/audience-1867754_640.jpg',
-    'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_640.jpg',
-    'https://cdn.pixabay.com/photo/2016/11/22/21/36/audience-1850665_640.jpg',
-  ];
+  // const images = [
+  //   'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
+  //   'https://cdn.pixabay.com/photo/2016/11/29/06/17/audience-1867754_640.jpg',
+  //   'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_640.jpg',
+  //   'https://cdn.pixabay.com/photo/2016/11/22/21/36/audience-1850665_640.jpg',
+  // ];
+  
   return (
-    <div>
-      <div className='w-full  flex h-[30rem] flex-col items-center md:flex-row justify-center md:gap-10 '>
-        <div className='md:w-1/2 m-auto'>
-          <h1 className='text-3xl text-white font-semibold xl:pl-4 md:p-4 sm:pl-2 '>Nirmalya Humtoo Dey</h1>
-          <p className='text-white p-5 tracking-wide'>
-            Introduced to music at the tender age of 6 by his grandfather Lt. Alok Nath Dey (a renowned flautist and music composer), the right-hand man and arranger for Satyajit Ray for all his ventures starting from “Pather Panchali” till“Agantuk”. Being the 6th generation musician in his family, Nirmalya bears the legacy and preserves century-old instruments (especially flutes). In his initial training years, he was trained by his grandfather and Pandit Ajay Chakraborty. At the tender age of 13, he performed his first musical concert with the legendary Dr. Bhupen Hazarika in various public performances followed by performances with the stalwarts like Ustad Amjad Ali Khan and his sons, Manna Dey, Arati Mukherjee, Mrs. Shipra Bose, Amit Kumar, Ravindra Jain, M.M. Kreem, and in the recent past, he performed with acclaimed artists like Adnan Sami, Mohit Chauhan, Pritam Chakravarty, Ankit Tiwari,  Richa Sharma, Rahat Fateh Ali Khan, Sukhwinder Singh, Shreya Ghosal, Bhupinder and Mitali Singh. N-H-D has also been a part of various directorial ventures by Sandeep Ray, Mrinal Sen, Goutam Ghose, Rituparno Ghosh, Karan Johar, Sanjay Leela Bhansali,
-            Ram Gopal Verma to name a few. Currently, he is the core member woodwinds artist in the Live band of Arijit Singh (ASL).
-
-          </p>
-        </div>
-        <div className='flex w-full h-full xl:w-1/2 md:w-1/2 sm:h-full sm:w-full justify-center items-center'>
-          <Nhd_gallery images={images} />
-        </div>
+    <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
+    <div className='w-full flex flex-col md:flex-row justify-center md:gap-10 sm:gap-20'>
+      <div className='md:w-1/2 m-auto'>
+        <h1 className='text-3xl text-white font-semibold xl:pl-4 md:p-4 sm:pl-2 '>Nirmalya Humtoo Dey</h1>
+        <p className='text-white p-5 tracking-wide'>
+        Introduced to music at the tender age of 6 by his grandfather Lt. Alok Nath Dey (a renowned flautist and music composer), the right-hand man and arranger for Satyajit Ray for all his ventures starting from “Pather Panchali” till“Agantuk”. Being the 6th generation musician in his family, Nirmalya bears the legacy and preserves century-old instruments (especially flutes). In his initial training years, he was trained by his grandfather and Pandit Ajay Chakraborty. At the tender age of 13, he performed his first musical concert with the legendary Dr. Bhupen Hazarika in various public performances followed by performances with the stalwarts like Ustad Amjad Ali Khan and his sons, Manna Dey, Arati Mukherjee, Mrs. Shipra Bose, Amit Kumar, Ravindra Jain, M.M. Kreem, and in the recent past, he performed with acclaimed artists like Adnan Sami, Mohit Chauhan, Pritam Chakravarty, Ankit Tiwari,  Richa Sharma, Rahat Fateh Ali Khan, Sukhwinder Singh, Shreya Ghosal, Bhupinder and Mitali Singh. N-H-D has also been a part of various directorial ventures by Sandeep Ray, Mrinal Sen, Goutam Ghose, Rituparno Ghosh, Karan Johar, Sanjay Leela Bhansali,
+  Ram Gopal Verma to name a few. Currently, he is the core member woodwinds artist in the Live band of Arijit Singh (ASL).
+        </p>
       </div>
+      <div className='flex w-full h-full p-5 xl:w-1/2 md:w-1/2 sm:h-full sm:w-full justify-center items-center'>
+        <img className="w-full" src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090751/Nhd/Landing%20page/_90A7443_zrb2vk.jpg" alt="" />
+      </div>
+    </div>
       <div className='flex justify-center items-center flex-col gap-3 mt-16'>
         <h1 className='text-4xl text-white'>Professional Synopsis</h1>
         <p className='text-base text-white'>NHD has over 20 years of experience in the Music Industry as a Music Producer, Music Programmer, Arranger, Composer, Woodwind designer, and now a Teacher and an Inspirational Speaker as well.</p>

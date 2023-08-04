@@ -20,18 +20,17 @@ import NhdImageGallery from '@/components/NhdImageGalley';
 
 function Home() {
     const images = [
-      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380363/_90A3708_lmn8eq.jpg',
-      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380361/_90A4147_dyhvl6.jpg',
-      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380365/_90A3794_ihfqdy.jpg',
-      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380368/_90A3855_vyfjhx.jpg',
+      'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090758/Nhd/Nhd%20live/_90A3708_d6ndhi.jpg',
+      'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691147366/_90A4147_cut_rmqj3t.jpg',
+      'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090757/Nhd/Landing%20page/_90A3794_okzf8t.jpg',
+      'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691147274/_90A3691_picdgk.jpg',
     ];
     const imageUrls = [
-      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380363/_90A3708_lmn8eq.jpg',
-      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380361/_90A4147_dyhvl6.jpg',
-      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380365/_90A3794_ihfqdy.jpg',
-      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380368/_90A3855_vyfjhx.jpg',
-      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380365/_90A3794_ihfqdy.jpg',
-      'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380368/_90A3855_vyfjhx.jpg',
+      'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090477/_90A3794_lqxttr.jpg',
+      'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090756/Nhd/Landing%20page/_90A3708_grxqh2.jpg',
+      'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691147366/_90A4147_cut_rmqj3t.jpg',
+      'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090804/Nhd/sendgb-kQgRcOs18SH/_90A3691_qkay9v.jpg',
+     
     ];
   return (
     <div className='flex flex-col'>

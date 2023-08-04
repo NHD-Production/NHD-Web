@@ -10,6 +10,58 @@ import ContactUs from '@/components/ContactUs';
 import Navbar from '@/components/Navbar';
 import About_humtoo from '@/components/About_humtoo';
 import ImageSlider from '@/components/ImageSlider';
+import NhdImageGallery from '@/components/NhdImageGalley';
+const images = [
+  {
+    id: 1,
+    src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089431/about/pritam_iq8izz.jpg',
+    alt: 'Image 1',
+  },
+  {
+    id: 2,
+    src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089431/about/arijit_1_ln8jpz.jpg',
+    alt: 'Image 2',
+  },
+  {
+    id: 3,
+    src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089432/about/10.jpeg_ptqc7j.jpg',
+    alt: 'Image 3',
+  },
+  {
+    id: 4,
+    src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089431/about/mohit_itxxcc.jpg',
+    alt: 'Image 4',
+  },
+  {
+    id: 5,
+    src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089431/about/lata_at_first_zrrunk.jpg',
+    alt: 'Image 5',
+  }
+  ,
+  {
+    id: 6,
+    src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089432/about/arijit_2_r1kajw.jpg',
+    alt: 'Image 6',
+  }
+  ,
+  {
+    id: 7,
+    src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089431/about/12.jpeg_nnfskm.jpg',
+    alt: 'Image 7',
+  }
+  ,
+  {
+    id: 8,
+    src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089431/about/11.jpeg_o9qcbm.jpg',
+    alt: 'Image 8',
+  }
+  ,
+  {
+    id: 9,
+    src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089432/about/4.jpeg_rjm3cz.jpg',
+    alt: 'Image 9',
+  }
+];
 function About() {
   return (
     <div className='h-full w-full nhd-profile'>
@@ -24,7 +76,7 @@ function About() {
       <div className='mt-10'>
       <About_humtoo/>
       </div>
-      <div className='mt-10'><ImageSlider/></div>
+      <NhdImageGallery images={images}/>
       <div className='mt-20'>
       <ContactUs/>
       </div>

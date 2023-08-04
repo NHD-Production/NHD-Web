@@ -38,7 +38,7 @@ body {
 }
 
 .audioplayerlg:after {
-    background: url('/apudurga.webp');
+    background: url('https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691146199/apu_durga_fpp7qp.png');
     background-size: cover;
     background-repeat: no-repeat;
     content: ' ';

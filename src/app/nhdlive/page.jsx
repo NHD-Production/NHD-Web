@@ -17,17 +17,20 @@ function About() {
   const {theme} = useContext(GlobalContext)
   const [Themecolor,setThemecolor] = theme;
   const imageUrls = [
-    'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
-    'https://cdn.pixabay.com/photo/2016/11/29/06/17/audience-1867754_640.jpg',
-    'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_640.jpg',
-    'https://cdn.pixabay.com/photo/2016/11/22/21/36/audience-1850665_640.jpg',
-    'https://cdn.pixabay.com/photo/2020/02/06/08/19/band-4823341_640.jpg',
-    'https://cdn.pixabay.com/photo/2016/11/19/11/11/dua-lipa-1838653_640.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089746/live/C0179.MP4.05_25_08_03.Still001_i7ldte.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089747/live/_90A7040_m2utet.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089751/live/_90A3739_zes7ux.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089751/live/_90A3767_nycw2k.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089104/live/_E7A3920_zlshod.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089106/live/_E7A3995_opjijl.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089106/live/_90A3853_vl3rgi.jpg',
   ];
   return (
     <div className='h-full w-full'>
       <div className=" w-full h-[50vh] relative ">
-       <Image src="https://res.cloudinary.com/dct1gazgb/image/upload/v1690380769/nhd_production_banner_showreel_u3g7so.jpg" alt='cover'  fill={true} />
+       <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159922/Artboard_1_oirguz.png" alt='cover'  fill={true} />
       </div>
      <div className=''>
      {/* <ImageSlider imageUrls={imageUrls}/> */}

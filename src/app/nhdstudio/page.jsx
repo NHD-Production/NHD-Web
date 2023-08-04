@@ -54,17 +54,18 @@ function About() {
   const { theme } = useContext(GlobalContext)
   const [Themecolor, setThemecolor] = theme;
   const imageUrls = [
-    'https://res.cloudinary.com/dct1gazgb/image/upload/v1690384063/_E7A3575-HDR_uaztz8.jpg',
-    'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380938/_E7A3600_ffrmy9.jpg',
-    'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380941/_E7A3638_phhlw3.jpg',
-    'https://res.cloudinary.com/dct1gazgb/image/upload/v1690380363/_90A3708_lmn8eq.jpg',
-    'https://res.cloudinary.com/dct1gazgb/image/upload/v1690384052/_E7A3547-HDR_knh5sj.jpg',
-    'https://res.cloudinary.com/dct1gazgb/image/upload/v1690384058/_E7A3668_jrffr0.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159271/_E7A3547-HDR-min_b0rvp0.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159272/_E7A3668-min_j7wavs.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159606/_E7A3459-HDR-min_bfzm81.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159271/_E7A3575-HDR-min_nmd8g2.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159087/_E7A3619_uo5as6.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159086/_E7A3638_qyqqeb.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159086/_E7A3600_itaa2t.jpg'
   ];
   return (
     <div className='h-full w-full'>
       <div className=" w-full h-[50vh] relative">
-        <Image src="https://res.cloudinary.com/dct1gazgb/image/upload/v1690380769/nhd_production_banner_showreel_u3g7so.jpg" alt='cover' fill={true} />
+        <Image src="/cover1.jpg" alt='cover' fill={true} />
       </div>
       <div className="content mt-10 mb-20">
 

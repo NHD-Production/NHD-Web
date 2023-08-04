@@ -3,12 +3,12 @@ import { FaFacebookSquare, FaTwitterSquare, FaInstagramSquare, FaImdb, FaSpotify
 
 const SocialMediaContainer = () => {
   const socialMediaData = [
-    { icon: FaFacebookSquare, link: 'https://www.facebook.com/', color: '#4267B2' },
-    { icon: FaTwitterSquare, link: 'https://www.twitter.com/', color: '#1DA1F2' },
-    { icon: FaInstagramSquare, link: 'https://www.instagram.com/', color: '#E4405F' },
-    { icon: FaImdb, link: 'https://www.imdb.com/', color: '#F5C518' },
-    { icon: FaSpotify, link: 'https://www.spotify.com/', color: '#1DB954' },
-    {icon:FaYoutube,link:'https://www.youtube.com', color: '#E4405F'}
+    { icon: FaFacebookSquare, link: 'https://www.facebook.com/nhdlive?mibextid=ZbWKwL', color: '#4267B2' },
+    { icon: FaTwitterSquare, link: 'https://twitter.com/humtu?t=eLophkcmXdatJbVQ4Ox21w&s=08', color: '#1DA1F2' },
+    { icon: FaInstagramSquare, link: 'https://www.facebook.com/nhdlive?mibextid=ZbWKwL', color: '#E4405F' },
+    { icon: FaImdb, link: 'https://m.imdb.com/name/nm4897907/?ref_=ext_shr_lnk', color: '#F5C518' },
+    { icon: FaSpotify, link: 'https://open.spotify.com/artist/0P8grWtJ4Z4bMpOBRGyBEg?si=xwcFeZTBSs-cHXxb4U3Uvg', color: '#1DB954' },
+    {icon:FaYoutube,link:'https://www.youtube.com/@humtoo1', color: '#E4405F'}
   ];
 
   return (

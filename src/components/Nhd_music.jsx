@@ -4,37 +4,37 @@ import React, { useEffect } from 'react';
 function Nhd_music() {
   const videos = [
     {
-      id: '3PfEVKiSSUw',
+      id: 'EHksoMewtXU',
       title: 'Video 1'
     },
     {
-      id: 'c092EDCuLTM',
+      id: 'EPYaVhh2Oas',
       title: 'Video 2'
     },
     {
-      id: 'focAkPYSTXc',
+      id: 'pF9Frtxx9Aw',
       title: 'Video 3'
     },
     {
-      id: 'kEpOa1MF7eE',
+      id: 'uOjLjHLvfzU',
       title: 'Video 4'
     },
     {
-      id: 'fVn5Awm6ITM',
+      id: '9xzhiEd-J1s',
       title: 'Video 5'
     },
     {
-      id: 'ELKNL9oNv5g',
+      id: 'k-gezkpPNmQ',
       title: 'Video 6'
     },
     {
-      id: 'u1AX1NdXN7I',
+      id: 'nkl1yoE3m9k',
       title: 'Video 7'
     },
     {
-      id: 'MAqzu1cwY9s',
+      id: '40DyIH433ak',
       title: 'Video 8'
-    }
+    },
   ];
 
   useEffect(() => {

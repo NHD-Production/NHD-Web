@@ -2,7 +2,7 @@
 import React ,{useEffect, useRef, useState} from 'react';
 import {HiPlay,HiPause} from 'react-icons/hi2';
 
-function AudioPlayerLarge({type,bgimage}) {
+function AudioPlayerLarge({type,bgimage}) { 
   const audioRef = useRef(null);
   const playAudio = () => {
     audioRef?.current?.play();
