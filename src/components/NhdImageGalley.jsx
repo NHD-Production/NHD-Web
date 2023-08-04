@@ -1,28 +1,66 @@
 'use client'
 import React, { useEffect } from 'react';
+import Image from 'next/image';
 
-function NhdImageGallery({images}) {
-
-
+function NhdImageGallery({ images }) {
+  let size = images.length
+  let col3 = size / 3
+  let col2 = col3*2
+  let col1 = size 
   return (
-    <div className="image-gallery m-auto rounded-lg w-11/12 bg-gradient-to-r backdrop-blur-lg bg-white/30">
+    <div className={`image-gallery m-auto rounded-lg w-full md:h-[calc(5*500px)]`}>
       <div className="content items-center">
-        <div className=" overflow-y-auto max-h-screen">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 p-4 md:p-8">
-            {images?.map(image => (
-              <div className="image-container shadow-lg shadow-indigo-500/50" key={image.id}>
+        <div className="flex flex-row justify-between w-full max-h-screen ">
+          <div className="flex flex-col w-[33%] gap-2">
+            {images?.map((image, index) => {
+              if (index >= 0 && index < col3) {
+                return ( <div className="image-container" key={image.id}>
                 <div className="relative">
-                  <img
-                    className="w-full h-full object-cover"
+                  <Image style={{width:"100%"}} width={300} height={500}
+                    className=" object-cover"
                     src={image.src}
                     alt={image.alt}
                   />
                 </div>
-              </div>
-            ))}
+              </div>);
+               
+              }
+            })
+            }
           </div>
+          <div className="flex flex-col w-[33%]  gap-2 ">
+            {images?.map((image, index) => {
+              if (index >= col3 && index < col2) {
+                return ( <div className="image-container" key={image.id}>
+                <div className="relative">
+                  <Image style={{width:"100%"}} width={300} height={500}
+                    className=" object-cover"
+                    src={image.src}
+                    alt={image.alt}
+                  />
+                </div>
+              </div>);
+              }
+            })}
+            </div>
+           <div className="flex flex-col w-[33%]  gap-2 ">
+     
+            {images?.map((image, index) => {
+              if (index >= col2 && index < col1) {
+                return ( <div className="image-container" key={image.id}>
+                <div className="relative">
+                  <Image style={{width:"100%"}} width={300} height={500}
+                    className=" object-cover"
+                    src={image.src}
+                    alt={image.alt}
+                  />
+                </div>
+              </div>);
+              }
+            })}
         </div>
       </div>
+    </div>
     </div>
   );
 }

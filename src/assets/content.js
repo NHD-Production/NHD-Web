@@ -190,3 +190,22 @@ export const nhdlive = [
       buttonText: 'Book Now'
     },
   ];
+
+  const nhd_nav=[
+    'Home','About','Music','Contact'
+  ]
+  const nhdlive_nav=[
+    'Home','Gallery','Contact'
+  ]
+  const nhdstudio_nav=[
+    'Home','Services','Charges','Contact'
+  ]
+  const nhdprod_nav=[
+    'Home','Gallery','Contact'
+  ]
+  const nhdclass_nav=[
+    'Home','Gallery','Contact'
+  ]
+  const abouthumtoo_nav=[
+    'Home','Gallery','Contact'
+  ]

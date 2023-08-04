@@ -64,7 +64,7 @@ const images = [
 ];
 function About() {
   return (
-    <div className='h-full w-full nhd-profile'>
+    <div className=' w-full nhd-profile flex flex-col '>
       {/* <div className=" w-full h-[40vh] relative">
        <Image src="/cover1.jpg" alt='cover'  fill={true} />
       </div>
@@ -76,7 +76,10 @@ function About() {
       <div className='mt-10'>
       <About_humtoo/>
       </div>
+      <div className=' h-auto '>
       <NhdImageGallery images={images}/>
+     
+      </div>
       <div className='mt-20'>
       <ContactUs/>
       </div>
