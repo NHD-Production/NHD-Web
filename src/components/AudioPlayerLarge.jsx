@@ -34,7 +34,7 @@ function AudioPlayerLarge({type,bgimage}) {
        <audio
        ref={audioRef}
         controls
-        src="/sample-15s.mp3" className='hidden'>
+        src="https://res.cloudinary.com/dmv3vi7ks/video/upload/v1691162994/POTHER_PACHALI_AND_cs3xh9.mp3" className='hidden'>
             Your browser does not support the
             <code>audio</code> element.
     </audio>

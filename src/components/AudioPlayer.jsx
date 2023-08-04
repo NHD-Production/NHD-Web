@@ -34,7 +34,7 @@ function AudioPlayer({type,bgimage}) {
        <audio
        ref={audioRef}
         controls
-        src="/sample-15s.mp3" className='hidden'>
+        src="https://res.cloudinary.com/dmv3vi7ks/video/upload/v1691162995/APUR_PACHALI_NHD_ugena1.mp3" className='hidden'>
             Your browser does not support the
             <code>audio</code> element.
     </audio>
