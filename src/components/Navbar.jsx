@@ -27,7 +27,7 @@ function Navbar() {
   return (
     <div className={`${navpos} top-0 left-0 z-50 w-full`}>
       <nav className="w-full relative z-10 h-[4.5rem] ">
-        <div className="justify-between bg-white/80 md:items-center md:flex md:px-8  w-full">
+        <div className={`justify-between ${navpos==='sticky'? 'bg-white':'bg-white/80'}  md:items-center md:flex md:px-8  w-full transition-all delay-100`}>
           <div>
             <div className="flex items-center justify-between py-3 md:py-3 md:block">
               {/* LOGO */}
