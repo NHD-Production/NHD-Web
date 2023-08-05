@@ -42,14 +42,14 @@ function ContactUs() {
        }) => (
           <form className="flex flex-col py-7 gap-4 justify-center items-start w-full xl:w-[80%]  " onSubmit={handleSubmit}>
             <input type="text" className='w-full h-[3rem] text-[1.3rem] px-2 bg-white/20 shadow-lg rounded-sm placeholder-black/75 focus:placeholder-black/95' name="name" id="name" placeholder='Enter Your Name'  onChange={handleChange}
-             onBlur={handleBlur}
+             onBlur={handleBlur} required
              value={values.name}/>
             <input type="text" className='w-full h-[3rem] text-[1.3rem] px-2 bg-white/20 shadow-lg rounded-sm  placeholder-black/75 focus:placeholder-black/95' name="email" id="email" placeholder='Enter a valid email address'  onChange={handleChange}
-             onBlur={handleBlur}
+             onBlur={handleBlur} required
              value={values.email}/>
            <div className='flex gap-4 md:gap-2 flex-col md:flex-row justify-between w-full items-center'>
            <select
-        className="block w-full  md:w-[30%] h-[3rem] bg-white/20  border border-fuchsia-700 shadow-xl px-1 focus:outline-none focus:border-blue-500" name="type"  onChange={handleChange}
+        className="block w-full  md:w-[30%] h-[3rem] bg-white/20  border border-fuchsia-700 shadow-xl px-1 focus:outline-none focus:border-blue-500" name="type" required onChange={handleChange}
         onBlur={handleBlur}
         value={values.type}>
         <option value="">Choose Any</option>
@@ -59,10 +59,10 @@ function ContactUs() {
         <option value="Nhd_Classes">Nhd_Classes</option>
       </select>
             <input type="text" className='w-full md:w-[80%] h-[3rem] text-[1.3rem] px-2  bg-white/20 shadow-lg rounded-sm  placeholder-black/75 focus:placeholder-black/95' name="subject" id="subject" placeholder='Subject'  onChange={handleChange}
-             onBlur={handleBlur}
+             onBlur={handleBlur} required
              value={values.subject}/></div>
             <textarea name="body" className='w-full resize-none text-[1.3rem] p-2  bg-white/20 shadow-xl rounded-sm  placeholder-black/75 focus:placeholder-black/95' id="" cols="30" rows="10"  placeholder='Enter your message'  onChange={handleChange}
-             onBlur={handleBlur}
+             onBlur={handleBlur} required
              value={values.body}></textarea>
             <input className='bg-white/20 shadow-xl rounded-sm text-white w-full md:w-auto px-8 py-2 hover:scale-[1.09] cursor-pointer' type="submit" value="Submit" />
         </form>

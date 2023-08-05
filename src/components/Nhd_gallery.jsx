@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { AiOutlineCloseSquare } from 'react-icons/ai';
 import Image from 'next/image';
 
@@ -28,15 +28,25 @@ const Nhd_gallery = ({ images }) => {
   };
 
   const imageRows = chunkArray(images, 4);
+  // const imageRows = undefined;
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false)
+      
+    }, 1000); 
+   return ()=> clearTimeout(timer);
+  }, []);
   return (
     <div className="grid  grid-cols-12 gap-1 h-full w-full p-2 shadow-sm ">
-      {imageRows.map((row, rowIndex) => (
+      {!loading && imageRows?.map((row, rowIndex) => (
         <React.Fragment key={rowIndex}>
           {row.map((image, index) => (
             <div
+              
               key={index}
-              className={`relative cursor-pointer ${
+              className={` relative cursor-pointer ${
                 index === 0
                   ? 'row-span-2 col-span-7 hover:scale-[1.01] rounded-lg'
                   : index === 1
@@ -47,12 +57,12 @@ const Nhd_gallery = ({ images }) => {
               }`}
               onClick={() => handleShowDialog(image)}
             >
-              <Image  className="w-full h-full object-cover " src={image}  alt="no image" loading="lazy" fill={true}/>
+              <Image  className="w-full h-full object-cover " src={image} quality={50}  alt="no image" loading="lazy" fill={true}/>
             </div>
           ))}
         </React.Fragment>
       ))}
-      {isOpen && (
+      {imageRows && isOpen && (
         <div
           className="fixed top-0 left-0 right-0 bottom-0  flex items-center justify-center bg-black bg-opacity-0"
           onClick={handleCloseDialog}
@@ -68,6 +78,20 @@ const Nhd_gallery = ({ images }) => {
           </div>
         </div>
       )}
+
+      {loading &&  <>
+        <div  className={` skeleton-image1 relative cursor-pointer row-span-2 col-span-7 hover:scale-[1.01] rounded-lg`}>
+            </div>
+            <div  className={` skeleton-image2 relative cursor-pointer row-span-4 col-span-5 hover:scale-[1.01] rounded-lg`}>
+            </div>
+            <div  className={` skeleton-image3 relative cursor-pointer row-span-5 col-span-7 hover:scale-[1.01] rounded-lg`}>
+            </div>
+            <div  className={` skeleton-image4 relative cursor-pointer row-span-3 col-span-5 hover:scale-[1.01] rounded-lg`}>
+            </div>
+      </>}
+
+
+      
     </div>
   );
 };

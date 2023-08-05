@@ -12,15 +12,16 @@ body {
     background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
 }
+
 @keyframes color {
-    0%{
+    0% {
         background-position: 0 50%;
     }
-    50%{
+    50% {
         background-position: 100% 50%;
     }
-    100%{
-        background-position:0 50%;
+    100% {
+        background-position: 0 50%;
     }
 }
 
@@ -82,4 +83,48 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+.skeleton-image1 {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.315);
+    animation: skeleton-loading 1.5s infinite;
+    animation-delay: 0s;
+}
+
+.skeleton-image2 {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.315);
+    animation: skeleton-loading 1.5s infinite;
+    animation-delay: .3s;
+}
+
+.skeleton-image3 {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.315);
+    animation: skeleton-loading 1.5s infinite;
+    animation-delay: .5s;
+}
+
+.skeleton-image4 {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.315);
+    animation: skeleton-loading 1.5s infinite;
+    animation-delay: .8s;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: rgba(97, 97, 97, 0.226);
+    }
+    50% {
+        background-color: rgba(95, 95, 95, 0.326);
+    }
+    100% {
+        background-color: rgba(95, 95, 95, 0.226);
+    }
 }

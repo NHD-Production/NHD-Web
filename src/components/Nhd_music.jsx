@@ -58,9 +58,9 @@ function Nhd_music() {
   }, []);
 
   return (
-    <div className="youtube-gallery m-auto rounded-lg w-11/12 overflow-auto bg-gradient-to-r backdrop-blur-lg bg-white/30">
+    <div className="youtube-gallery m-auto rounded-lg w-11/12 overflow-auto">
     <div className="content items-center">
-      <div className="overflow-y-scroll max-h-screen">
+      <div className="overflow-y-auto min-h-0 max-h-[100rem]">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 p-4 md:p-8">
           {videos.map(video => (
             <div className="iframe-container aspect-w-16 aspect-h-9 shadow-lg shadow-indigo-500/50" key={video.id}>

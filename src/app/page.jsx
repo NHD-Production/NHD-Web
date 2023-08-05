@@ -67,7 +67,11 @@ function Home() {
         <button className='bg-blue-600/50 text-cyan-50 hover:bg-slate-50 hover:text-black p-2 flex justify-center items-center rounded-md'>Visit to the Gallery</button>
       </a>
    </div>
-     <div className='mt-28'><Nhd_music/></div>
+     <div className='mt-28'>
+      
+      <Nhd_music/>
+     
+     </div>
   
    
     <ContactUs/>
