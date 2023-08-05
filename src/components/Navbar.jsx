@@ -1,7 +1,7 @@
 'use client'
 import { GlobalContext } from '@/context/Globalcontext'
 import Link from 'next/link'
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Image from 'next/image';
 import logo from '@/assets/nhd_logo.png';
 import ham from '@/assets/hamburger.png';
@@ -9,13 +9,25 @@ import close from '@/assets/close.png';
 function Navbar() {
   const { theme } = useContext(GlobalContext)
   const [navbar, setNavbar] = useState(false) // Add navbar state variable
+  const [navpos,setNavpos] = useState('sticky')
 
-  const { Themecolor, setThemecolor } = theme // Assuming you have defined Themecolor and setThemecolor in the GlobalContext
+  const handlescroll = () => {
+    if (window.scrollY > 100) setNavpos('fixed')
+     else setNavpos('sticky')
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', handlescroll)
+
+    return () => {
+      window.removeEventListener('scroll',handlescroll )
+    }
+  },[])
+
 
   return (
-    <div>
-      <nav className="w-full bg-white relative z-10 h-[4.5rem]">
-        <div className="justify-between bg-white md:items-center md:flex md:px-8  w-full">
+    <div className={`${navpos} top-0 left-0 z-50 w-full`}>
+      <nav className="w-full relative z-10 h-[4.5rem] ">
+        <div className="justify-between bg-white/80 md:items-center md:flex md:px-8  w-full">
           <div>
             <div className="flex items-center justify-between py-3 md:py-3 md:block">
               {/* LOGO */}
