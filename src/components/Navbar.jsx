@@ -6,11 +6,16 @@ import Image from 'next/image';
 import logo from '@/assets/nhd_logo.png';
 import ham from '@/assets/hamburger.png';
 import close from '@/assets/close.png';
+import { usePathname } from 'next/navigation'
 function Navbar() {
   const { theme } = useContext(GlobalContext)
   const [navbar, setNavbar] = useState(false) // Add navbar state variable
   const [navpos,setNavpos] = useState('sticky')
+  const pathname = usePathname()
 
+  useEffect(() => {
+    console.log(pathname)
+  }, [])
   const handlescroll = () => {
     if (window.scrollY > 100) setNavpos('fixed')
      else setNavpos('sticky')
@@ -61,7 +66,9 @@ function Navbar() {
                 navbar ? 'p-12 md:p-0 block' : 'hidden'
               }`}
             >
-              <ul className="h-screen md:h-auto items-center justify-center md:flex ">
+             {
+               pathname === '/' &&
+               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link shallow href="/" onClick={() => setNavbar(!navbar)}>
                     Home
@@ -83,6 +90,118 @@ function Navbar() {
                   </Link>
                 </li>
               </ul>
+              }
+              {
+               pathname === '/About' &&
+               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
+                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link shallow href="/" onClick={() => setNavbar(!navbar)}>
+                    Home
+                  </Link>
+                </li>
+                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <a href="/Gallery" target="_blank" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
+                     Gallery
+                  </a>
+                </li>
+                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link shallow href="#music" onClick={() => setNavbar(!navbar)}>
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+              }
+               {
+               pathname === '/nhdlive' &&
+               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
+                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link shallow href="/" onClick={() => setNavbar(!navbar)}>
+                    Home
+                  </Link>
+                </li>
+                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <a href="/Gallery" target="_blank" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
+                     Gallery
+                  </a>
+                </li>
+                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link shallow href="#contact" onClick={() => setNavbar(!navbar)}>
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+              }
+              {
+               pathname === '/nhdstudio' &&
+               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
+                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link shallow href="/" onClick={() => setNavbar(!navbar)}>
+                    Home
+                  </Link>
+                </li>
+                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <a href="#charges" target="_blank" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
+                     Charges
+                  </a>
+                </li>
+                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <a href="/About" target="_blank" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
+                     About
+                  </a>
+                </li>
+                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link shallow href="#music" onClick={() => setNavbar(!navbar)}>
+                    Music
+                  </Link>
+                </li>
+                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link shallow href="#contact" onClick={() => setNavbar(!navbar)}>
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+              }
+              {
+               pathname === '/nhdproduction' &&
+               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
+               <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                 <Link shallow href="/" onClick={() => setNavbar(!navbar)}>
+                   Home
+                 </Link>
+               </li>
+               <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                 <a href="/Gallery" target="_blank" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
+                    Gallery
+                 </a>
+               </li>
+               <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                 <Link shallow href="#contact" onClick={() => setNavbar(!navbar)}>
+                   Contact
+                 </Link>
+               </li>
+             </ul>
+              }
+              {
+               pathname === '/nhdclasses' &&
+               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
+                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link shallow href="/" onClick={() => setNavbar(!navbar)}>
+                    Home
+                  </Link>
+                </li>
+                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <a href="/Gallery" target="_blank" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
+                     Gallery
+                  </a>
+                </li>
+                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link shallow href="#contact" onClick={() => setNavbar(!navbar)}>
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+              }
+              
             </div>
           </div>
         </div>
