@@ -1,7 +1,24 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 
 function ZigBox({ title, description, data }) {
+  const handleScrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  useEffect(() => {
+    const handlescroll = () => {
+      
+    }
+
+    window.addEventListener("scroll", handlescroll);
+
+    return () => {
+      window.removeEventListener("scroll", handlescroll);
+    };
+  }, []);
   return (
     <div className="flex flex-col w-full items-center justify-center text-white">
       <div className="header text-center">
@@ -35,7 +52,12 @@ function ZigBox({ title, description, data }) {
                   </p>
                 </div>}
                 <p className="text-[.8rem] md:text-[1rem] font-[500] mt-4 text-slate-200">{description}</p>
-                {extraButton && <button className="border-2 rounded-sm px-5 py-1 transition-all delay-[.1s] my-5 shadow-lg hover:text-black hover:bg-white/90 hover:border-white ">{extraButton.name}</button>}
+                {extraButton && <button
+          className="border-2 rounded-sm px-5 py-1 transition-all delay-[.1s] my-5 shadow-lg hover:text-black hover:bg-white/90 hover:border-white"
+          onClick={handleScrollToContact}
+        >
+          {extraButton.name}
+        </button>}
               </div>
               <div className="image mb-5 md:mb-0">
                 <Image

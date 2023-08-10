@@ -17,6 +17,8 @@ import About_humtoo from '@/components/About_humtoo';
 import AudioPlayerLarge from '@/components/AudioPlayerLarge';
 import SocialMediaContainer from '@/components/SocialMediaContainer';
 import NhdImageGallery from '@/components/NhdImageGalley';
+import { FaFacebookSquare, FaTwitterSquare, FaInstagramSquare, FaImdb, FaSpotify, FaYoutube } from 'react-icons/fa';
+
 
 function Home() {
     const images = [
@@ -34,6 +36,13 @@ function Home() {
       'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691147366/_90A4147_cut_rmqj3t.jpg'
      
     ];
+    const data= [
+      { icon: FaFacebookSquare, link: 'https://www.facebook.com/nhdlive?mibextid=ZbWKwL', color: '#4267B2' },
+      { icon: FaTwitterSquare, link: 'https://twitter.com/humtu?t=eLophkcmXdatJbVQ4Ox21w&s=08', color: '#1DA1F2' },
+      { icon: FaInstagramSquare, link: 'https://www.facebook.com/nhdlive?mibextid=ZbWKwL', color: '#E4405F' },
+      { icon: FaImdb, link: 'https://m.imdb.com/name/nm4897907/?ref_=ext_shr_lnk', color: '#F5C518' },
+      { icon: FaSpotify, link: 'https://open.spotify.com/artist/0P8grWtJ4Z4bMpOBRGyBEg?si=xwcFeZTBSs-cHXxb4U3Uvg', color: '#1DB954' },
+      {icon:FaYoutube,link:'https://www.youtube.com/@humtoo1', color: '#E4405F'}]
   return (
     <div className='flex flex-col'>
     <div className='grid sm:grid-cols-12 xl:h-[93vh]  '>
@@ -55,7 +64,7 @@ function Home() {
       </div>
      </div>
     </div>
-    <div className='mt-10'><SocialMediaContainer/></div>
+    <div className='mt-10'><SocialMediaContainer data={data}/></div>
     <div className="content mt-28">
         
        <ZigBox data={Nhd_data}/>
@@ -67,7 +76,7 @@ function Home() {
         <button className='bg-blue-600/50 text-cyan-50 hover:bg-slate-50 hover:text-black p-2 flex justify-center items-center rounded-md'>Visit to the Gallery</button>
       </a>
    </div>
-     <div className='mt-28'>
+     <div className='mt-28' id='music'>
       
       <Nhd_music/>
      

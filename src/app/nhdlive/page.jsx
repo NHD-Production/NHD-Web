@@ -38,8 +38,12 @@ function About() {
    <div className='flex flex-col justify-center items-center '>
    <ZigzagBullate data={nhdlive}/>
    </div>
-      <ImageSlider imageUrls={imageUrls}/>
+      <div  id='gallery'>
+      <ImageSlider imageUrls={imageUrls} />
+      </div>
+     <div id='contact'>
       <ContactUs/>
+     </div>
       
     </div>
   )

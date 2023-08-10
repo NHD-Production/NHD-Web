@@ -12,6 +12,7 @@ import About_humtoo from '@/components/About_humtoo';
 import ImageSlider from '@/components/ImageSlider';
 import { Nhdstudio_data } from '@/assets/content';
 import BullateList from '@/components/BullateList';
+import SocialMediaContainer from '@/components/SocialMediaContainer';
 function About() {
   
   const studioService = [
@@ -62,18 +63,25 @@ function About() {
     'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159086/_E7A3638_qyqqeb.jpg',
     'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159086/_E7A3600_itaa2t.jpg'
   ];
+  const data= [
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691667045/cubase_h70hhr.png',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691667048/logic_x_algpxk.png',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691667046/studioone_1_asb0ng.png',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691667049/Neuendo_gkfnwe.png'
+   ]
   return (
     <div className='h-full w-full'>
       <div className=" w-full h-[50vh] relative">
-        <Image src="/cover1.jpg" alt='cover' fill={true} />
+        <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691606888/NHD_studio_c29jpv.png" alt='cover' fill={true} />
       </div>
-      <div className="content mt-10 mb-20">
+      <div className="content mt-10 mb-20" >
 
         <ZigBox data={Nhdstudio_data} />
       </div>
-      <div className='flex flex-col justify-center items-center m-10 '>
+      <div className='flex flex-col justify-center items-center m-10 ' id='about' >
         <BullateList items={studioService} bullatetype={false} desc={'Services that we provide:'} />
       </div>
+      <div className='flex justify-center items-center'><SocialMediaContainer data={data}/></div>
       <div className='flex flex-col justify-center items-center mt-10'>
         <BullateList items={equipmentList}
           bullatetype={false}
@@ -104,7 +112,7 @@ function About() {
         <ul className='list-disc text-lg text-white relative right-14'>
           <li>Microphones :</li>
         </ul>
-        <div className='relative bottom-5 right-5 '>
+        <div className='relative bottom-5 right-5 ' id='image'>
           <BullateList
             items={microphone}
             bullatetype={false}
@@ -112,11 +120,11 @@ function About() {
           </BullateList>
         </div>
       </div>
-    <div className=""> <ImageSlider imageUrls={imageUrls}/></div>
-    <div className='flex flex-col justify-center items-center m-10'>
+    <div className=""  id='charges'> <ImageSlider imageUrls={imageUrls}/></div>
+    <div className='flex flex-col justify-center items-center m-10 '>
         <BullateList items={booking} bullatetype={false} desc={'Booking Charges:'} />
       </div>
-      <div className="">
+      <div className="" id='contact'>
         <ContactUs />
       </div>
      

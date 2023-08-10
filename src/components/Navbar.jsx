@@ -7,6 +7,7 @@ import logo from '@/assets/nhd_logo.png';
 import ham from '@/assets/hamburger.png';
 import close from '@/assets/close.png';
 import { usePathname } from 'next/navigation'
+import {GiHamburgerMenu} from 'react-icons/gi'
 function Navbar() {
   const { theme } = useContext(GlobalContext)
   const [navbar, setNavbar] = useState(false) // Add navbar state variable
@@ -48,13 +49,8 @@ function Navbar() {
                   {navbar ? (
                     <Image src={close} width={30} height={30} alt="logo" />
                   ) : (
-                    <Image
-                      src={ham}
-                      width={30}
-                      height={30}
-                      alt="logo"
-                      className="focus:border-none active:border-none"
-                    />
+                    <GiHamburgerMenu size={30} color='purple'  alt="logo"
+                    className="focus:border-none active:border-none"/>
                   )}
                 </button>
               </div>
@@ -70,7 +66,7 @@ function Navbar() {
                pathname === '/' &&
                <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link shallow href="/" onClick={() => setNavbar(!navbar)}>
+                  <Link shallow href="#" onClick={() => setNavbar(!navbar)}>
                     Home
                   </Link>
                 </li>
@@ -95,17 +91,17 @@ function Navbar() {
                pathname === '/About' &&
                <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link shallow href="/" onClick={() => setNavbar(!navbar)}>
+                  <Link shallow href="#" onClick={() => setNavbar(!navbar)}>
                     Home
                   </Link>
                 </li>
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <a href="/Gallery" target="_blank" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
+                  <a href="#gallery" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
                      Gallery
                   </a>
                 </li>
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link shallow href="#music" onClick={() => setNavbar(!navbar)}>
+                  <Link shallow href="#contact" onClick={() => setNavbar(!navbar)}>
                     Contact
                   </Link>
                 </li>
@@ -115,12 +111,12 @@ function Navbar() {
                pathname === '/nhdlive' &&
                <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link shallow href="/" onClick={() => setNavbar(!navbar)}>
+                  <Link shallow href="#" onClick={() => setNavbar(!navbar)}>
                     Home
                   </Link>
                 </li>
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <a href="/Gallery" target="_blank" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
+                  <a href="#gallery" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
                      Gallery
                   </a>
                 </li>
@@ -135,23 +131,23 @@ function Navbar() {
                pathname === '/nhdstudio' &&
                <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link shallow href="/" onClick={() => setNavbar(!navbar)}>
+                  <Link shallow href="#" onClick={() => setNavbar(!navbar)}>
                     Home
                   </Link>
                 </li>
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <a href="#charges" target="_blank" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
+                  <a href="#charges" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
                      Charges
                   </a>
                 </li>
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <a href="/About" target="_blank" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
+                  <a href="#about" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
                      About
                   </a>
                 </li>
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link shallow href="#music" onClick={() => setNavbar(!navbar)}>
-                    Music
+                  <Link shallow href="#image" onClick={() => setNavbar(!navbar)}>
+                    Images
                   </Link>
                 </li>
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
@@ -165,12 +161,12 @@ function Navbar() {
                pathname === '/nhdproduction' &&
                <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                 <Link shallow href="/" onClick={() => setNavbar(!navbar)}>
+                 <Link shallow href="#" onClick={() => setNavbar(!navbar)}>
                    Home
                  </Link>
                </li>
                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                 <a href="/Gallery" target="_blank" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
+                 <a href="#gallery"  onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
                     Gallery
                  </a>
                </li>
@@ -185,13 +181,13 @@ function Navbar() {
                pathname === '/nhdclasses' &&
                <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link shallow href="/" onClick={() => setNavbar(!navbar)}>
+                  <Link shallow href="#" onClick={() => setNavbar(!navbar)}>
                     Home
                   </Link>
                 </li>
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <a href="/Gallery" target="_blank" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
-                     Gallery
+                  <a href="#about"  onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
+                     About
                   </a>
                 </li>
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">

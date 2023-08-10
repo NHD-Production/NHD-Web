@@ -76,11 +76,11 @@ function About() {
       <div className='mt-10'>
       <About_humtoo/>
       </div>
-      <div className=' h-auto '>
+      <div className=' h-auto ' id='gallery'>
       <NhdImageGallery images={images}/>
      
       </div>
-      <div className='mt-20'>
+      <div className='mt-20' id='contact'>
       <ContactUs/>
       </div>
     </div>

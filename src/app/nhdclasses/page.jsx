@@ -26,13 +26,13 @@ function About() {
   return (
     <div className='h-full w-full'>
       <div className=" w-full h-[40vh] relative mb-20">
-       <Image src="/cover1.jpg" alt='cover'  fill={true} />
+       <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691668664/classes_banner_nmxn81.png" alt='cover'  fill={true} />
       </div>
-      <div className="content mt-40 mb-40">
+      <div className="content mt-40 mb-40" id='about'>
         
        <ZigBox data={Nhdclasses_data}/>
       </div>
-      <ImageSlider imageUrls={imageUrls}/>
+      {/* <ImageSlider imageUrls={imageUrls}/> */}
       <div className="mt-20"><ContactUs/></div>
       
     </div>

@@ -25,14 +25,16 @@ function About() {
   return (
     <div className='h-full w-full'>
       <div className=" w-full h-[40vh] relative mb-20">
-       <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090765/Nhd/NHD%20prod/nhd_production_banner_showreel_kvdlza.jpg" alt='cover'  fill={true} />
+       <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691607683/nhd_production_banner_showreel_usd6hh.png" alt='cover'  fill={true} />
       </div>
       
       <div className="content mt-20 mb-40">
         
        <ZigBox data={Nhdprod_data}/>
       </div>
+      <div id='gallery'>
       <ImageSlider imageUrls={imageUrls}/>
+      </div>
      <div className='mt-20'>
      <ContactUs />
      </div>

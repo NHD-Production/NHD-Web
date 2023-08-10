@@ -1,6 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const ZigzagBullate = ({ data }) => {
+  const handleScrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  useEffect(() => {
+    const handlescroll = () => {
+      
+    };
+
+    window.addEventListener('scroll', handlescroll);
+
+    return () => {
+      window.removeEventListener('scroll', handlescroll);
+    };
+  }, []);
+
   return (
     <div className="w-full mx-auto text-white">
       {data.map((item, index) => (
@@ -27,10 +46,10 @@ const ZigzagBullate = ({ data }) => {
             </ul>
             {item.buttonText && (
               <a
-                href={item.buttonURL || '#'}
-                target="_blank"
+                href={item.buttonURL || '#contact'}
                 rel="noopener noreferrer"
                 className="inline-block bg-blue-500 text-white px-4 py-2 rounded-md mt-4 hover:bg-white hover:text-black"
+                onClick={handleScrollToContact}
               >
                 {item.buttonText}
               </a>
