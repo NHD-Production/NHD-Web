@@ -37,8 +37,8 @@ const ZigzagBullate = ({ data }) => {
             />
           </div>
           <div className="flex-1">
-            <h3 className="text-2xl p-20">{item.title}</h3>
-            <p>{item.description}</p>
+            <h3 className="text-2xl pt-5 md:w-20 font-bold border-dashed border-b-2 border-white ">{item.title}</h3>
+            <p className="pt-2">{item.description}</p>
             <ul className="list-disc p-10">
               {item.bulletPoints.map((point, i) => (
                 <li key={i}>{point}</li>
@@ -48,7 +48,7 @@ const ZigzagBullate = ({ data }) => {
               <a
                 href={item.buttonURL || '#contact'}
                 rel="noopener noreferrer"
-                className="inline-block bg-blue-500 text-white px-4 py-2 rounded-md mt-4 hover:bg-white hover:text-black"
+                className="border-2 rounded-sm px-5 py-2 transition-all delay-[.1s] my-5 shadow-lg hover:text-black hover:bg-white/90 hover:border-white"
                 onClick={handleScrollToContact}
               >
                 {item.buttonText}

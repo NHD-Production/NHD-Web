@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const SocialMediaContainer = ({ data }) => {
@@ -22,13 +23,15 @@ const SocialMediaContainer = ({ data }) => {
     );
   } else {
     return (
-      <div className="flex justify-evenly items-center space-x-6 md:space-x-6 w-[35%]">
+      <div className="flex justify-evenly items-center space-x-6 md:space-x-6 w-100 md:w-[35%]  px-5 py-10">
         {data?.map((imageUrl, index) => (
-          <img
+          <Image
             key={index}
             src={imageUrl}
             alt={`Image ${index}`}
-            className="w-[100px] h-[100px] md:w-14 md:h-14 p-1"
+            className="w-[50px] h-[50px] md:w-[100px] md:h-[100px] p-1 object-fit aspect-[2/3] "
+            width={100}
+            height={100}
           />
         ))}
       </div>

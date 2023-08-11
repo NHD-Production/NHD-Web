@@ -12,7 +12,7 @@ const BulletList = ({ items, bullatetype, title , subtitle ,children}) => {
   );
   let unorderedlist = (
     <div>
-      <ul className='list-disc text-white text-base '>
+      <ul className='list-disc text-white text-base ml-5'>
         {items.map((item, index) => (
           <li key={index}>{item}</li>
         ))}

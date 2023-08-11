@@ -87,9 +87,9 @@ function About() {
         <ZigBox data={Nhdstudio_data} />
       </div>
 
-      <div className=" px-[13rem] flex justify-start flex-col">
+      <div className=" flex justify-start flex-col">
 
-      <div className=' w-30 mx-auto' id='about' >
+      <div className=' w-100 md:w-30  mx-auto' id='about' >
         <BullateList items={studioService} bullatetype={false} title={'Services that we provide:'} />
       </div>
 
@@ -97,7 +97,7 @@ function About() {
       <div className='flex justify-center items-center'><SocialMediaContainer data={data}/></div>
 
       
-      <div className=' mt-10  w-30 mx-auto'>
+      <div className=' mt-10 w-100 md:w-30 mx-auto'>
         <BullateList items={equipmentList}
           bullatetype={false}
           title={'Equipment List:'}>
@@ -141,7 +141,7 @@ function About() {
           </BullateList>
           </div>
     <div className=""  id='charges'> <ImageSlider imageUrls={imageUrls}/></div>
-    <div className='flex flex-col   '>
+    <div className='w-100 md:w-30 mx-auto  '>
         <BullateList items={booking} bullatetype={false} title={'Booking Charges:'} />
       </div>
               </div>
