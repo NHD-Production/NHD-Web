@@ -38,6 +38,13 @@ const Nhd_gallery = ({ images }) => {
     }, 1000); 
    return ()=> clearTimeout(timer);
   }, []);
+
+  const getAnim=(idx) => {
+  if(idx===0) return "imga";
+  else if(idx===1) return "imga2";
+  else if(idx===2) return "imga3";
+  else return "imga4";
+  }
   return (
     <div className="grid  grid-cols-12 gap-1 h-full w-full p-2 shadow-sm ">
       {!loading && imageRows?.map((row, rowIndex) => (
@@ -48,16 +55,16 @@ const Nhd_gallery = ({ images }) => {
               key={index}
               className={` relative cursor-pointer ${
                 index === 0
-                  ? 'row-span-2 col-span-7 hover:scale-[1.01] rounded-lg'
+                  ? 'row-span-2 col-span-7 hover:scale-[1.01] rounded-lg overflow-hidden'
                   : index === 1
-                  ? 'row-span-4 col-span-5 hover:scale-[1.01] rounded-lg'
+                  ? 'row-span-4 col-span-5 hover:scale-[1.01] rounded-lg overflow-hidden'
                   : index === 2
-                  ? 'row-span-5 col-span-7 hover:scale-[1.01] rounded-lg'
-                  : 'row-span-3 col-span-5 hover:scale-[1.01] rounded-lg'
+                  ? 'row-span-5 col-span-7 hover:scale-[1.01] rounded-lg  overflow-hidden'
+                  : 'row-span-3 col-span-5 hover:scale-[1.01] rounded-lg overflow-hidden'
               }`}
               onClick={() => handleShowDialog(image)}
             >
-              <Image  className="w-full h-full object-cover " src={image} quality={50}  alt="no image" loading="lazy" fill={true}/>
+              <Image  className={`w-full h-full object-cover  hover:scale-[1.15] transition-all delay-100 ${getAnim(index)}`} src={image} quality={50}  alt="no image" loading="lazy" fill={true}/>
             </div>
           ))}
         </React.Fragment>
