@@ -25,7 +25,6 @@ function About() {
   const equipmentList = [
     'Computer - M2 Max Mac Studio',
     'Studio Monitors - Yamaha HS8',
-    'Audio Interface :',
   ]
   const audiolist1 = [
     'Tascam US16x16',
@@ -35,7 +34,8 @@ function About() {
   const daw = [
     'Cubase 12 Pro',
     'Logic Pro',
-    'Studio One 6.'
+    'Studio One 6',
+    'Nuendo'
 
   ]
   const microphone = [
@@ -50,6 +50,14 @@ function About() {
     'Studio Charges from 12 P.M. to 12 A.M. -  Rs. 700/ Hour',
     'Studio Charges from 12 A.M. to 12 P.M. - Rs. 900/ Hour',
     'Minimum Booking Hours: 2 Hours'
+  ]
+
+  const preamps = [
+    'ART (Applied Research And Technology) Tube MP',
+    'ART (Applied Research And Technology) Tube MP Studio'
+  ]
+  const ucs = [
+    'Behringer X Touch One'
   ]
 
   const { theme } = useContext(GlobalContext)
@@ -78,52 +86,65 @@ function About() {
 
         <ZigBox data={Nhdstudio_data} />
       </div>
-      <div className='flex flex-col justify-center items-center m-10 ' id='about' >
-        <BullateList items={studioService} bullatetype={false} desc={'Services that we provide:'} />
+
+      <div className=" px-[13rem] flex justify-start flex-col">
+
+      <div className=' w-30 mx-auto' id='about' >
+        <BullateList items={studioService} bullatetype={false} title={'Services that we provide:'} />
       </div>
+
+
       <div className='flex justify-center items-center'><SocialMediaContainer data={data}/></div>
-      <div className='flex flex-col justify-center items-center mt-10'>
+
+      
+      <div className=' mt-10  w-30 mx-auto'>
         <BullateList items={equipmentList}
           bullatetype={false}
-          desc={'Equipment List:'}>
-        </BullateList>
-        <div className='relative bottom-5 left-3'>
+          title={'Equipment List:'}>
+        
+       
           <BullateList
             items={audiolist1}
             bullatetype={false}
-            desc={null}>
+            subtitle="Audio Interface :"/>
 
-          </BullateList>
-        </div>
-      </div>
-      <div className='flex flex-col justify-center items-center relative bottom-5' >
-        <ul className='list-disc text-base text-white relative left-8'>
-          <li>DAW( Digital Audio Workstation ) of NHD</li>
-        </ul>
-        <div className='relative bottom-5 right-10'>
+
+     
+
           <BullateList
             items={daw}
             bullatetype={false}
-            desc={null}>
-          </BullateList>
-        </div>
-      </div>
-      <div className='flex flex-col justify-center items-center relative bottom-10' >
-        <ul className='list-disc text-lg text-white relative right-14'>
-          <li>Microphones :</li>
-        </ul>
-        <div className='relative bottom-5 right-5 ' id='image'>
+            subtitle="DAW( Digital Audio Workstation ) of NHD :"/>
+
+      
+      
+ 
           <BullateList
             items={microphone}
             bullatetype={false}
-            desc={null}>
+            subtitle="Microphones :"/>
+
+
+ 
+          <BullateList
+            items={preamps}
+            bullatetype={false}
+            subtitle=" Preamps :"/>
+
+
+     
+          <BullateList
+            items={ucs}
+            bullatetype={false}
+            subtitle="Univercal Control Serface (UCS) :"/>
+
           </BullateList>
-        </div>
-      </div>
+          </div>
     <div className=""  id='charges'> <ImageSlider imageUrls={imageUrls}/></div>
-    <div className='flex flex-col justify-center items-center m-10 '>
-        <BullateList items={booking} bullatetype={false} desc={'Booking Charges:'} />
+    <div className='flex flex-col   '>
+        <BullateList items={booking} bullatetype={false} title={'Booking Charges:'} />
       </div>
+              </div>
       <div className="" id='contact'>
         <ContactUs />
       </div>

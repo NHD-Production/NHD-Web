@@ -1,9 +1,9 @@
 import React from 'react';
 
-const BulletList = ({ items, bullatetype, desc}) => {
+const BulletList = ({ items, bullatetype, title , subtitle ,children}) => {
   let orderlist = (
     <div>
-      <ol className='list-decimal text-white text-base'>
+      <ol className='list-decimal text-white text-base '>
         {items.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
@@ -12,7 +12,7 @@ const BulletList = ({ items, bullatetype, desc}) => {
   );
   let unorderedlist = (
     <div>
-      <ul className='list-disc text-white text-base'>
+      <ul className='list-disc text-white text-base '>
         {items.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
@@ -21,9 +21,11 @@ const BulletList = ({ items, bullatetype, desc}) => {
   );
 
   return (
-    <div>
-      <p className='text-white text-4 xl mb-5'>{desc}</p>
+    <div className="flex justify-start flex-col my-2 p-5 rounded-lg">
+      {title && <p className='text-white text-[1.7rem]  font-bold'>{title}</p>}
+      {subtitle && <p className='text-white text-[1.1rem] font-bold'>{subtitle}</p>}
       {bullatetype ? orderlist : unorderedlist}
+      {children}
     </div>
   );
 };
