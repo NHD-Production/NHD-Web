@@ -73,7 +73,7 @@ function About() {
       <About_humtoo/>
       </div> */}
       
-      <div className='mt-10'>
+      <div id='home' className='mt-10'>
       <About_humtoo/>
       </div>
       <div className=' h-auto ' id='gallery'>

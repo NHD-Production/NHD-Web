@@ -23,7 +23,7 @@ function About() {
     'https://cdn.pixabay.com/photo/2016/11/19/11/11/dua-lipa-1838653_640.jpg',
   ];
   return (
-    <div className='h-full w-full'>
+    <div id='home' className='h-full w-full'>
       <div className=" w-full h-[40vh] relative mb-20">
        <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691607683/nhd_production_banner_showreel_usd6hh.png" alt='cover'  fill={true} />
       </div>
@@ -35,7 +35,7 @@ function About() {
       <div id='gallery'>
       <ImageSlider imageUrls={imageUrls}/>
       </div>
-     <div className='mt-20'>
+     <div id='contact' className='mt-20'>
      <ContactUs />
      </div>
       
