@@ -29,7 +29,7 @@ function About() {
   ];
   return (
     <div className='h-full w-full'>
-      <div className=" w-full h-[50vh] relative ">
+      <div id='home' className=" w-full h-[50vh] relative ">
        <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159922/Artboard_1_oirguz.png" alt='cover'  fill={true} />
       </div>
      <div className=''>

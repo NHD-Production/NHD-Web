@@ -24,16 +24,16 @@ function About() {
     'https://cdn.pixabay.com/photo/2016/11/19/11/11/dua-lipa-1838653_640.jpg',
   ];
   return (
-    <div className='h-full w-full'>
+    <div id='home' className='h-full w-full'>
       <div className=" w-full h-[40vh] relative mb-20">
-       <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691868884/classes_banner_czcruh.png" alt='cover'  fill={true} />
+       <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691868884/classes_banner_czcruh.png" quality={100} alt='cover'  fill={true} />
       </div>
       <div className="content mt-40 mb-40" id='about'>
         
        <ZigBox data={Nhdclasses_data}/>
       </div>
       {/* <ImageSlider imageUrls={imageUrls}/> */}
-      <div className="mt-20"><ContactUs/></div>
+      <div id='contact' className="mt-20"><ContactUs/></div>
       
     </div>
   )

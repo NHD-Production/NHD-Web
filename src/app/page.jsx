@@ -39,7 +39,7 @@ function Home() {
     const data= [
       { icon: FaFacebookSquare, link: 'https://www.facebook.com/nhdlive?mibextid=ZbWKwL', color: '#4267B2' },
       { icon: FaTwitterSquare, link: 'https://twitter.com/humtu?t=eLophkcmXdatJbVQ4Ox21w&s=08', color: '#1DA1F2' },
-      { icon: FaInstagramSquare, link: 'https://instagram.com/nhdlive_?igshid=NTc4MTIwNjQ2YQ', color: '#E4405F' },
+      { icon: FaInstagramSquare, link: 'https://instagram.com/nhd_live?igshid=MzRlODBiNWFlZA==', color: '#E4405F' },
       { icon: FaImdb, link: 'https://m.imdb.com/name/nm4897907/?ref_=ext_shr_lnk', color: '#F5C518' },
       { icon: FaSpotify, link: 'https://open.spotify.com/artist/0P8grWtJ4Z4bMpOBRGyBEg?si=xwcFeZTBSs-cHXxb4U3Uvg', color: '#1DB954' },
       {icon:FaYoutube,link:'https://www.youtube.com/@humtoo1', color: '#E4405F'}]
@@ -47,7 +47,7 @@ function Home() {
     <div className='flex flex-col'>
     <div className='grid sm:grid-cols-12 xl:h-[93vh]'>
      <div className='col-span-12 xl:col-span-9 flex flex-col  justify-between '>
-      <div className="sm:h-[40vh] xl:h-[calc(100%/3)] h-auto overflow-hidden flex  justify-center items-center p-2">
+      <div id='home' className="sm:h-[40vh] xl:h-[calc(100%/3)] h-auto overflow-hidden flex  justify-center items-center p-2">
         <Welcome/>
       </div>
       <div className=" min-h-auto grow-1 max-h-[160vh] md:min-h-[50vh]   md:max-h-[50vh] xl:min-h-[25vh]  xl:max-h-[50vh]  sm:h-[calc(100%/3)] flex-grow-3 p-2 flex justify-center items-start">
