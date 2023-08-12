@@ -65,10 +65,6 @@ export const Nhd_data = [{
     image: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090472/_90A7443_q8boha.jpg',
     title: 'What is NHD ?',
     description: 'NHD Music and Art Pvt. Ltd.  founded by Mr. Nirmalya Humtoo Dey caters to a wide range of musical solutions, from melodic band performances to mastering playback vocals and professional woodwinds.From music production to independent studio rental experiences at a better value, both financially and in kind.Our work seeks to create, reiterate, and profess music that stirs the minds of many and touches the soul of many more. With a team of renowned band members, music composers, sound engineers and artists, we create a symphony that breathes life into music.',
-    extraButton: {
-        name: 'Book Now',
-        link: '#'
-    },
     isCLub: true
 },
 {
@@ -76,11 +72,6 @@ export const Nhd_data = [{
     title: 'How NHD operates',
     description: 'An expert management  and public relations team indulge in creating a seamless and thriving venture, modelled exclusively according to the need of particular clients. We herein provide services adhering to our well-analysed and documented principles, after a full-fledged agreement between the company and related parties.NHD Live, Studio, Productions and Classes provide industry-level quality services with a hint of exclusive freshness in all genres. '
     ,
-    
-    extraButton: {
-        name: 'Book Now',
-        link: '#'
-    },
     isCLub: true
 }
 ]
@@ -92,7 +83,7 @@ export const Nhdclasses_data = [{
     title: 'Playback Vocal Training:',
     description: 'Industry-level training provided by Mr Nirmalya Numtoo Dey himself is an additional advantage of this course. One might be trained in any genre of vocals, but being playback worthy and creating a buzz is harder than it sounds. You’re probably a good singer, but is your voice playback worthy? Do you dream of your song being featured in a movie or an album? Wait no more,"cause what you have been seeking, awaits you".',
     extraButton: {
-        name: 'Book Now',
+        name: 'Enroll Now',
         link: '#'
     },
     isCLub: true
@@ -104,7 +95,7 @@ export const Nhdclasses_data = [{
     ,
     
     extraButton: {
-        name: 'Book Now',
+        name: 'Enroll Now',
         link: '#'
     },
     isCLub: true
