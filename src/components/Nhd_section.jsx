@@ -23,7 +23,7 @@ function Nhd_section() {
             </div>
             <h2 className="text-base font-bold text-white ">NHD</h2>
             <h4 className="font-bold text-fuchsia-500">Live</h4>
-            <p className="w-full text-[13px] text-white">
+            <p className="w-full text-p 2xl:text-h3 text-white">
               A premium band created in collaboration with the finest musicians that caters to the live audience&apos;s classic charm as well as creative wilderness.
             </p>
           </div>
@@ -41,7 +41,7 @@ function Nhd_section() {
             </div>
             <h2 className="text-base font-bold text-white">NHD</h2>
             <h4 className="font-bold text-fuchsia-500">Studio</h4>
-            <p className=" text-[13px] text-white">
+            <p className=" text-p 2xl:text-h3 text-white">
               A lucrative haven for sounding recording and studio renting pursuits guided by our experienced in-house sound engineers.
             </p>
           </div>
@@ -59,7 +59,7 @@ function Nhd_section() {
             </div>
             <h2 className="text-base font-bold text-white">NHD</h2>
             <h4 className="font-bold text-fuchsia-500 ">Production</h4>
-            <p className="text-[13px] text-white">
+            <p className="text-p 2xl:text-h3 text-white">
               A seamless arrangement of audio post-production for music and movie ventures curated meticulously by industry-level musicians and composers.
             </p>
           </div>
@@ -77,7 +77,7 @@ function Nhd_section() {
             </div>
             <h2 className="text-base font-bold text-white">NHD</h2>
             <h4 className="font-bold text-fuchsia-500 relative">Classes</h4>
-            <p className="text-[13px] text-white ">
+            <p className="text-p 2xl:text-h3 text-white ">
               A unique blend of woodwinds, flute, audio-production, sound engineering and playback-vocal master level classes and specialization.
             </p>
           </div>

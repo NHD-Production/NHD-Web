@@ -51,7 +51,7 @@ function ZigBox({ title, description, data }) {
                     }
                   </p>
                 </div>}
-                <p className="text-[.8rem] md:text-[1rem] font-[500] mt-4 text-slate-200">{description}</p>
+                <p className="text-p 2xl:text-h3 font-[500] mt-4 text-slate-200">{description}</p>
                 {extraButton && <button
           className="border-2 rounded-sm px-5 py-1 transition-all delay-[.1s] my-5 shadow-lg hover:text-black hover:bg-white/90 hover:border-white"
           onClick={handleScrollToContact}

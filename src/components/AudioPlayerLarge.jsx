@@ -41,7 +41,7 @@ function AudioPlayerLarge({type,bgimage}) {
        {!audioPlay ?<HiPlay size={100} color='white' onClick={()=>handlePlay(true)} />:
        <HiPause size={100} color='white' onClick={()=>handlePlay(false)} />}
      </div>
-     <div className="text-[#fff] w-80">
+     <div className="text-[#fff] w-80 text-p 2xl:text-h3">
      Renowned throughout the world, the flute - in the famous theme of &apos;Pather Panchali&apos;, by Satyajit Ray had been played by N-H-D&apos;s grandfather Late Alok Nath Dey.
      </div>
    </div>

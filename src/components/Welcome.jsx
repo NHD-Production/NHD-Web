@@ -11,7 +11,7 @@ function Welcome() {
         </div>
         <div className='h-auto md:h-100  text-center md:text-left md:p-6 md:w-2/3 sm:mb-10 p-5 '>
           <h1 className='text-white text-2xl md:text-[3rem] mb-2 font-bold'>Welcome All </h1>
-          <h2 className='text-white text-base md:text-base md:text-[1.5 rem] text-justify'>
+          <h2 className='text-white text-base md:text-base md:text-[1.5 rem] text-justify text-p 2xl:text-h3'>
             Greetings one and all. I, Nirmalya Humtoo Dey the Founder and Director of NHD warmly welcome you to our website. We through our website will be taking you through a harmonic ride of symphony creation, presentation, and even live coaching sessions.
           </h2>
         </div>
