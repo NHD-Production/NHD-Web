@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <body className={`{inter.className} relative h-[100vh] `}>
       <GlobalProvider>
       <Navbar/>
-      <div className="w-full">
+      <div className="w-full ">
       {children}
       </div>
       </GlobalProvider>
