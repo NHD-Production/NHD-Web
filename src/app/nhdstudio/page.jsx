@@ -80,7 +80,7 @@ function About() {
   return (
     <div className='h-full w-full'>
       <div className=" w-full h-[50vh] relative">
-        <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691606888/NHD_studio_c29jpv.png" alt='cover' fill={true} />
+        <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691606888/NHD_studio_c29jpv.png" quality={100} alt='cover' fill={true} />
       </div>
       <div className="content mt-10 mb-20" >
 

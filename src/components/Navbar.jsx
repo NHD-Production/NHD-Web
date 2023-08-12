@@ -66,7 +66,7 @@ function Navbar() {
                pathname === '/' &&
                <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link shallow href="#" onClick={() => setNavbar(!navbar)}>
+                  <Link shallow href="/" onClick={() => setNavbar(!navbar)}>
                     Home
                   </Link>
                 </li>
@@ -91,7 +91,7 @@ function Navbar() {
                pathname === '/About' &&
                <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link shallow href="#" onClick={() => setNavbar(!navbar)}>
+                  <Link shallow href="/" onClick={() => setNavbar(!navbar)}>
                     Home
                   </Link>
                 </li>
@@ -111,7 +111,7 @@ function Navbar() {
                pathname === '/nhdlive' &&
                <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link shallow href="#" onClick={() => setNavbar(!navbar)}>
+                  <Link shallow href="/" onClick={() => setNavbar(!navbar)}>
                     Home
                   </Link>
                 </li>
@@ -131,7 +131,7 @@ function Navbar() {
                pathname === '/nhdstudio' &&
                <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link shallow href="#" onClick={() => setNavbar(!navbar)}>
+                  <Link shallow href="/" onClick={() => setNavbar(!navbar)}>
                     Home
                   </Link>
                 </li>
@@ -161,7 +161,7 @@ function Navbar() {
                pathname === '/nhdproduction' &&
                <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                 <Link shallow href="#" onClick={() => setNavbar(!navbar)}>
+                 <Link shallow href="/" onClick={() => setNavbar(!navbar)}>
                    Home
                  </Link>
                </li>
@@ -181,7 +181,7 @@ function Navbar() {
                pathname === '/nhdclasses' &&
                <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link shallow href="#" onClick={() => setNavbar(!navbar)}>
+                  <Link shallow href="/" onClick={() => setNavbar(!navbar)}>
                     Home
                   </Link>
                 </li>
