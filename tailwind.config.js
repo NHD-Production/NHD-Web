@@ -22,6 +22,14 @@ module.exports = {
             fontFamily: {
                 Montserrat: "'Montserrat', 'sans-serif'",
             },
+            fontSize: {
+                h1: '28px',
+                h2: '24px',
+                h3: '20px',
+                p: '14px',
+                s: '12px',
+                xs: '10px'
+            },
             height: {
                 10: '10%',
                 20: '20%',
