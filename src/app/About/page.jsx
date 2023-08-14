@@ -29,7 +29,7 @@ const images = [
   },
   {
     id: 4,
-    src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089431/about/mohit_itxxcc.jpg',
+    src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691875067/950966ee-b4dc-447d-90c5-39bf71b4b8a2_1_d3hp4b.jpg',
     alt: 'Image 4',
   },
   {

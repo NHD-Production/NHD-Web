@@ -17,7 +17,7 @@ function Nhd_section() {
                 <RiLiveLine size={30} color='white' />
               </div>
 
-              <div className="bg-white/20 h-[34px] w-[30%] md:w-[50%]  rounded-full flex items-center justify-between shadow-xl px-4">
+              <div  className="bg-white/20 h-[34px] w-[30%] md:w-[50%]  rounded-full flex items-center justify-between shadow-xl px-4">
                 <p className='text-white text-p'>See more</p>
                 <MdOutlineArrowForwardIos size={20} color='white' />
               </div>

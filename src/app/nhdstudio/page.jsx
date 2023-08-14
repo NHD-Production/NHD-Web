@@ -73,7 +73,7 @@ function About() {
   ];
   const data= [
     'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691667045/cubase_h70hhr.png',
-    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691667048/logic_x_algpxk.png',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692015059/My_project_gdtj1n.png',
     'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691667046/studioone_1_asb0ng.png',
     'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691667049/Neuendo_gkfnwe.png'
    ]
