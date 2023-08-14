@@ -92,9 +92,9 @@ function Navbar() {
                pathname === '/About' &&
                <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 sm:p-0 text-xl cursor-pointer text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link shallow to='home' spy={true} smooth={true} offset={50} duration={500} onClick={() => setNavbar(!navbar)}>
+                  <NextLink href="/" onClick={() => setNavbar(!navbar)}>
                     Home
-                  </Link>
+                  </NextLink>
                 </li>
                 <li className="pb-6 sm:p-0 cursor-pointer text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link to="gallery" spy={true} smooth={true} offset={50} duration={500} onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
@@ -112,9 +112,9 @@ function Navbar() {
                pathname === '/nhdlive' &&
                <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 sm:p-0 text-xl cursor-pointer text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link shallow to="home" spy={true} smooth={true} offset={50} duration={500} onClick={() => setNavbar(!navbar)}>
+                  <NextLink href="/" onClick={() => setNavbar(!navbar)}>
                     Home
-                  </Link>
+                  </NextLink>
                 </li>
                 <li className="pb-6 sm:p-0 text-xl cursor-pointer text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link to="gallery" spy={true} smooth={true} offset={50} duration={500} onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
@@ -132,9 +132,9 @@ function Navbar() {
                pathname === '/nhdstudio' &&
                <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 sm:p-0 text-xl cursor-pointer text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link shallow to="home" spy={true} smooth={true} offset={50} duration={500} onClick={() => setNavbar(!navbar)}>
+                  <NextLink href="/" onClick={() => setNavbar(!navbar)}>
                     Home
-                  </Link>
+                  </NextLink>
                 </li>
                 <li className="pb-6 sm:p-0 text-xl cursor-pointer text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link to="charges" py={true} smooth={true} offset={50} duration={500} onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
@@ -162,9 +162,9 @@ function Navbar() {
                pathname === '/nhdproduction' &&
                <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                <li className="pb-6 sm:p-0 text-xl cursor-pointer text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                 <Link shallow to="home" py={true} smooth={true} offset={50} duration={500} onClick={() => setNavbar(!navbar)}>
+                 <NextLink href="/" onClick={() => setNavbar(!navbar)}>
                    Home
-                 </Link>
+                 </NextLink>
                </li>
                <li className="pb-6 sm:p-0 text-xl cursor-pointer text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                  <Link to="gallery" py={true} smooth={true} offset={50} duration={500}  onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
@@ -182,9 +182,9 @@ function Navbar() {
                pathname === '/nhdclasses' &&
                <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 sm:p-0 text-xl cursor-pointer text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link shallow to="home" py={true} smooth={true} offset={50} duration={500} onClick={() => setNavbar(!navbar)}>
+                  <NextLink href="/" onClick={() => setNavbar(!navbar)}>
                     Home
-                  </Link>
+                  </NextLink>
                 </li>
                 <li className="pb-6 sm:p-0 text-xl cursor-pointer text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link to="about" py={true} smooth={true} offset={50} duration={500}  onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
