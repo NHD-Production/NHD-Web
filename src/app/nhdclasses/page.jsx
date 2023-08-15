@@ -3,7 +3,7 @@ import Nhd_gallery from '@/components/Nhd_gallery';
 import ZigBox from '@/components/ZigBox';
 import { GlobalContext } from '@/context/Globalcontext';
 import Image from 'next/image';
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import { demoData } from '@/assets/content';
 import { useContext } from 'react';
 import ContactUs from '@/components/ContactUs';
@@ -12,9 +12,33 @@ import About_humtoo from '@/components/About_humtoo';
 import ImageSlider from '@/components/ImageSlider';
 import Welcome from '@/components/Welcome';
 import {Nhdclasses_data} from '@/assets/content';
+import {FaArrowUp} from 'react-icons/fa'
 function About() {
   const {theme} = useContext(GlobalContext)
   const [Themecolor,setThemecolor] = theme;
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollButton(true);
+      } else {
+        setShowScrollButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   const imageUrls = [
     'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
     'https://cdn.pixabay.com/photo/2016/11/29/06/17/audience-1867754_640.jpg',
@@ -34,6 +58,17 @@ function About() {
       </div>
       {/* <ImageSlider imageUrls={imageUrls}/> */}
       <div id='contact' className="mt-20"><ContactUs/></div>
+       {/* Scroll to Top Button */}
+       {showScrollButton && (
+        <div className='fixed bottom-10 right-10'>
+          <button
+            className='bg-blue-600/50 text-cyan-50 hover:bg-slate-50 hover:text-black p-2 rounded-full flex justify-evenly items-center'
+            onClick={scrollToTop}
+          >
+            Scroll to Top <FaArrowUp size={20} color='white'/>
+          </button>
+        </div>
+      )}
       
     </div>
   )

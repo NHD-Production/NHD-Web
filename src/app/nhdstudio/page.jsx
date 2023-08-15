@@ -3,7 +3,7 @@ import Nhd_gallery from '@/components/Nhd_gallery';
 import ZigBox from '@/components/ZigBox';
 import { GlobalContext } from '@/context/Globalcontext';
 import Image from 'next/image';
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import { demoData } from '@/assets/content';
 import { useContext } from 'react';
 import ContactUs from '@/components/ContactUs';
@@ -13,6 +13,7 @@ import ImageSlider from '@/components/ImageSlider';
 import { Nhdstudio_data } from '@/assets/content';
 import BullateList from '@/components/BullateList';
 import SocialMediaContainer from '@/components/SocialMediaContainer';
+import {FaArrowUp} from 'react-icons/fa'
 function About() {
   
   const studioService = [
@@ -62,6 +63,29 @@ function About() {
 
   const { theme } = useContext(GlobalContext)
   const [Themecolor, setThemecolor] = theme;
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollButton(true);
+      } else {
+        setShowScrollButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   const imageUrls = [
     'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159271/_E7A3547-HDR-min_b0rvp0.jpg',
     'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159272/_E7A3668-min_j7wavs.jpg',
@@ -149,7 +173,17 @@ function About() {
         <ContactUs />
       </div>
      
-
+    {/* Scroll to Top Button */}
+    {showScrollButton && (
+        <div className='fixed bottom-10 right-10'>
+          <button
+            className='bg-blue-600/50 text-cyan-50 hover:bg-slate-50 hover:text-black p-2 rounded-full flex justify-evenly items-center'
+            onClick={scrollToTop}
+          >
+            Scroll to Top <FaArrowUp size={20} color='white'/>
+          </button>
+        </div>
+      )}
       
 
     </div>

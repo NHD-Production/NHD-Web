@@ -103,7 +103,7 @@ export const Nhdclasses_data = [{
         description: 'If you think we just train voices for playback, you have surely mistaken. To all my instrumentally trained friends, your hard work would not go in vain. NHD Music production classes shall cater to transforming your instrumental training into recording production-worthy pieces. Alongside this, independent sound recording and engineering expertise will be provided on the same palate through the joint course training.',
 
         extraButton: {
-            name: 'Book Now',
+            name: 'Enroll Now',
             link: '#'
         },
         isCLub: true

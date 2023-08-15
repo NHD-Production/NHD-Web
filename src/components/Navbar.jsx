@@ -38,9 +38,9 @@ function Navbar() {
           <div>
             <div className="flex items-center justify-between py-3 md:py-3 md:block">
               {/* LOGO */}
-              <Link href="/" shallow>
+              <NextLink href="/"  shallow>
               <Image src={logo} width={40} height={40} alt="logo" />
-              </Link>
+              </NextLink>
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="md:hidden">
                 <button

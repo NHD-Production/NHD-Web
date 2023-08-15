@@ -15,7 +15,7 @@ function About_humtoo() {
   
   return (
     <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
-    <div className='w-full flex flex-col md:flex-row justify-center md:gap-10 sm:gap-20'>
+    <div className='w-full flex flex-col-reverse md:flex-row justify-center md:gap-10 sm:gap-20'>
       <div className='md:w-1/2 m-auto'>
         <h1 className='text-3xl text-white font-semibold xl:pl-4 md:p-4 sm:pl-2 '>Nirmalya Humtoo Dey</h1>
         <p className='text-white p-5 tracking-wide'>

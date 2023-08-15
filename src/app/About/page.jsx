@@ -11,6 +11,8 @@ import Navbar from '@/components/Navbar';
 import About_humtoo from '@/components/About_humtoo';
 import ImageSlider from '@/components/ImageSlider';
 import NhdImageGallery from '@/components/NhdImageGalley';
+import { useEffect,useState} from 'react';
+import {FaArrowUp} from 'react-icons/fa'
 const images = [
   {
     id: 1,
@@ -63,6 +65,29 @@ const images = [
   }
 ];
 function About() {
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollButton(true);
+      } else {
+        setShowScrollButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className=' w-full nhd-profile flex flex-col '>
       {/* <div className=" w-full h-[40vh] relative">
@@ -83,6 +108,17 @@ function About() {
       <div className='mt-20' id='contact'>
       <ContactUs/>
       </div>
+       {/* Scroll to Top Button */}
+       {showScrollButton && (
+        <div className='fixed bottom-10 right-10'>
+          <button
+            className='bg-blue-600/50 text-cyan-50 hover:bg-slate-50 hover:text-black p-2 rounded-full flex justify-evenly items-center'
+            onClick={scrollToTop}
+          >
+            Scroll to Top <FaArrowUp size={20} color='white'/>
+          </button>
+        </div>
+      )}
     </div>
   )
 }

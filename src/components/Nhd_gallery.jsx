@@ -6,10 +6,13 @@ import Image from "next/image";
 const Nhd_gallery = ({ images }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [dialogImageLoading, setDialogImageLoading] = useState(true) // Set default to false
 
   const handleShowDialog = (image) => {
+   // console.log("handleShowDialog called");
     setIsOpen(!isOpen);
     setSelectedImage(image);
+    setDialogImageLoading(true);
   };
 
   const handleCloseDialog = () => {
@@ -28,7 +31,6 @@ const Nhd_gallery = ({ images }) => {
   };
 
   const imageRows = chunkArray(images, 4);
-  // const imageRows = undefined;
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -44,8 +46,9 @@ const Nhd_gallery = ({ images }) => {
     else if (idx === 2) return "imga3";
     else return "imga4";
   };
+
   return (
-    <div className="grid  grid-cols-12 gap-1 h-full w-full p-2 shadow-sm ">
+    <div className="grid grid-cols-12 gap-1 h-full w-full p-2 shadow-sm ">
       {!loading &&
         imageRows?.map((row, rowIndex) => (
           <React.Fragment key={rowIndex}>
@@ -72,6 +75,7 @@ const Nhd_gallery = ({ images }) => {
                   alt="no image"
                   loading="lazy"
                   fill={true}
+                  onLoad={() =>setDialogImageLoading(false)}
                 />
               </div>
             ))}
@@ -83,19 +87,25 @@ const Nhd_gallery = ({ images }) => {
           onClick={handleCloseDialog}
         >
           <div className="relative w-full md:w-1/2 lg:w-1/3 ">
-            <Image
-              className="w-full h-full object-contain outline outline-white outline-8"
-              height={300}
-              width={500}
-              src={selectedImage}
-              alt="no image"
-            />
-            <AiOutlineCloseSquare
-              size={30}
-              color="white"
-              onClick={handleCloseDialog}
-              className="absolute top-2 right-2 cursor-pointer"
-            />
+            {dialogImageLoading ? (
+              <div className="animate-spin rounded-full h-8 w-8 border-t-4 border-blue-500"></div>
+            ) : (
+              <>
+                <Image
+                  className="w-full h-full object-contain outline outline-white outline-8"
+                  height={300}
+                  width={500}
+                  src={selectedImage}
+                  alt="no image"
+                />
+                <AiOutlineCloseSquare
+                  size={30}
+                  color="white"
+                  onClick={handleCloseDialog}
+                  className="absolute top-2 right-2 cursor-pointer"
+                />
+              </>
+            )}
           </div>
         </div>
       )}
