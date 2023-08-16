@@ -12,7 +12,7 @@ import GalleryApp from "@/components/ImageSlider";
 import ImageSlider from "@/components/ImageSlider";
 import ContactUs from "@/components/ContactUs";
 import Nhd_music from "@/components/Nhd_music";
-import About_nhd from "@/app/About/page";
+import About_nhd from "@/app/about/page";
 import About_humtoo from "@/components/About_humtoo";
 import AudioPlayerLarge from "@/components/AudioPlayerLarge";
 import SocialMediaContainer from "@/components/SocialMediaContainer";
@@ -141,7 +141,7 @@ function Home() {
       </div>
 
       <div className="flex flex-col justify-center items-center m-10">
-        <a href="/Gallery" target="_blank">
+        <a href="/gallery" target="_blank">
           <button className="bg-blue-600/50 text-cyan-50 hover:bg-slate-50 hover:text-black p-2 flex justify-center items-center rounded-md">
             Visit to the Gallery
           </button>
