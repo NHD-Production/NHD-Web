@@ -39,6 +39,25 @@ function About() {
       behavior: "smooth",
     });
   };
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    // Function to update screenWidth state
+    const updateScreenWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    // Attach the event listener when component mounts
+    window.addEventListener('resize', updateScreenWidth);
+
+    // Clean up the event listener when component unmounts
+    return () => {
+      window.removeEventListener('resize', updateScreenWidth);
+    };
+  }, []); 
+
+  
   const imageUrls = [
     'https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg',
     'https://cdn.pixabay.com/photo/2016/11/29/06/17/audience-1867754_640.jpg',

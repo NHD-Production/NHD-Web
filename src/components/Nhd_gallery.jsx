@@ -67,7 +67,7 @@ const Nhd_gallery = ({ images }) => {
                 onClick={() => handleShowDialog(image)}
               >
                 <Image
-                  className={`w-full h-full object-cover  hover:scale-[1.15] transition-all delay-100 ${getAnim(
+                  className={`w-full h-full object-cover  hover:scale-[1.05] transition-all delay-100 ${getAnim(
                     index
                   )}`}
                   src={image}
@@ -83,16 +83,15 @@ const Nhd_gallery = ({ images }) => {
         ))}
       {imageRows && isOpen && (
         <div
-          className="fixed top-0 left-0 right-0 bottom-0  flex items-center justify-center bg-black bg-opacity-0 z-[500]"
+          className="fixed top-0 left-0 right-0 bottom-0  flex items-center justify-center !bg-black/60 backdrop-blur-sm bg-opacity-0 z-[500] overflow-hidden"
           onClick={handleCloseDialog}
         >
-          <div className="relative w-full md:w-1/2 lg:w-1/3 ">
-            {dialogImageLoading ? (
-              <div className="animate-spin rounded-full h-8 w-8 border-t-4 border-blue-500"></div>
-            ) : (
-              <>
+          <div className="p-5 w-full h-full flex justify-center items-center">
+
+          <div className="relative ">
+            
                 <Image
-                  className="w-full h-full object-contain outline outline-white outline-8"
+                  className="w-full h-full object-contain outline outline-white outline-2"
                   height={300}
                   width={500}
                   src={selectedImage}
@@ -104,8 +103,9 @@ const Nhd_gallery = ({ images }) => {
                   onClick={handleCloseDialog}
                   className="absolute top-2 right-2 cursor-pointer"
                 />
-              </>
-            )}
+            
+            
+          </div>
           </div>
         </div>
       )}

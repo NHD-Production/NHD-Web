@@ -28,6 +28,7 @@
     .audioplayer:after {
         background: url('/img1.webp');
         background-size: cover;
+        background-repeat: no-repeat;
         content: ' ';
         position: absolute;
         top: 0;
@@ -122,22 +123,22 @@
     }
     
     .imga {
-        animation: image-anim 12s infinite;
+        animation: image-anim 10s infinite;
         animation-delay: 0s;
     }
     
     .imga2 {
-        animation: image-anim 13s infinite;
+        animation: image-anim 11s infinite;
         animation-delay: 2s;
     }
     
     .imga3 {
-        animation: image-anim 14s infinite;
+        animation: image-anim 12s infinite;
         animation-delay: 4s;
     }
     
     .imga4 {
-        animation: image-anim 15s infinite;
+        animation: image-anim 13s infinite;
         animation-delay: 6s;
     }
     
@@ -145,7 +146,16 @@
         0% {
             scale: 1;
         }
-        100% {
+        50% {
             scale: 1.1;
+        }
+        100% {
+            scale: 1;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .audioplayer:after {
+            background-size: contain !important;
         }
     }
