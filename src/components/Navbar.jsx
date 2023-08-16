@@ -42,13 +42,16 @@ function Navbar() {
               <Image src={logo} width={40} height={40} alt="logo" />
               </NextLink>
               {/* HAMBURGER BUTTON FOR MOBILE */}
-              <div className="md:hidden">
+              <div className="md:hidden flex justify-center items-center">
+                <NextLink href='/' className='flex items-center justify-center rounded-full bg-purple-500 px-4 py-1'>
+                     <p className='text-white'>Home</p>
+                </NextLink>
                 <button
                   className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
-                    <Image src={close} width={30} height={30} alt="logo" />
+                    <Image src={close} width={30} height={30}  alt="logo" />
                   ) : (
                     <GiHamburgerMenu size={30} color='purple'  alt="logo"
                     className="focus:border-none active:border-none"/>
