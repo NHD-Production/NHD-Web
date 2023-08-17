@@ -62,6 +62,12 @@ const images = [
     id: 9,
     src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089432/about/4.jpeg_rjm3cz.jpg',
     alt: 'Image 9',
+  },
+  {
+    id:10,
+    src:'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692300139/gallery_qut9iq.jpg',
+    alt:'image10',
+
   }
 ];
 function About() {
