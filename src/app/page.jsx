@@ -120,11 +120,11 @@ function Home() {
             <AudioPlayerLarge />
           </div>
         </div>
-        <div className="h-[150vh] xl:h-auto col-span-12 xl:col-span-3 flex flex-col justify-between ">
-          <div className="h-[67%] overflow-hidden flex justify-center items-center">
+        <div className="h-[100vh] md:h-[150vh] xl:h-auto col-span-12 xl:col-span-3 flex flex-col-reverse md:flex-col justify-start md:justify-between ">
+          <div className="h-[55%] md:h-[67%] overflow-hidden flex justify-center items-center">
             <Nhd_gallery images={images} />
           </div>
-          <div className="h-[33%]  overflow-hidden flex justify-center items-center p-2">
+          <div className="h-[45%] md:h-[33%]  overflow-hidden flex justify-center items-center p-2">
             <AudioPlayer />
           </div>
         </div>
@@ -159,7 +159,7 @@ function Home() {
             className='bg-blue-600/50 text-cyan-50 hover:bg-slate-50 hover:text-black p-2 rounded-full flex justify-evenly items-center'
             onClick={scrollToTop}
           >
-           <p className="mx-2">
+           <p className="mx-2 hidden md:block">
              Scroll to Top 
             </p> 
              <FaArrowUp size={15} color='white'/>

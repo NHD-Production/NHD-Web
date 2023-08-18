@@ -53,7 +53,7 @@ function About() {
   ];
   return (
     <div id='home' className='h-full w-full'>
-      <div className=" w-full h-[40vh] relative mb-20">
+      <div className=" w-full h-[20vh] md:h-[40vh] relative mb-20">
        <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691607683/nhd_production_banner_showreel_usd6hh.png" alt='cover'  fill={true} />
       </div>
       
