@@ -1,11 +1,11 @@
 'use client'
 import NhdImageGallery from '@/components/NhdImageGalley'
-import React, { useEffect, useContext, useState } from "react";
+import { useState,useEffect } from 'react'
 import {FaArrowUp} from 'react-icons/fa'
 
 
 
-const page = () => {
+const Gallery = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
 
   useEffect(() => {
@@ -97,4 +97,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Gallery
