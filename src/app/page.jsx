@@ -140,7 +140,7 @@ function Home() {
         <ImageSlider imageUrls={imageUrls} />
       </div>
 
-      <div className="flex flex-col justify-center items-center m-10">
+      <div className="flex flex-col justify-center items-center mt-2">
         <a href="/gallery" target="_blank">
           <button className="bg-blue-600/50 text-cyan-50 hover:bg-slate-50 hover:text-black p-2 flex justify-center items-center rounded-md">
             Visit to the Gallery
