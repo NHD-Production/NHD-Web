@@ -41,7 +41,7 @@ function AudioPlayer({type,bgimage}) {
        {!audioPlay ?<HiPlay size={60} color='white' onClick={()=>handlePlay(true)} />:
        <HiPause size={60} color='white' onClick={()=>handlePlay(false)} />}
      </div>
-     <div className="text-[#fff] text-md 2xl:text-h3">
+     <div className="text-[#fff] text-s sm:text-md 2xl:text-h3">
      59 Years later N-H-D plays the same leif motif in flute for the theme of Kaushik Ganguly&apos;s celebrated feature film &quot;Apur Panchali&quot; as a tribute.
      </div>
    </div>

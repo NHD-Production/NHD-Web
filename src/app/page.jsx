@@ -69,7 +69,7 @@ function Home() {
     "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090789/Nhd/sendgb-kQgRcOs18SH/5_fnx5fs.jpg",
     "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
     "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090778/Nhd/sendgb-kQgRcOs18SH/1_jq9d9h.jpg",
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090779/Nhd/sendgb-kQgRcOs18SH/2.jpeg_ucuirt.jpg",
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692383798/Nhd/Landing%20page/_MG_0203_cmwvfs.jpg",
   ];
   const data = [
     {
@@ -140,7 +140,7 @@ function Home() {
         <ImageSlider imageUrls={imageUrls} />
       </div>
 
-      <div className="flex flex-col justify-center items-center m-10">
+      <div className="flex flex-col justify-center items-center md:m-10">
         <a href="/gallery" target="_blank">
           <button className="bg-blue-600/50 text-cyan-50 hover:bg-slate-50 hover:text-black p-2 flex justify-center items-center rounded-md">
             Visit to the Gallery

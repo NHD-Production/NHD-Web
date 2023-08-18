@@ -74,7 +74,10 @@ function ContactUs() {
             <div className="w-full xl:w-[50%] h-[80%]  bg-white/50 xl:absolute xl:top-1/2 xl:left-2/3 xl:transform xl:-translate-x-1/2 xl:-translate-y-1/2 flex flex-col-reverse xl:flex-row  justify-start items-center ">
                 <div className="add flex flex-col w-full xl:w-[40%] h-full  p-5 xl:p-10">
                     <h2 className='font-semibold uppercase text-[1.3rem] py-5'>Address</h2>
-                    <p className='text-slate-600 text-xl py-2'>76 Jyotish Roy Road 1st floor Newalipore Kolkata West Bengal Pin 700053</p>
+                    <p className='text-slate-600 text-xl '>76 Jyotish Roy Road</p>
+                    <p className='text-slate-600 text-xl '>1st floor New Alipore </p>
+                    <p className='text-slate-600 text-xl '>Kolkata</p>
+                    <p className='text-slate-600 text-xl '>West Bengal 700053</p>
                     <h2 className='uppercase font-semibold text-[1.3rem] py-5'>Call Us</h2>
                     <p className='text-slate-600 text-xl py-2'>+91 9892727256</p>
                     <p className='text-slate-600 text-xl py-2'>+91 9653494407</p>
@@ -82,7 +85,7 @@ function ContactUs() {
                     <h2 className='uppercase font-semibold text-[1.3rem] py-5'>Opening</h2>
                     <p className='text-slate-600 text-xl py-2'>24 hours open</p>
                     <p className='uppercase font-semibold text-[1.3rem] py-5'>Mail us</p>
-                    <p className='text-slate-600 text-base font-semibold relative xl:right-5'>nhumtoodproductions@gmail.com</p>
+                    <p className='text-slate-600 text-xl'>nhumtoodproductions@gmail.com</p>
                     
                 </div>
                 <div className="map w-full xl:w-[70%] h-[20rem] xl:h-full bg-slate-200">

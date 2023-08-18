@@ -19,6 +19,15 @@ export default function ImageSlider({ imageUrls }) {
 
   const [scount, setscount] = useState(3);
 
+  useEffect(()=>{
+    if(window.innerWidth<=500){
+      setscount(1)
+    }
+    else{
+      setscount(3)
+    }
+  },[])
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 500) {
@@ -34,7 +43,7 @@ export default function ImageSlider({ imageUrls }) {
       window.removeEventListener('resize' ,resize);
 
     };
-  }, []);
+  }, [scount]);
 
   return (
     <>
@@ -54,7 +63,7 @@ export default function ImageSlider({ imageUrls }) {
           {imageUrls?.map((imageUrl,index) => (
             <SwiperSlide key={index}>
               <Image
-                className='w-[550px] h-[350px] shadow-2xl'
+                className='w-[550px] h-[250px] md:h-[350px] shadow-2xl'
                 height={300}
                 width={1000}
                 src={imageUrl}
