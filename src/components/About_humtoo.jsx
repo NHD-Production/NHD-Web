@@ -18,7 +18,7 @@ function About_humtoo() {
     <div className='w-full flex flex-col-reverse md:flex-row justify-center md:gap-10 sm:gap-20'>
       <div className='md:w-1/2 m-auto'>
         <h1 className='text-3xl text-white font-semibold xl:pl-4 md:p-4 sm:pl-2 '>Nirmalya Humtoo Dey</h1>
-        <p className='text-white p-5 tracking-wide'>
+        <p className='text-white p-1 tracking-wide'>
         Introduced to music at the tender age of 6 by his grandfather Lt. Alok Nath Dey (a renowned flautist and music composer), the right-hand man and arranger for Satyajit Ray for all his ventures starting from “Pather Panchali” till“Agantuk”. Being the 6th generation musician in his family, Nirmalya bears the legacy and preserves century-old instruments (especially flutes). In his initial training years, he was trained by his grandfather and Pandit Ajay Chakraborty. At the tender age of 13, he performed his first musical concert with the legendary Dr. Bhupen Hazarika in various public performances followed by performances with the stalwarts like Ustad Amjad Ali Khan and his sons, Manna Dey, Arati Mukherjee, Mrs. Shipra Bose, Amit Kumar, Ravindra Jain, M.M. Kreem, and in the recent past, he performed with acclaimed artists like Adnan Sami, Mohit Chauhan, Pritam Chakravarty, Ankit Tiwari,  Richa Sharma, Rahat Fateh Ali Khan, Sukhwinder Singh, Shreya Ghosal, Bhupinder and Mitali Singh. N-H-D has also been a part of various directorial ventures by Sandeep Ray, Mrinal Sen, Goutam Ghose, Rituparno Ghosh, Karan Johar, Sanjay Leela Bhansali,
   Ram Gopal Verma to name a few. Currently, he is the core member woodwinds artist in the Live band of Arijit Singh (ASL).
         </p>
@@ -27,8 +27,8 @@ function About_humtoo() {
         <img className="w-full" src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090751/Nhd/Landing%20page/_90A7443_zrb2vk.jpg" alt="" />
       </div>
     </div>
-      <div className='flex justify-center items-center flex-col gap-3 mt-16'>
-        <h1 className='text-4xl text-white'>Professional Synopsis</h1>
+      <div className='flex justify-center items-center flex-col gap-3 mt-16 p-1'>
+        <h1 className='text-3xl text-white'>Professional Synopsis</h1>
         <p className='text-base text-white'>NHD has over 20 years of experience in the Music Industry as a Music Producer, Music Programmer, Arranger, Composer, Woodwind designer, and now a Teacher and an Inspirational Speaker as well.</p>
         <div className='flex flex-col md:flex-row justify-center gap-6 mt-12'>
           <button className="bg-white/30 hover:bg-blue-700/30 text-white items-center px-8 py-1 rounded-full">
@@ -41,16 +41,16 @@ function About_humtoo() {
             Arranger and Composer
           </button>
         </div>
-        <div className='flex justify-center items-center flex-col mt-10 gap-5 p-10'>
-          <h1 className='text-4xl text-white items-center m-auto'>Professional Training:</h1>
+        <div className='flex justify-center items-center flex-col mt-10 gap-5 p-1'>
+          <h1 className='text-2xl text-white items-center m-auto '>Professional Training:</h1>
           <ul className='list-disc'>
             <li className='text-white text-base'>Introduction to flute training -  Shri Aloke Nath Dey.</li>
             <li className='text-white text-base'>Talim and development in Hindustani Classical - Pt. Ajay Chakraborty.</li>
             <li className='text-white text-base'>World Music Training - Self-Adaptation and Training</li>
           </ul>
         </div>
-        <div className='flex justify-center items-center flex-col mt-10 gap-5 p-10'>
-          <h1 className='text-4xl text-white'>Area of Expertise:</h1>
+        <div className='flex justify-center items-center flex-col mt-10 gap-5 p-1'>
+          <h1 className='text-3xl text-white'>Area of Expertise:</h1>
           <div className='flex flex-col md:flex-row justify-center gap-6 mt-12'>
             <button className="bg-white/30 hover:bg-blue-700/30 text-white items-center px-8 py-1 rounded-full">
               Woodwinds
