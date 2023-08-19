@@ -49,7 +49,7 @@ export default function ImageSlider({ imageUrls }) {
           }}
           navigation={true}
           modules={[Pagination, Navigation, Autoplay]}
-          className="mySwiper"
+          className="mySwiper p-0 m-0"
         >
           {imageUrls?.map((imageUrl,index) => (
             <SwiperSlide key={index}>
