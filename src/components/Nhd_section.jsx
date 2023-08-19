@@ -17,9 +17,9 @@ function Nhd_section() {
                 <RiLiveLine size={30} color='white' />
               </div>
 
-              <div  className="bg-white/20 h-[34px] w-[50%] md:w-[50%]  rounded-full flex items-center justify-evenly shadow-xl px-4">
-                <p className='text-white text-p'>See more</p>
-                <MdOutlineArrowForwardIos size={20} color='white' />
+              <div  className="bg-white/20 h-[34px] w-[7rem]  rounded-full flex items-center justify-evenly shadow-xl px-3">
+                <p className='text-white text-s '>See more</p>
+                <MdOutlineArrowForwardIos size={15} color='white' />
               </div>
             </div>
             <h2 className="text-base font-bold text-white ">NHD</h2>
@@ -36,9 +36,9 @@ function Nhd_section() {
               <div className="">
                 <SiYoutubestudio size={30} color='white' />
               </div>
-              <div className="bg-white/20 h-[34px]  w-[50%] md:w-[50%] rounded-full flex items-center justify-evenly shadow-xl p-4">
-              <p className='text-white text-p'>See more</p>
-                <MdOutlineArrowForwardIos size={20} color='white' />
+              <div  className="bg-white/20 h-[34px] w-[7rem]  rounded-full flex items-center justify-evenly shadow-xl px-3">
+                <p className='text-white text-s '>See more</p>
+                <MdOutlineArrowForwardIos size={15} color='white' />
               </div>
             </div>
             <h2 className="text-base font-bold text-white">NHD</h2>
@@ -55,9 +55,9 @@ function Nhd_section() {
               <div className="">
                 <SiMusicbrainz size={30} color='white' />
               </div>
-              <div className="bg-white/20 h-[34px] w-[50%] md:w-[50%] rounded-full flex items-center justify-evenly shadow-xl p-4">
-              <p className='text-white text-p'>See more</p>
-                <MdOutlineArrowForwardIos size={20} color='white' />
+              <div  className="bg-white/20 h-[34px] w-[7rem]  rounded-full flex items-center justify-evenly shadow-xl px-3">
+                <p className='text-white text-s '>See more</p>
+                <MdOutlineArrowForwardIos size={15} color='white' />
               </div>
             </div>
             <h2 className="text-base font-bold text-white">NHD</h2>
@@ -74,9 +74,9 @@ function Nhd_section() {
               <div className="">
                 <SiGoogleclassroom size={30} color='white' />
               </div>
-              <div className="bg-white/20 h-[34px]  w-[50%] md:w-[50%] rounded-full flex items-center justify-evenly shadow-xl p-4">
-              <p className='text-white text-p'>See more</p>
-                <MdOutlineArrowForwardIos size={20} color='white' />
+              <div  className="bg-white/20 h-[34px] w-[7rem]  rounded-full flex items-center justify-evenly shadow-xl px-3">
+                <p className='text-white text-s '>See more</p>
+                <MdOutlineArrowForwardIos size={15} color='white' />
               </div>
             </div>
             <h2 className="text-base font-bold text-white">NHD</h2>

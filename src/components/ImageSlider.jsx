@@ -32,7 +32,10 @@ export default function ImageSlider({ imageUrls }) {
     const handleResize = () => {
       if (window.innerWidth <= 500) {
         setscount(1);
-      } else {
+      } else if(window.innerWidth <= 1000) {
+        setscount(2);
+      }
+      else{
         setscount(3);
       }
     };
@@ -58,7 +61,7 @@ export default function ImageSlider({ imageUrls }) {
           }}
           navigation={true}
           modules={[Pagination, Navigation, Autoplay]}
-          className="mySwiper"
+          className="mySwiper p-0 m-0"
         >
           {imageUrls?.map((imageUrl,index) => (
             <SwiperSlide key={index}>
