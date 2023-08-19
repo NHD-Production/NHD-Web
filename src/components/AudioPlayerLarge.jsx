@@ -29,7 +29,7 @@ function AudioPlayerLarge({type,bgimage}) {
 
    return (
     <div className='audioplayerlg h-full w-full  rounded-2xl  relative overflow-hidden border-purple-500 border-[.05rem]'>
-   <div className="absolute top-0 left-0 h-full w-full z-10 flex flex-row justify-between items-center px-8 py-7">
+   <div className="absolute top-0 left-0 h-full w-full z-10 flex flex-col  md:flex-row md:justify-between md:items-center px-8 md:py-7">
      <div className="playbtn cursor-pointer ">
        <audio
        ref={audioRef}
