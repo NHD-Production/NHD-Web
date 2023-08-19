@@ -38,7 +38,7 @@ function Navbar() {
           <div>
             <div className="flex items-center justify-between py-3 md:py-3 md:block">
               {/* LOGO */}
-              <NextLink href="/"  shallow>
+              <NextLink href="/" >
               <Image src={logo} width={40} height={40} alt="logo" />
               </NextLink>
               {/* HAMBURGER BUTTON FOR MOBILE */}
@@ -75,9 +75,9 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="pb-6 cursor-pointer sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link to="/about"  onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
+                  <NextLink href="/about"  onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
                      About
-                  </Link>
+                  </NextLink>
                 </li>
                 <li className="pb-6 sm:p-0 text-xl cursor-pointer text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link shallow to="music" spy={true} smooth={true} offset={50} duration={500} onClick={() => setNavbar(!navbar)}>
@@ -92,7 +92,7 @@ function Navbar() {
               </ul>
               }
               {
-               pathname === '/About' &&
+               pathname === '/about' &&
                <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 sm:p-0 text-xl cursor-pointer text-purple-900 py-2 sm:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <NextLink href="/" onClick={() => setNavbar(!navbar)}>
