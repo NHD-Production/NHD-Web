@@ -109,14 +109,14 @@ function Home() {
         <div className="col-span-12 xl:col-span-9 flex flex-col  justify-between ">
           <div
             id="home"
-            className="sm:h-[40vh] xl:h-[calc(100%/3)] h-auto overflow-hidden flex  justify-center items-center p-2"
+            className="md:h-[40vh] xl:h-[calc(100%/3)] h-auto overflow-hidden flex  justify-center items-center p-2"
           >
             <Welcome />
           </div>
-          <div className=" min-h-auto grow-1 max-h-[160vh] md:min-h-[50vh]   md:max-h-[50vh] xl:min-h-[25vh]  xl:max-h-[50vh]  sm:h-[calc(100%/3)] flex-grow-3 p-2 flex justify-center items-start">
+          <div className=" min-h-auto grow-1 max-h-[160vh] md:min-h-[50vh]    xl:min-h-[25vh]  xl:max-h-[60vh]  md:h-[calc(100%/2)] xl:h-[calc(100%/3)] flex-grow-3 p-2 flex justify-center items-start">
             <Nhd_section />
           </div>
-          <div className="sm:h-[40vh] xl:h-[calc(100%/3)] h-[30vh] p-2 overflow-hidden  flex justify-center items-center">
+          <div className="sm:h-[20vh] xl:h-[calc(100%/3)] h-[30vh] p-2 overflow-hidden  flex justify-center items-center">
             <AudioPlayerLarge />
           </div>
         </div>

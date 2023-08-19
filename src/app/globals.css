@@ -25,6 +25,16 @@
         }
     }
     
+    .audioplayer,
+    .audioplayerlg {
+        -webkit-user-select: none;
+        /* Safari */
+        -ms-user-select: none;
+        /* IE 10 and IE 11 */
+        user-select: none;
+        /* Standard syntax */
+    }
+    
     .audioplayer:after {
         background: url('/img1.webp');
         background-size: cover;
@@ -156,6 +166,9 @@
     
     @media only screen and (max-width: 600px) {
         .audioplayer:after {
+            background-size: contain !important;
+        }
+        .audioplayerlg:after {
             background-size: contain !important;
         }
     }
