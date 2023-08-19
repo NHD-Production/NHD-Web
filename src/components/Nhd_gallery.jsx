@@ -88,14 +88,14 @@ const Nhd_gallery = ({ images }) => {
         >
           <div className="p-5 w-full h-full flex justify-center items-center">
 
-          <div className="relative ">
+          <div className="relative  w-[500px] bg-white/20 ">
             
                 <Image
-                  className="w-full h-full object-contain outline outline-white outline-2"
+                  className="w-full h-full object-contain outline outline-white outline-2 text-white flex justify-center items-center"
                   height={300}
                   width={500}
                   src={selectedImage}
-                  alt="no image"
+                  alt="Image Preview Not Loaded"
                 />
                 <AiOutlineCloseSquare
                   size={30}
