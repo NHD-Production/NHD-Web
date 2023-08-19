@@ -60,7 +60,7 @@ function AudioPlayer({type,bgimage}) {
 
    return (
     <div className='audioplayer h-full w-full  rounded-2xl  relative overflow-hidden border-purple-500 border-[.05rem]'>
-   <div className="absolute top-0 left-0 h-full w-full z-10 flex flex-col justify-around xl:justify-between px-8 py-7">
+   <div className="absolute top-0 left-0 h-full w-full z-10 flex flex-col justify-between px-8 py-7">
      <div className="playbtn cursor-pointer">
        <audio
        ref={audioRef}
