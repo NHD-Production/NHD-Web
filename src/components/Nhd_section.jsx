@@ -15,13 +15,13 @@ function Nhd_section() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div className=" h-full flex flex-col overflow-hidden rounded-xl shadow-2xl backdrop-blur-lg bg-gradient-to-t from-indigo-100/10 via-purple-500/50 to-pink-500/50 items-start hover:scale-[1.02] transform transition-scale duration-200 cursor-pointer p-4">
+        <div className=" h-full flex flex-col overflow-hidden rounded-xl shadow-2xl backdrop-blur-lg bg-gradient-to-t from-indigo-100/10 via-purple-500/50 to-pink-500/50 items-start hover:scale-[1.02] transform transition-scale duration-200 cursor-pointer p-[7.5px]">
           <div className="flex justify-between w-full">
             <div className="">
               <RiLiveLine size={30} color="white" />
             </div>
 
-            <div className="bg-white bg-opacity-20 py-1 px-4 rounded-full inline-flex items-center">
+            <div className="bg-white bg-opacity-20 px-4 rounded-full inline-flex items-center">
               <p className="text-white text-p">See more</p>
               <MdOutlineArrowForwardIos size={20} color="white" />
             </div>
@@ -41,12 +41,12 @@ function Nhd_section() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div className="flex h-full  flex-col overflow-hidden rounded-xl shadow-2xl backdrop-blur-md bg-gradient-to-t from-indigo-100/10 via-purple-500/50 to-pink-500/50 items-start hover:scale-[1.02] transform transition-scale duration-200 cursor-pointer p-4">
+        <div className="flex h-full  flex-col overflow-hidden rounded-xl shadow-2xl backdrop-blur-md bg-gradient-to-t from-indigo-100/10 via-purple-500/50 to-pink-500/50 items-start hover:scale-[1.02] transform transition-scale duration-200 cursor-pointer p-[7.5px]">
           <div className="flex justify-between w-full">
             <div className="">
               <SiYoutubestudio size={30} color="white" />
             </div>
-            <div className="bg-white bg-opacity-20 py-1 px-4 rounded-full inline-flex items-center">
+            <div className="bg-white bg-opacity-20 px-4 rounded-full inline-flex items-center">
               <p className="text-white text-p">See more</p>
               <MdOutlineArrowForwardIos size={20} color="white" />
             </div>
@@ -65,12 +65,12 @@ function Nhd_section() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div className="flex h-full  flex-col overflow-hidden rounded-xl backdrop-blur-md shadow-2xl bg-gradient-to-t from-indigo-100/10 via-purple-500/50 to-pink-500/50 items-start hover:scale-[1.02] transform transition-scale duration-200 cursor-pointer p-4">
+        <div className="flex h-full  flex-col overflow-hidden rounded-xl backdrop-blur-md shadow-2xl bg-gradient-to-t from-indigo-100/10 via-purple-500/50 to-pink-500/50 items-start hover:scale-[1.02] transform transition-scale duration-200 cursor-pointer p-[7.5px]">
           <div className="flex justify-between w-full">
             <div className="">
               <SiMusicbrainz size={30} color="white" />
             </div>
-            <div className="bg-white bg-opacity-20 py-1 px-4 rounded-full inline-flex items-center">
+            <div className="bg-white bg-opacity-20 px-4 rounded-full inline-flex items-center">
               <p className="text-white text-sm md:text-base">See more</p>
               <MdOutlineArrowForwardIos size={20} color="white" />
             </div>
@@ -90,12 +90,12 @@ function Nhd_section() {
         className="w-full h-[15rem] md:w-1/2 xl:w-1/4 px-2 py-2  sm:h-full"
         rel="noopener noreferrer"
       >
-        <div className="flex h-full  flex-col overflow-hidden rounded-xl shadow-2xl backdrop-blur-md bg-gradient-to-t from-indigo-100/10 via-purple-500/50 to-pink-500/50 items-start hover:scale-[1.02] transform transition-scale duration-200 cursor-pointer p-4">
+        <div className="flex h-full  flex-col overflow-hidden rounded-xl shadow-2xl backdrop-blur-md bg-gradient-to-t from-indigo-100/10 via-purple-500/50 to-pink-500/50 items-start hover:scale-[1.02] transform transition-scale duration-200 cursor-pointer p-[7.5px]">
           <div className="flex justify-between w-full">
             <div className="">
               <SiGoogleclassroom size={30} color="white" />
             </div>
-            <div className="bg-white bg-opacity-20 py-1 px-4 rounded-full inline-flex items-center">
+            <div className="bg-white bg-opacity-20 px-4 rounded-full inline-flex items-center">
               <p className="text-white text-p">See more</p>
               <MdOutlineArrowForwardIos size={20} color="white" />
             </div>

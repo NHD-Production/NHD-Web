@@ -116,12 +116,15 @@ function About() {
       </div>
        {/* Scroll to Top Button */}
        {showScrollButton && (
-        <div className='fixed bottom-10 right-10'>
+        <div className='fixed bottom-10 right-10 z-[500]'>
           <button
             className='bg-blue-600/50 text-cyan-50 hover:bg-slate-50 hover:text-black p-2 rounded-full flex justify-evenly items-center'
             onClick={scrollToTop}
           >
-            Scroll to Top <FaArrowUp size={20} color='white'/>
+           <p className="mx-2 hidden md:block">
+             Scroll to Top 
+            </p> 
+             <FaArrowUp size={15} color='white'/>
           </button>
         </div>
       )}
