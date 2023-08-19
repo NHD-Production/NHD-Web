@@ -32,7 +32,10 @@ export default function ImageSlider({ imageUrls }) {
     const handleResize = () => {
       if (window.innerWidth <= 500) {
         setscount(1);
-      } else {
+      } else if(window.innerWidth <= 1000) {
+        setscount(2);
+      }
+      else{
         setscount(3);
       }
     };
