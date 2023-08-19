@@ -74,10 +74,10 @@ function Navbar() {
                     Home
                   </Link>
                 </li>
-                <li className="pb-6 sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <NextLink href="/about" target="_blank" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
+                <li className="pb-6 cursor-pointer sm:p-0 text-xl text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link to="/about"  onClick={() => setNavbar(!navbar)} rel="noopener noreferrer">
                      About
-                  </NextLink>
+                  </Link>
                 </li>
                 <li className="pb-6 sm:p-0 text-xl cursor-pointer text-purple-900 py-2 sm:px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link shallow to="music" spy={true} smooth={true} offset={50} duration={500} onClick={() => setNavbar(!navbar)}>
