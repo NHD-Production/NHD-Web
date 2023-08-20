@@ -117,12 +117,13 @@ const Gallery = () => {
     },
     {
         "id": 18,
-        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg",
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159086/_E7A3600_itaa2t.jpg",
         "alt": "Image 18-"
     },
     {
+        
         "id": 19,
-        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089751/live/_90A3739_zes7ux.jpg",
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089431/about/mohit_itxxcc.jpg",
         "alt": "Image 19-"
     },
     {
@@ -267,7 +268,7 @@ const Gallery = () => {
     },
     {
         "id": 48,
-        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159086/_E7A3600_itaa2t.jpg",
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg",
         "alt": "Image 48-"
     },
     {
@@ -275,9 +276,9 @@ const Gallery = () => {
       src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089431/about/pritam_iq8izz.jpg',
       alt: 'Image 1-',
     },
-    {
+    { 
       id: 50,
-      src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089431/about/mohit_itxxcc.jpg',
+      src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089751/live/_90A3739_zes7ux.jpg',
       alt: 'Image 2-',
     },
     {
