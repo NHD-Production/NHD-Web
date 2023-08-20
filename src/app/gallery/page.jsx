@@ -87,7 +87,7 @@ const Gallery = () => {
     },
     {
         "id": 12,
-        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692514505/_90A3978_img_qndvji.jpg",
         "alt": "Image 12-"
     },
     {
@@ -112,7 +112,7 @@ const Gallery = () => {
     },
     {
         "id": 17,
-        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692515018/_90A3755_jpzzpg.jpg",
         "alt": "Image 17-"
     },
     {
@@ -317,7 +317,7 @@ const Gallery = () => {
       id: 57,
       src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090781/Nhd/sendgb-kQgRcOs18SH/4.jpeg_vgcnjd.jpg',
       alt: 'Image 6-',
-    }
+    },
 ]
   return (
    <> <div><NhdImageGallery images={images}/></div>
