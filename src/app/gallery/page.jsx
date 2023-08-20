@@ -87,7 +87,7 @@ const Gallery = () => {
     },
     {
         "id": 12,
-        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692514505/_90A3978_img_qndvji.jpg",
         "alt": "Image 12-"
     },
     {
@@ -112,17 +112,18 @@ const Gallery = () => {
     },
     {
         "id": 17,
-        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692515018/_90A3755_jpzzpg.jpg",
         "alt": "Image 17-"
     },
     {
         "id": 18,
-        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg",
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159086/_E7A3600_itaa2t.jpg",
         "alt": "Image 18-"
     },
     {
+        
         "id": 19,
-        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089751/live/_90A3739_zes7ux.jpg",
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089431/about/mohit_itxxcc.jpg",
         "alt": "Image 19-"
     },
     {
@@ -267,7 +268,7 @@ const Gallery = () => {
     },
     {
         "id": 48,
-        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159086/_E7A3600_itaa2t.jpg",
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg",
         "alt": "Image 48-"
     },
     {
@@ -275,9 +276,9 @@ const Gallery = () => {
       src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089431/about/pritam_iq8izz.jpg',
       alt: 'Image 1-',
     },
-    {
+    { 
       id: 50,
-      src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089431/about/mohit_itxxcc.jpg',
+      src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089751/live/_90A3739_zes7ux.jpg',
       alt: 'Image 2-',
     },
     {
@@ -317,7 +318,7 @@ const Gallery = () => {
       id: 57,
       src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090781/Nhd/sendgb-kQgRcOs18SH/4.jpeg_vgcnjd.jpg',
       alt: 'Image 6-',
-    }
+    },
 ]
   return (
    <> <div><NhdImageGallery images={images}/></div>
