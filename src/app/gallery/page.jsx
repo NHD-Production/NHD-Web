@@ -82,7 +82,7 @@ const Gallery = () => {
     },
     {
         "id": 11,
-        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090789/Nhd/sendgb-kQgRcOs18SH/5_fnx5fs.jpg",
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1693057053/_90A3874_qyedv6.jpg",
         "alt": "Image 11-"
     },
     {
