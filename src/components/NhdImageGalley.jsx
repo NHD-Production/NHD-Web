@@ -22,7 +22,7 @@ function NhdImageGallery({ images }) {
   };
 
   return (
-    <div className={`image-gallery m-auto rounded-lg w-full min-h-0 max-h-[200rem] overflow-y-auto`}>
+    <div className={`image-gallery m-auto rounded-lg w-full min-h-0 max-h-[200rem] overflow-y-auto cursor-pointer`}>
       <div className="content items-center">
         <div className="flex flex-row justify-between w-full max-h-full">
           <div className="flex flex-col w-[33%] gap-2">
@@ -38,7 +38,7 @@ function NhdImageGallery({ images }) {
               }
             })}
           </div>
-          <div className="flex flex-col w-[33%] gap-2">
+          <div className="flex flex-col w-[33%] gap-2 cursor-pointer">
             {images?.map((image, index) => {
               if (index >= col3 && index < col2) {
                 return (
@@ -51,7 +51,7 @@ function NhdImageGallery({ images }) {
               }
             })}
           </div>
-          <div className="flex flex-col w-[33%] gap-2">
+          <div className="flex flex-col w-[33%] gap-2 cursor-pointer">
             {images?.map((image, index) => {
               if (index >= col2 && index < col1) {
                 return (
