@@ -66,7 +66,7 @@ function Home() {
     "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159271/_E7A3547-HDR-min_b0rvp0.jpg",
     "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691609412/8.jpeg_eee3hw.jpg",
     "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691158793/_E7A3716-min_bam3zn.jpg",
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090789/Nhd/sendgb-kQgRcOs18SH/5_fnx5fs.jpg",
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692514505/_90A3978_img_qndvji.jpg",
     "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
     "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090778/Nhd/sendgb-kQgRcOs18SH/1_jq9d9h.jpg",
     "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692383798/Nhd/Landing%20page/_MG_0203_cmwvfs.jpg",

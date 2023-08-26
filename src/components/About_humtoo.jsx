@@ -31,13 +31,13 @@ function About_humtoo() {
         <h1 className='text-3xl text-white'>Professional Synopsis</h1>
         <p className='text-base text-white'>NHD has over 20 years of experience in the Music Industry as a Music Producer, Music Programmer, Arranger, Composer, Woodwind designer, and now a Teacher and an Inspirational Speaker as well.</p>
         <div className='flex flex-col md:flex-row justify-center gap-6 mt-12'>
-          <button className="bg-white/30 hover:bg-blue-700/30 text-white items-center px-8 py-1 rounded-full">
+           <button className="bg-white/30  text-white items-center px-8 py-1 rounded-full"> {/*a hover was given hover:bg-blue-700/30 */}
             Woodwind player
           </button>
-          <button className="bg-white/30 hover:bg-blue-700/30 text-white items-center px-8 py-1 rounded-full">
+          <button className="bg-white/30 text-white items-center px-8 py-1 rounded-full">
             Music Programmer
           </button>
-          <button className="bg-white/30 hover:bg-blue-700/30 text-white items-center px-8 py-1 rounded-full">
+          <button className="bg-white/30 text-white items-center px-8 py-1 rounded-full">
             Arranger and Composer
           </button>
         </div>
@@ -52,20 +52,20 @@ function About_humtoo() {
         <div className='flex justify-center items-center flex-col mt-10 gap-5 p-1'>
           <h1 className='text-3xl text-white'>Area of Expertise:</h1>
           <div className='flex flex-col md:flex-row justify-center gap-6 mt-12'>
-            <button className="bg-white/30 hover:bg-blue-700/30 text-white items-center px-8 py-1 rounded-full">
+            <button className="bg-white/30  text-white items-center px-8 py-1 rounded-full">
               Woodwinds
             </button>
-            <button className="bg-white/30 hover:bg-blue-700/30 text-white items-center px-8 py-1 rounded-full">
+            <button className="bg-white/30  text-white items-center px-8 py-1 rounded-full">
               Composing for Ad-Jingles
             </button>
-            <button className="bg-white/30 hover:bg-blue-700/30 text-white items-center px-8 py-1 rounded-full">
+            <button className="bg-white/30  text-white items-center px-8 py-1 rounded-full">
               Audio Production
             </button>
-            <button className="bg-white/30 hover:bg-blue-700/30 text-white items-center px-8 py-1 rounded-full">
+            <button className="bg-white/30  text-white items-center px-8 py-1 rounded-full">
               Mixing and Mastering
             </button>
           </div>
-          <button className="bg-white/30 hover:bg-blue-700/30 text-white items-center px-8 py-1 rounded-full xl:relative xl:right-5">
+          <button className="bg-white/30  text-white items-center px-8 py-1 rounded-full xl:relative xl:right-5">
             The background score for Feature Films, Serials and Web Series
           </button>
         </div>
