@@ -1,30 +1,17 @@
-import React,{useState,useEffect} from 'react'
+import React from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import emailjs from '@emailjs/browser';
-import {BiSolidCheckCircle} from "react-icons/bi";
 
 function ContactUs() {
-  const [formValue,setFormValue] = useState({ name: '' , email: '', type: '' , subject:'' , body: '' })
-  const [deliveryStatus,setDelivaryStatus] = useState(true)
-  const [Loading,setLoading] = useState(false)
-  useEffect(() => {
-    if(deliveryStatus){
-     const delivarytimer = setTimeout(() => {
-        setDelivaryStatus(false)
-      }, 2000);
-      return ()=> clearTimeout(delivarytimer)
-    }
 
-    return ()=>null
-  },[deliveryStatus])
   return (
     <div className='flex flex-col p-2 xl:flex-row xl:p-5 relative' id='contact'>
         <div className="w-full xl:w-1/2 bg-white/20  flex flex-col justify-center items-start p-3  md:p-8">
           <p className='text-[2.5rem] xl:text-[4rem] text-white'>Get in touch !</p>
           <span className='bg-white h-1 w-10'></span>
-       {!deliveryStatus ?   <Formik
-       initialValues={formValue}
+          <Formik
+       initialValues={{ name: '' , email: '', type: '' , subject:'' , body: '' }}
        validationSchema={Yup.object({
         name : Yup.string().required('Please Enter Name'),
         email: Yup.string().required('Please Enter Email'),
@@ -33,15 +20,13 @@ function ContactUs() {
         body: Yup.string().required('Please Enter Email Body')
       })}
        onSubmit={ async (values) => {
-         setLoading(true)
+         console.log(values)
          await emailjs.send('service_g1cwgf8', 'template_wmblkvi', values, 'HDABb1Hz76qpigItG')
          .then((res) => {
-          setLoading(false)
-          setFormValue({ name: '' , email: '', type: '' , subject:'' , body: '' })
-          setDelivaryStatus(true)
+          console.log("success")
   })
   .catch((error) => {
-        console.log("Not OK not 200")
+      console.log("Not OK not 200")
         console.log(error)
        })}}
      >
@@ -67,11 +52,11 @@ function ContactUs() {
         className="block w-full  md:w-[30%] h-[3rem] bg-white/20  border border-fuchsia-700 shadow-xl px-1 focus:outline-none focus:border-blue-500" name="type" required onChange={handleChange}
         onBlur={handleBlur}
         value={values.type}>
-        <option className='text-black' value="">Choose Any</option>
-        <option className='text-black' value="Nhd_Live">Nhd_Live</option>
-        <option className='text-black' value="Nhd_Studio">Nhd_Studio</option>
-        <option className='text-black' value="Nhd_Production">Nhd_Production</option>
-        <option className='text-black' value="Nhd_Classes">Nhd_Classes</option>
+        <option value="">Choose Any</option>
+        <option value="Nhd_Live">Nhd_Live</option>
+        <option value="Nhd_Studio">Nhd_Studio</option>
+        <option value="Nhd_Production">Nhd_Production</option>
+        <option value="Nhd_Classes">Nhd_Classes</option>
       </select>
             <input type="text" className='w-full md:w-[80%] h-[3rem] text-[1.3rem] px-2  bg-white/20 shadow-lg rounded-sm  placeholder-white/75 focus:placeholder-white/95' name="subject" id="subject" placeholder='Subject'  onChange={handleChange}
              onBlur={handleBlur} required
@@ -79,19 +64,10 @@ function ContactUs() {
             <textarea name="body" className='w-full resize-none text-[1.3rem] p-2  bg-white/20 shadow-xl rounded-sm  placeholder-white/75 focus:placeholder-white/95' id="" cols="30" rows="10"  placeholder='Enter your message'  onChange={handleChange}
              onBlur={handleBlur} required
              value={values.body}></textarea>
-             {
-              Loading ?
-              <button className='bg-white/20 shadow-xl rounded-sm text-white w-full md:w-auto px-8 py-2 hover:scale-[1.09] cursor-pointer'>Sending...</button>
-              :<input  className='bg-white/20 shadow-xl rounded-sm text-white w-full md:w-auto px-8 py-2 hover:scale-[1.09] cursor-pointer' type="submit" value="Submit" />
-             }
-            
+            <input className='bg-white/20 shadow-xl rounded-sm text-white w-full md:w-auto px-8 py-2 hover:scale-[1.09] cursor-pointer' type="submit" value="Submit" />
         </form>
        )}
-        </Formik> : <div className='h-[65vh]  w-full xl:w-[80%] flex justify-center items-center flex-col '>
-        <BiSolidCheckCircle className='text-green-500' size={100}/>
-        <p className='text-white text-[2.5rem] font-bold'>Success</p>
-        
-        </div>}
+        </Formik>
           </div>
           <div/>
         <div className="w-full xl:w-1/2 bg-white/20 ">
