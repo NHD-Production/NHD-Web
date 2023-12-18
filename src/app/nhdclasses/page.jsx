@@ -68,7 +68,7 @@ function About() {
   ];
   return (
     <div id='home' className='h-full w-full'>
-      <div className=" w-full h-[20vh] md:h-[50vh] relative mb-20 ">
+      <div className=" w-full h-[20vh] relative mb-20 ">
        <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691868884/classes_banner_czcruh.png" quality={100} alt='cover'  fill={true} />
       </div>
       <div className="content mt-40 mb-40" id='about'>
