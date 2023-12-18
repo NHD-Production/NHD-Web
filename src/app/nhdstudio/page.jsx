@@ -1,19 +1,20 @@
-'use client'
-import Nhd_gallery from '@/components/Nhd_gallery';
-import ZigBox from '@/components/ZigBox';
-import { GlobalContext } from '@/context/Globalcontext';
-import Image from 'next/image';
+"use client";
+import About_humtoo from "@/components/About_humtoo";
+import BullateList from "@/components/BullateList";
+import ContactUs from "@/components/ContactUs";
+import Image from "next/image";
+import ImageSlider from "@/components/ImageSlider";
+import Navbar from "@/components/Navbar";
+import Nhd_gallery from "@/components/Nhd_gallery";
 import React, { useEffect, useState } from "react";
-import { demoData } from '@/assets/content';
-import { useContext } from 'react';
-import ContactUs from '@/components/ContactUs';
-import Navbar from '@/components/Navbar';
-import About_humtoo from '@/components/About_humtoo';
-import ImageSlider from '@/components/ImageSlider';
-import { Nhdstudio_data } from '@/assets/content';
-import BullateList from '@/components/BullateList';
-import SocialMediaContainer from '@/components/SocialMediaContainer';
-import {FaArrowUp} from 'react-icons/fa'
+import SocialMediaContainer from "@/components/SocialMediaContainer";
+import ZigBox from "@/components/ZigBox";
+import { useContext } from "react";
+import { FaArrowUp } from "react-icons/fa";
+import { demoData } from "@/assets/content";
+import { Nhdstudio_data } from "@/assets/content";
+import { GlobalContext } from "@/context/Globalcontext";
+
 function About() {
   
   const studioService = [
@@ -103,7 +104,7 @@ function About() {
    ]
   return (
     <div className='h-full w-full'>
-      <div id='home' className=" w-full h-[20vh] relative">
+      <div id='home' className=" w-full h-[20vh] lg:h-[50vh] relative">
         <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691606888/NHD_studio_c29jpv.png" quality={100} alt='cover' fill={true} />
       </div>
       <div className="content mt-10 mb-20" >
