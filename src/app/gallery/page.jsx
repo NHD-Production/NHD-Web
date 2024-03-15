@@ -132,6 +132,16 @@ const Gallery = () => {
         "alt": "Image 20-"
     },
     {
+      id: 61,
+      src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515446/satyajit_ray_archives_invitation_hbf23u.jpg',
+      alt: 'Image 61-'
+    },
+    {
+      id: 62,
+      src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515444/nhd_invitation_the_music_of_satyajit_ray_zfi3xq.jpg',
+      alt: 'Image 62-'
+    },
+    {
         "id": 21,
         "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089104/live/_E7A3920_zlshod.jpg",
         "alt": "Image 21-"
@@ -232,6 +242,17 @@ const Gallery = () => {
         "alt": "Image 40-"
     },
     {
+      id: 63,
+      src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515470/the_music_of_satyajit_ray_a5xlxd.jpg',
+      alt: 'Image 63-'
+    },
+    {
+      id: 64,
+      src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515468/the_club_sandwitch_zext9v.jpg',
+      alt: 'Image 64-'
+    },
+
+    {
         "id": 41,
         "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014243/FB_IMG_1691859951612_nafv5i.jpg",
         "alt": "Image 41-"
@@ -317,8 +338,9 @@ const Gallery = () => {
     {
       id: 57,
       src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090781/Nhd/sendgb-kQgRcOs18SH/4.jpeg_vgcnjd.jpg',
-      alt: 'Image 6-',
+      alt: 'Image 57-',
     },
+    //new updates 15-03-2024
     {
         id: 58,
         src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515360/charulata_2_qrumtc.jpg',
@@ -332,29 +354,9 @@ const Gallery = () => {
       {
         id: 60,
         src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515423/kolkatar_korcha_raemkl.jpg',
-        alt: 'Image 59-',
+        alt: 'Image 60-',
       },
-      {
-        id: 61,
-        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515446/satyajit_ray_archives_invitation_hbf23u.jpg',
-        alt: 'Image 59-',
-      },
-      {
-        id: 62,
-        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515444/nhd_invitation_the_music_of_satyajit_ray_zfi3xq.jpg',
-        alt: 'Image 59-',
-      },
-      {
-        id: 63,
-        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515470/the_music_of_satyajit_ray_a5xlxd.jpg',
-        alt: 'Image 59-',
-      },
-      {
-        id: 64,
-        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515468/the_club_sandwitch_zext9v.jpg',
-        alt: 'Image 59-',
-      },
-
+      
 
 ]
   return (
