@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
-import Image from 'next/image';
-import { AiOutlineCloseSquare } from 'react-icons/ai';
+"use client";
+import Image from "next/image";
+import React, { useState } from "react";
+import { AiOutlineCloseSquare } from "react-icons/ai";
+import { imgListOne } from "@/assets/content";
+import { imgListTwo } from "@/assets/content";
+import { imgListThree } from "@/assets/content";
 
-function NhdImageGallery({ images }) {
-  let size = images.length;
-  let col3 = Math.floor(size / 3);
-  let col2 = col3 * 2;
-  let col1 = size;
+function NhdImageGallery() {
+
 
   const [isOpen, setIsOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -21,47 +22,48 @@ function NhdImageGallery({ images }) {
     setSelectedImage(null);
   };
 
+ 
   return (
     <div className={`image-gallery m-auto rounded-lg w-full min-h-0 max-h-[200rem] overflow-y-auto cursor-pointer`}>
       <div className="content items-center">
-        <div className="flex flex-row justify-between w-full max-h-full">
-          <div className="flex flex-col w-[33%] gap-2">
-            {images?.map((image, index) => {
-              if (index >= 0 && index < col3) {
+        <div className="flex flex-row justify-between w-full max-h-full p-[.5rem] md:p-[1.5rem] gap-3">
+          <div className="flex flex-col w-[33%] gap-3">
+            {imgListOne.map((image, index) => {
+              
                 return (
-                  <div className="image-container skeleton-image1" key={image.id} onClick={() => handleShowDialog(image)}>
+                  <div className="image-container skeleton-image1" key={image.alt} onClick={() => handleShowDialog(image)}>
                     <div className="relative">
-                      <Image style={{ width: '100%' }} width={300} height={500} className="object-cover" src={image.src} alt={image.alt} />
+                      <Image style={{ width: '100%' }} width={300} height={500} className="object-cover rounded-[.3rem] md:rounded-[1rem]" src={image.src} alt={image.alt} />
                     </div>
                   </div>
                 );
-              }
+              
             })}
           </div>
           <div className="flex flex-col w-[33%] gap-2 cursor-pointer">
-            {images?.map((image, index) => {
-              if (index >= col3 && index < col2) {
+            {imgListTwo.map((image, index) => {
+            
                 return (
-                  <div className="image-container skeleton-image2" key={image.id} onClick={() => handleShowDialog(image)}>
+                  <div className="image-container skeleton-image2" key={image.alt} onClick={() => handleShowDialog(image)}>
                     <div className="relative">
-                      <Image style={{ width: '100%' }} width={300} height={500} className="object-cover" src={image.src} alt={image.alt} />
+                      <Image style={{ width: '100%' }} width={300} height={500} className="object-cover rounded-[.3rem] md:rounded-[1rem]" src={image.src} alt={image.alt} />
                     </div>
                   </div>
                 );
-              }
+              
             })}
           </div>
           <div className="flex flex-col w-[33%] gap-2 cursor-pointer">
-            {images?.map((image, index) => {
-              if (index >= col2 && index < col1) {
+            {imgListThree.map((image, index) => {
+             
                 return (
-                  <div className="image-container skeleton-image3" key={image.id} onClick={() => handleShowDialog(image)}>
+                  <div className="image-container skeleton-image3" key={image.alt} onClick={() => handleShowDialog(image)}>
                     <div className="relative">
-                      <Image style={{ width: '100%' }} width={300} height={500} className="object-cover" src={image.src} alt={image.alt} />
+                      <Image style={{ width: '100%' }} width={300} height={500} className="object-cover rounded-[.3rem] md:rounded-[1rem]" src={image.src} alt={image.alt} />
                     </div>
                   </div>
                 );
-              }
+              
             })}
           </div>
         </div>
