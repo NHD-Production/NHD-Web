@@ -1,9 +1,8 @@
-'use client'
-import NhdImageGallery from '@/components/NhdImageGalley'
-import { useState,useEffect } from 'react'
-import {FaArrowUp} from 'react-icons/fa'
-import { imgListOne,imgListTwo,imgListThree } from '@/assets/content'
-
+"use client";
+import NhdImageGallery from "@/components/NhdImageGalley";
+import { useEffect, useState } from "react";
+import { FaArrowUp } from "react-icons/fa";
+import { imgListOne, imgListThree, imgListTwo } from "@/assets/content";
 
 const Gallery = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -29,9 +28,9 @@ const Gallery = () => {
       behavior: "smooth",
     });
   };
-  const images = [imgListOne,imgListTwo,imgListThree]
+
   return (
-   <> <div><NhdImageGallery images={images}/></div>
+   <> <div><NhdImageGallery /></div>
     {/* Scroll to Top Button */}
     {showScrollButton && (
         <div className='fixed bottom-10 right-10 z-[500]'>

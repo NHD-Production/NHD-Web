@@ -1,8 +1,12 @@
+"use client";
 import Image from "next/image";
 import React, { useState } from "react";
 import { AiOutlineCloseSquare } from "react-icons/ai";
+import { imgListOne } from "@/assets/content";
+import { imgListTwo } from "@/assets/content";
+import { imgListThree } from "@/assets/content";
 
-function NhdImageGallery({ images }) {
+function NhdImageGallery() {
 
 
   const [isOpen, setIsOpen] = useState(false);
@@ -17,12 +21,14 @@ function NhdImageGallery({ images }) {
     setIsOpen(false);
     setSelectedImage(null);
   };
+
+ 
   return (
     <div className={`image-gallery m-auto rounded-lg w-full min-h-0 max-h-[200rem] overflow-y-auto cursor-pointer`}>
       <div className="content items-center">
         <div className="flex flex-row justify-between w-full max-h-full p-[.5rem] md:p-[1.5rem] gap-3">
           <div className="flex flex-col w-[33%] gap-3">
-            {images[0]?.map((image, index) => {
+            {imgListOne.map((image, index) => {
               
                 return (
                   <div className="image-container skeleton-image1" key={image.alt} onClick={() => handleShowDialog(image)}>
@@ -35,7 +41,7 @@ function NhdImageGallery({ images }) {
             })}
           </div>
           <div className="flex flex-col w-[33%] gap-2 cursor-pointer">
-            {images[1]?.map((image, index) => {
+            {imgListTwo.map((image, index) => {
             
                 return (
                   <div className="image-container skeleton-image2" key={image.alt} onClick={() => handleShowDialog(image)}>
@@ -48,7 +54,7 @@ function NhdImageGallery({ images }) {
             })}
           </div>
           <div className="flex flex-col w-[33%] gap-2 cursor-pointer">
-            {images[2]?.map((image, index) => {
+            {imgListThree.map((image, index) => {
              
                 return (
                   <div className="image-container skeleton-image3" key={image.alt} onClick={() => handleShowDialog(image)}>
