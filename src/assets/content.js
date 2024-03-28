@@ -192,3 +192,342 @@ const nhdclass_nav = [
 const abouthumtoo_nav = [
     'Home', 'Gallery', 'Contact'
 ]
+
+export const imgListOne = [
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090758/Nhd/Nhd%20live/_90A3708_d6ndhi.jpg",
+        "alt": "Image 1-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691147366/_90A4147_cut_rmqj3t.jpg",
+        "alt": "Image 2-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090757/Nhd/Landing%20page/_90A3794_okzf8t.jpg",
+        "alt": "Image 3-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691147274/_90A3691_picdgk.jpg",
+        "alt": "Image 4-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090773/Nhd/sendgb-kQgRcOs18SH/1.jpeg_miihie.jpg",
+        "alt": "Image 5-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090770/Nhd/Nhd%20live/_90A7312_tntreg.jpg",
+        "alt": "Image 6-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090754/Nhd/Nhd%20live/Screen_Shot_2023-07-24_at_11.04.51_PM_dtkdys.png",
+        "alt": "Image 7-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159271/_E7A3547-HDR-min_b0rvp0.jpg",
+        "alt": "Image 8-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691609412/8.jpeg_eee3hw.jpg",
+        "alt": "Image 9-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691158793/_E7A3716-min_bam3zn.jpg",
+        "alt": "Image 10-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1693057053/_90A3874_qyedv6.jpg",
+        "alt": "Image 11-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692514505/_90A3978_img_qndvji.jpg",
+        "alt": "Image 12-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090778/Nhd/sendgb-kQgRcOs18SH/1_jq9d9h.jpg",
+        "alt": "Image 13-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692383798/Nhd/Landing%20page/_MG_0203_cmwvfs.jpg",
+        "alt": "Image 14-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089746/live/C0179.MP4.05_25_08_03.Still001_i7ldte.jpg",
+        "alt": "Image 15-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089747/live/_90A7040_m2utet.jpg",
+        "alt": "Image 16-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692515018/_90A3755_jpzzpg.jpg",
+        "alt": "Image 17-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159086/_E7A3600_itaa2t.jpg",
+        "alt": "Image 18-"
+    },
+    {
+        
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089431/about/mohit_itxxcc.jpg",
+        "alt": "Image 19-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089751/live/_90A3767_nycw2k.jpg",
+        "alt": "Image 20-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089104/live/_E7A3920_zlshod.jpg",
+        "alt": "Image 21-"
+    },
+]
+
+export const imgListTwo = [
+
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089106/live/_E7A3995_opjijl.jpg",
+        "alt": "Image 22-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089106/live/_90A3853_vl3rgi.jpg",
+        "alt": "Image 23-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014246/FB_IMG_1691860301318-Enhanced_fcukli.jpg",
+        "alt": "Image 24-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014246/FB_IMG_1691860281006_wmli14.jpg",
+        "alt": "Image 25-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014245/FB_IMG_1691859991006_msidly.jpg",
+        "alt": "Image 26-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014245/FB_IMG_1691860272974_zaszqf.jpg",
+        "alt": "Image 27-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014244/FB_IMG_1691859937861_htyzlq.jpg",
+        "alt": "Image 28-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014244/FB_IMG_1691860226589-Enhanced_kxm0mk.jpg",
+        "alt": "Image 29-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014243/FB_IMG_1691859968447_pawomw.jpg",
+        "alt": "Image 30-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014243/FB_IMG_1691859929135_fg5o5h.jpg",
+        "alt": "Image 31-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014243/FB_IMG_1691859951612_nafv5i.jpg",
+        "alt": "Image 32-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014246/FB_IMG_1691860301318-Enhanced_fcukli.jpg",
+        "alt": "Image 33-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014246/FB_IMG_1691860281006_wmli14.jpg",
+        "alt": "Image 34-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014245/FB_IMG_1691859991006_msidly.jpg",
+        "alt": "Image 35-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014245/FB_IMG_1691860272974_zaszqf.jpg",
+        "alt": "Image 36-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014244/FB_IMG_1691859937861_htyzlq.jpg",
+        "alt": "Image 37-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014244/FB_IMG_1691860226589-Enhanced_kxm0mk.jpg",
+        "alt": "Image 38-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014243/FB_IMG_1691859968447_pawomw.jpg",
+        "alt": "Image 39-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014243/FB_IMG_1691859929135_fg5o5h.jpg",
+        "alt": "Image 40-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014243/FB_IMG_1691859951612_nafv5i.jpg",
+        "alt": "Image 41-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159271/_E7A3547-HDR-min_b0rvp0.jpg",
+        "alt": "Image 42-"
+    },
+]
+
+export const imgListThree = [
+    
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159272/_E7A3668-min_j7wavs.jpg",
+        "alt": "Image 43-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159606/_E7A3459-HDR-min_bfzm81.jpg",
+        "alt": "Image 44-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159271/_E7A3575-HDR-min_nmd8g2.jpg",
+        "alt": "Image 45-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159087/_E7A3619_uo5as6.jpg",
+        "alt": "Image 46-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159086/_E7A3638_qyqqeb.jpg",
+        "alt": "Image 47-"
+    },
+    {
+        
+        "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg",
+        "alt": "Image 48-"
+    },
+    {
+      
+      src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089431/about/pritam_iq8izz.jpg',
+      alt: 'Image 49',
+    },
+    { 
+      
+      src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089751/live/_90A3739_zes7ux.jpg',
+      alt: 'Image 50',
+    },
+    {
+      
+      src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089431/about/12.jpeg_nnfskm.jpg',
+      alt: 'Image 51',
+    },
+    {
+      
+      src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089431/about/arijit_1_ln8jpz.jpg',
+      alt: 'Image 52',
+    }
+    ,
+    {
+      
+      src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089431/about/lata_at_first_zrrunk.jpg',
+      alt: 'Image 53',
+    }
+    ,
+    {
+      
+      src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089431/about/11.jpeg_o9qcbm.jpg',
+      alt: 'Image 54',
+    },
+    {
+      
+      src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089432/about/10.jpeg_ptqc7j.jpg',
+      alt: 'Image 55',
+    },
+    {
+      
+      src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089432/about/arijit_2_r1kajw.jpg',
+      alt: 'Image 56',
+    }
+    ,
+    {
+      
+      src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090781/Nhd/sendgb-kQgRcOs18SH/4.jpeg_vgcnjd.jpg',
+      alt: 'Image 57-',
+    },
+    //new updates 15-03-2024
+    {
+        
+        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515360/charulata_2_qrumtc.jpg',
+        alt: 'Image 58-',
+      },
+      {
+        
+        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515390/charulata_rlym08.jpg',
+        alt: 'Image 59-',
+      },
+      {
+        
+        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515423/kolkatar_korcha_raemkl.jpg',
+        alt: 'Image 60-',
+      },
+      {
+        
+        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515446/satyajit_ray_archives_invitation_hbf23u.jpg',
+        alt: 'Image 61-',
+      },
+      {
+        
+        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515444/nhd_invitation_the_music_of_satyajit_ray_zfi3xq.jpg',
+        alt: 'Image 62-',
+      },
+      {
+        
+        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515470/the_music_of_satyajit_ray_a5xlxd.jpg',
+        alt: 'Image 63-',
+      },
+      {
+        
+        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515468/the_club_sandwitch_zext9v.jpg',
+        alt: 'Image 64-',
+      },
+
+
+]
+
