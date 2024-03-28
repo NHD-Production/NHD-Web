@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import Image from 'next/image';
-import { AiOutlineCloseSquare } from 'react-icons/ai';
+import Image from "next/image";
+import React, { useState } from "react";
+import { AiOutlineCloseSquare } from "react-icons/ai";
 
 function NhdImageGallery({ images }) {
 
@@ -17,18 +17,17 @@ function NhdImageGallery({ images }) {
     setIsOpen(false);
     setSelectedImage(null);
   };
-  console.log(images)
   return (
     <div className={`image-gallery m-auto rounded-lg w-full min-h-0 max-h-[200rem] overflow-y-auto cursor-pointer`}>
       <div className="content items-center">
-        <div className="flex flex-row justify-between w-full max-h-full">
-          <div className="flex flex-col w-[33%] gap-2">
+        <div className="flex flex-row justify-between w-full max-h-full p-[.5rem] md:p-[1.5rem] gap-3">
+          <div className="flex flex-col w-[33%] gap-3">
             {images[0]?.map((image, index) => {
               
                 return (
                   <div className="image-container skeleton-image1" key={image.alt} onClick={() => handleShowDialog(image)}>
                     <div className="relative">
-                      <Image style={{ width: '100%' }} width={300} height={500} className="object-cover" src={image.src} alt={image.alt} />
+                      <Image style={{ width: '100%' }} width={300} height={500} className="object-cover rounded-[.3rem] md:rounded-[1rem]" src={image.src} alt={image.alt} />
                     </div>
                   </div>
                 );
@@ -41,7 +40,7 @@ function NhdImageGallery({ images }) {
                 return (
                   <div className="image-container skeleton-image2" key={image.alt} onClick={() => handleShowDialog(image)}>
                     <div className="relative">
-                      <Image style={{ width: '100%' }} width={300} height={500} className="object-cover" src={image.src} alt={image.alt} />
+                      <Image style={{ width: '100%' }} width={300} height={500} className="object-cover rounded-[.3rem] md:rounded-[1rem]" src={image.src} alt={image.alt} />
                     </div>
                   </div>
                 );
@@ -54,7 +53,7 @@ function NhdImageGallery({ images }) {
                 return (
                   <div className="image-container skeleton-image3" key={image.alt} onClick={() => handleShowDialog(image)}>
                     <div className="relative">
-                      <Image style={{ width: '100%' }} width={300} height={500} className="object-cover" src={image.src} alt={image.alt} />
+                      <Image style={{ width: '100%' }} width={300} height={500} className="object-cover rounded-[.3rem] md:rounded-[1rem]" src={image.src} alt={image.alt} />
                     </div>
                   </div>
                 );

@@ -1,4 +1,4 @@
-import BullateList from "@/components/BullateList"
+import BullateList from "@/components/BullateList";
 
 export const demoData = [{
         image: 'https://m.economictimes.com/thumb/msid-87577205,width-1200,height-900,resizemode-4,imgsize-75004/travis-scott.jpg',
@@ -196,6 +196,21 @@ const abouthumtoo_nav = [
 export const imgListOne = [
     {
         
+        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515360/charulata_2_qrumtc.jpg',
+        alt: 'Image 58-',
+      },
+      {
+        
+        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515390/charulata_rlym08.jpg',
+        alt: 'Image 59-',
+      },
+      {
+        
+        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515423/kolkatar_korcha_raemkl.jpg',
+        alt: 'Image 60-',
+      },
+    {
+        
         "src": "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090758/Nhd/Nhd%20live/_90A3708_d6ndhi.jpg",
         "alt": "Image 1-"
     },
@@ -303,6 +318,16 @@ export const imgListOne = [
 ]
 
 export const imgListTwo = [
+    {
+        
+        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515446/satyajit_ray_archives_invitation_hbf23u.jpg',
+        alt: 'Image 61-',
+      },
+      {
+        
+        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515444/nhd_invitation_the_music_of_satyajit_ray_zfi3xq.jpg',
+        alt: 'Image 62-',
+      },
 
     {
         
@@ -412,6 +437,16 @@ export const imgListTwo = [
 ]
 
 export const imgListThree = [
+    {
+        
+        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515470/the_music_of_satyajit_ray_a5xlxd.jpg',
+        alt: 'Image 63-',
+      },
+      {
+        
+        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515468/the_club_sandwitch_zext9v.jpg',
+        alt: 'Image 64-',
+      },
     
     {
         
@@ -491,43 +526,6 @@ export const imgListThree = [
       src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090781/Nhd/sendgb-kQgRcOs18SH/4.jpeg_vgcnjd.jpg',
       alt: 'Image 57-',
     },
-    //new updates 15-03-2024
-    {
-        
-        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515360/charulata_2_qrumtc.jpg',
-        alt: 'Image 58-',
-      },
-      {
-        
-        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515390/charulata_rlym08.jpg',
-        alt: 'Image 59-',
-      },
-      {
-        
-        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515423/kolkatar_korcha_raemkl.jpg',
-        alt: 'Image 60-',
-      },
-      {
-        
-        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515446/satyajit_ray_archives_invitation_hbf23u.jpg',
-        alt: 'Image 61-',
-      },
-      {
-        
-        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515444/nhd_invitation_the_music_of_satyajit_ray_zfi3xq.jpg',
-        alt: 'Image 62-',
-      },
-      {
-        
-        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515470/the_music_of_satyajit_ray_a5xlxd.jpg',
-        alt: 'Image 63-',
-      },
-      {
-        
-        src: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515468/the_club_sandwitch_zext9v.jpg',
-        alt: 'Image 64-',
-      },
-
 
 ]
 
