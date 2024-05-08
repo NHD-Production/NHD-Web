@@ -57,6 +57,9 @@ function About() {
       <div className=" w-full h-[20vh] lg:h-[50vh] relative mb-20">
        <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691607683/nhd_production_banner_showreel_usd6hh.png" alt='cover'  fill={true} />
       </div>
+      <div className='flex justify-center text-white text-xl m-3 p-3'>
+      A seamless arrangement of audio post-production for music and movie ventures curated meticulously by industry-level musicians and composers.
+      </div>
       
       <div className="content mt-20 mb-40">
         

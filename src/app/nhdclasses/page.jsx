@@ -71,6 +71,9 @@ function About() {
       <div className=" w-full h-[20vh] lg:h-[50vh] relative ">
        <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691868884/classes_banner_czcruh.png" quality={100} alt='cover'  fill={true} />
       </div>
+      <div className='flex justify-center text-white text-xl m-3 p-3'>
+      A unique blend of woodwinds, flute, audio-production, sound engineering and playback-vocal master level classes and specialization.
+      </div>
       <div className="content mt-40 mb-40" id='about'>
         
        <ZigBox data={Nhdclasses_data}/>
