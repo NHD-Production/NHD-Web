@@ -60,7 +60,7 @@ function About() {
       <div id='home' className=" w-full h-[20vh] lg:h-[50vh] relative ">
        <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159922/Artboard_1_oirguz.png" alt='cover'  fill={true} />
       </div>
-      <div className='flex justify-center text-white text-xl m-3 p-3'>
+      <div className='flex justify-center text-white text-2xl m-3 p-3'>
       A premium band created in collaboration with the finest musicians that caters to the live audience&apos;s classic charm as well as creative wilderness.
       </div>
      <div className=''>
