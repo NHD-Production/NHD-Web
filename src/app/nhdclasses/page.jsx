@@ -1,19 +1,18 @@
-"use client";
-import About_humtoo from "@/components/About_humtoo";
-import ContactUs from "@/components/ContactUs";
-import Image from "next/image";
-import ImageSlider from "@/components/ImageSlider";
-import Navbar from "@/components/Navbar";
-import Nhd_gallery from "@/components/Nhd_gallery";
+'use client'
+import Nhd_gallery from '@/components/Nhd_gallery';
+import ZigBox from '@/components/ZigBox';
+import { GlobalContext } from '@/context/Globalcontext';
+import Image from 'next/image';
 import React, { useEffect, useState } from "react";
-import Welcome from "@/components/Welcome";
-import ZigBox from "@/components/ZigBox";
-import { useContext } from "react";
-import { FaArrowUp } from "react-icons/fa";
-import { demoData } from "@/assets/content";
-import { Nhdclasses_data } from "@/assets/content";
-import { GlobalContext } from "@/context/Globalcontext";
-
+import { demoData } from '@/assets/content';
+import { useContext } from 'react';
+import ContactUs from '@/components/ContactUs';
+import Navbar from '@/components/Navbar';
+import About_humtoo from '@/components/About_humtoo';
+import ImageSlider from '@/components/ImageSlider';
+import Welcome from '@/components/Welcome';
+import {Nhdclasses_data} from '@/assets/content';
+import {FaArrowUp} from 'react-icons/fa'
 function About() {
   const {theme} = useContext(GlobalContext)
   const [Themecolor,setThemecolor] = theme;
@@ -69,9 +68,12 @@ function About() {
   ];
   return (
     <div id='home' className='h-full w-full'>
-      <div className=" w-full h-[20vh] lg:h-[50vh] relative mb-20 ">
+      <div className=" w-full h-[20vh] lg-[50vh] relative mb-20 ">
        <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691868884/classes_banner_czcruh.png" quality={100} alt='cover'  fill={true} />
       </div>
+      <p className="w-full text-p 2xl:text-h3 p-5 m-5 text-white">
+              A premium band created in collaboration with the finest musicians that caters to the live audience&apos;s classic charm as well as creative wilderness.
+      </p>
       <div className="content mt-40 mb-40" id='about'>
         
        <ZigBox data={Nhdclasses_data}/>
