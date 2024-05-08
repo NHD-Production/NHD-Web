@@ -71,9 +71,6 @@ function About() {
       <div className=" w-full h-[20vh] lg-[50vh] relative mb-20 ">
        <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691868884/classes_banner_czcruh.png" quality={100} alt='cover'  fill={true} />
       </div>
-      <p className="w-full text-xl text-white">
-              A premium band created in collaboration with the finest musicians that caters to the live audience&apos;s classic charm as well as creative wilderness.
-      </p>
       <div className="content mt-40 mb-40" id='about'>
         
        <ZigBox data={Nhdclasses_data}/>
