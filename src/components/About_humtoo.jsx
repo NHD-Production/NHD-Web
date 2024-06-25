@@ -116,7 +116,7 @@ function About_humtoo() {
               <ul className='list-none text-xl text-teal-200 flex flex-col justify-center items-center  gap-2 mt-5'>
                 <li> BOLLYWOOD :</li>
                 <ul className='list-disc text-white text-base'>
-                  <li>Piya Tora Kaisa Abhiman -  Raincoat/ 2004, Pihu Bole - Parineeta/ 2005, Agar Tum - Zeher/ 2005, I Love You - Bodyguard/ 2011, All Songs of Barfi - Barfi/ 2012, Tum Hi Ho -  Aashiqui2 /2012, Title Track - Humari Adhuri Kahani/ 2015, Gerua- Dilwale/ 2015, Title Track - Ae Dil Hai Mushkil/2016, Shayad - Love Aaj Kal 2/ 2020.</li>
+                  <li>Piya Tora Kaisa Abhiman -  Raincoat 2004, Pihu Bole - Parineeta 2005, Agar Tum - Zeher 2005, I Love You - Bodyguard 2011, All Songs of Barfi - Barfi 2012, Tum Hi Ho -  Aashiqui2 2012, Title Track - Humari Adhuri Kahani 2015, Gerua- Dilwale 2015, Title Track - Ae Dil Hai Mushkil 2016, Shayad - Love Aaj Kal 2 2020.</li>
                   <li>He has also been part of several television and OTT ventures by Ekta Kapoor’s <span className='font-semibold tracking-wide'>“Balaji Productions”</span>.
                   </li>
                 </ul>
