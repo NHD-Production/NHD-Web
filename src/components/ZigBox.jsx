@@ -30,7 +30,7 @@ function ZigBox({ title, description, data }) {
         )}
       </div>
       <div className="zigBody w-full ">
-        {data?.map(({ title, description, image, extraButton, date, wing, isUpcoming, isClub }, index) => {
+        {data?.map(({ title, description, image, extraButton, date, wing, isUpcoming, isClub,imageactions }, index) => {
           {if(!isUpcoming || isClub){return (
             <div key={index+title}
               className={`flex ${index % 2 ? "flex-col-reverse md:flex-row" : "flex-col-reverse md:flex-row-reverse"
@@ -59,7 +59,7 @@ function ZigBox({ title, description, data }) {
           {extraButton.name}
         </button>}
               </div>
-              <div className="image mb-5 md:mb-0">
+              <div className={`image mb-5 md:mb-0 drop-shadow-lg hover:scale-[1.03] transition-all ${imageactions?.brightness ?"hover:brightness-150":""}`}>
                 <Image
                   src={image}
                   alt={title}
