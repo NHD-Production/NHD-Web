@@ -1,0 +1,199 @@
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    html {
+        font-size: 16px;
+        scroll-behavior: smooth !important;
+    }
+    
+    body {
+        background: linear-gradient(134deg, #640973 36.46%, #0B0054 73.96%);
+        background-attachment: fixed;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    @keyframes color {
+        0% {
+            background-position: 0 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0 50%;
+        }
+    }
+    
+    .audioplayer,
+    .audioplayerlg {
+        -webkit-user-select: none;
+        /* Safari */
+        -ms-user-select: none;
+        /* IE 10 and IE 11 */
+        user-select: none;
+        /* Standard syntax */
+    }
+    
+    .audioplayer:after {
+        background: url('/img1.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(177, 17, 192);
+        opacity: .5;
+    }
+    
+    .audioplayerlg:after {
+        background: url('https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691146199/apu_durga_fpp7qp.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(177, 17, 192);
+        opacity: .5;
+    }
+    /* width */
+    
+     ::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+     ::-webkit-scrollbar:hover {
+        width: 10px;
+    }
+    /* Track */
+    
+     ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    /* Handle */
+    
+     ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 2px;
+    }
+    /* Handle on hover */
+    
+     ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    
+    .skeleton-image1 {
+        position: relative;
+        overflow: hidden;
+        background-color: rgba(128, 128, 128, 0.315);
+        animation: skeleton-loading 1.5s infinite;
+        animation-delay: 0s;
+    }
+    
+    .skeleton-image2 {
+        position: relative;
+        overflow: hidden;
+        background-color: rgba(128, 128, 128, 0.315);
+        animation: skeleton-loading 1.5s infinite;
+        animation-delay: .3s;
+    }
+    
+    .skeleton-image3 {
+        position: relative;
+        overflow: hidden;
+        background-color: rgba(128, 128, 128, 0.315);
+        animation: skeleton-loading 1.5s infinite;
+        animation-delay: .5s;
+    }
+    
+    .skeleton-image4 {
+        position: relative;
+        overflow: hidden;
+        background-color: rgba(128, 128, 128, 0.315);
+        animation: skeleton-loading 1.5s infinite;
+        animation-delay: .8s;
+    }
+    
+    @keyframes skeleton-loading {
+        0% {
+            background-color: rgba(97, 97, 97, 0.226);
+        }
+        50% {
+            background-color: rgba(95, 95, 95, 0.326);
+        }
+        100% {
+            background-color: rgba(95, 95, 95, 0.226);
+        }
+    }
+    
+    .imga {
+        animation: image-anim 10s infinite;
+        animation-delay: 0s;
+    }
+    
+    .imga2 {
+        animation: image-anim 11s infinite;
+        animation-delay: 2s;
+    }
+    
+    .imga3 {
+        animation: image-anim 12s infinite;
+        animation-delay: 4s;
+    }
+    
+    .imga4 {
+        animation: image-anim 13s infinite;
+        animation-delay: 6s;
+    }
+    
+    @keyframes image-anim {
+        0% {
+            scale: 1;
+        }
+        50% {
+            scale: 1.1;
+        }
+        100% {
+            scale: 1;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .audioplayer:after {
+            background-size: contain !important;
+        }
+        .audioplayerlg:after {
+            background-size: contain !important;
+        }
+    }
+    
+    .loadinganim {
+        animation: loading-anim .8s infinite;
+        animation-delay: 0s;
+        position: relative;
+        /* opacity: 50%; */
+    }
+    
+    @keyframes loading-anim {
+        0% {
+            /* transform: scale(1); */
+            /* opacity: 0; */
+            top: 0;
+        }
+        50% {
+            /* transform: scale(1.02); */
+            top: 8px;
+            /* opacity: 0.7; */
+        }
+        100% {
+            /* transform: scale(1); */
+            /* opacity: 0; */
+            top: 0;
+        }
+    }
