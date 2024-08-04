@@ -10,7 +10,7 @@ const ZigzagBullate = ({ data }) => {
 
   useEffect(() => {
     const handlescroll = () => {
-      
+
     };
 
     window.addEventListener('scroll', handlescroll);
@@ -25,9 +25,8 @@ const ZigzagBullate = ({ data }) => {
       {data.map((item, index) => (
         <div
           key={index}
-          className={`flex flex-col h-auto w-full ${
-            index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-          } items-center justify-between p-10`}
+          className={`flex flex-col h-auto w-full ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+            } items-center justify-between p-10`}
         >
           <div className="flex-1">
             <img
@@ -44,19 +43,20 @@ const ZigzagBullate = ({ data }) => {
                 <li key={i}>{point}</li>
               ))}
             </ul>
-            {item.buttonText && (
-              <a
-                href={item.buttonURL || '#contact'}
-                rel="noopener noreferrer"
-                className="border-2 rounded-sm px-5 py-2 transition-all delay-[.1s] my-5 shadow-lg hover:text-black hover:bg-white/90 hover:border-white"
-                onClick={handleScrollToContact}
-              >
-                {item.buttonText}
-              </a>
-            )}
+
           </div>
         </div>
       ))}
+      <div className="flex justify-center items-center m-10">
+          <a
+            href="#contact"
+            rel="noopener noreferrer"
+            className="border-2 rounded-sm px-5 py-2 transition-all delay-[.1s] shadow-lg hover:text-black hover:bg-white/90 hover:border-white sm:px-7 sm:py-3 md:px-10 md:py-4"
+            onClick={handleScrollToContact}
+          >
+            Book Now
+          </a>
+      </div>
     </div>
   );
 };
