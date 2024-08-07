@@ -52,12 +52,12 @@ function ZigBox({ title, description, data }) {
                   </p>
                 </div>}
                 <p className="text-p 2xl:text-h3 font-[500] mt-4 text-slate-200">{description}</p>
-                {extraButton && <button
+                {/* {extraButton && <button
           className="border-2 rounded-sm px-5 py-1 transition-all delay-[.1s] my-5 shadow-lg hover:text-black hover:bg-white/90 hover:border-white"
           onClick={handleScrollToContact}
         >
           {extraButton.name}
-        </button>}
+        </button>} */}
               </div>
               <div className={`image mb-5 md:mb-0 drop-shadow-lg hover:scale-[1.03] transition-all ${imageactions?.brightness ?"hover:brightness-150":""}`}>
                 <Image
@@ -71,6 +71,16 @@ function ZigBox({ title, description, data }) {
             </div>
           );}}
         })}
+      </div>
+      <div className="flex justify-center items-center m-2">
+          <a
+            href="#contact"
+            rel="noopener noreferrer"
+            className="border-2 rounded-sm px-5 py-2 transition-all delay-[.1s] shadow-lg hover:text-black hover:bg-white/90 hover:border-white sm:px-7 sm:py-3 md:px-10 md:py-4"
+            onClick={handleScrollToContact}
+          >
+            Book Now
+          </a>
       </div>
     </div>
   );
