@@ -12,9 +12,7 @@ function ZigBox({ title, description, data }) {
     const handlescroll = () => {
       
     }
-
     window.addEventListener("scroll", handlescroll);
-
     return () => {
       window.removeEventListener("scroll", handlescroll);
     };
