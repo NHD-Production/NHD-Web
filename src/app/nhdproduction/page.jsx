@@ -9,6 +9,10 @@ import React, { useEffect, useState } from "react";
 import ZigBox from "@/components/ZigBox";
 import { useContext } from "react";
 import { FaArrowUp } from "react-icons/fa";
+<<<<<<< HEAD
+=======
+import musicIcon  from "@/assets/music_letters.png";
+>>>>>>> production
 import { demoData } from "@/assets/content";
 import { Nhdprod_data } from "@/assets/content";
 import { GlobalContext } from "@/context/Globalcontext";
@@ -54,11 +58,14 @@ function About() {
   ];
   return (
     <div id='home' className='h-full w-full'>
-      <div className=" w-full h-[20vh] lg:h-[50vh] relative mb-20">
+       <div id='home' className=" w-full h-[20vh] lg:h-[50vh] relative ">
        <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691607683/nhd_production_banner_showreel_usd6hh.png" alt='cover'  fill={true} />
       </div>
-      <div className='flex justify-center text-white text-2xl m-3 p-3'>
+      <div className='flex flex-col xl:flex-row items-center justify-evenly text-white text-2xl p-3 bg-black/80'>
+        <Image src={musicIcon} alt="floating_music_image" />
+        <p className="p-1 w-90 text-[1rem] xl:text-[1.6rem] text-center leading-normal">
       A seamless arrangement of audio post-production for music and movie ventures curated meticulously by industry-level musicians and composers.
+      </p>
       </div>
       
       <div className="content mt-20 mb-40">

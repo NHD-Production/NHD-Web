@@ -10,9 +10,9 @@ function ZigBox({ title, description, data }) {
   };
   useEffect(() => {
     const handlescroll = () => {
-      
     }
     window.addEventListener("scroll", handlescroll);
+
     return () => {
       window.removeEventListener("scroll", handlescroll);
     };

@@ -1,11 +1,10 @@
 'use client'
 import { GlobalContext } from '@/context/Globalcontext'
+import { IoIosCloseCircle } from "react-icons/io";
 import { Link } from "react-scroll"
 import React, { useContext, useEffect, useState } from 'react'
 import Image from 'next/image';
 import logo from '@/assets/nhd_logo.png';
-import ham from '@/assets/hamburger.png';
-import close from '@/assets/close.png';
 import { usePathname } from 'next/navigation'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import NextLink from 'next/link';
@@ -47,14 +46,13 @@ function Navbar() {
                      <p className='text-white'>Home</p>
                 </NextLink>
                 <button
-                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                  className="p-2 text-gray-700 rounded-md outline-none "
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
-                    <Image src={close} width={30} height={30}  alt="logo" />
+                    <IoIosCloseCircle size={30} color='purple'  alt="close_menu_logo"/>
                   ) : (
-                    <GiHamburgerMenu size={30} color='purple'  alt="logo"
-                    className="focus:border-none active:border-none"/>
+                    <GiHamburgerMenu size={30} color='purple'  alt="open_menu_logo"/>
                   )}
                 </button>
               </div>

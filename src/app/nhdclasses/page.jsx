@@ -11,6 +11,7 @@ import Navbar from '@/components/Navbar';
 import About_humtoo from '@/components/About_humtoo';
 import ImageSlider from '@/components/ImageSlider';
 import Welcome from '@/components/Welcome';
+import musicIcon  from "@/assets/music_letters.png";
 import {Nhdclasses_data} from '@/assets/content';
 import {FaArrowUp} from 'react-icons/fa'
 function About() {
@@ -71,8 +72,11 @@ function About() {
       <div className=" w-full h-[20vh] lg:h-[50vh] relative ">
        <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691868884/classes_banner_czcruh.png" quality={100} alt='cover'  fill={true} />
       </div>
-      <div className='flex justify-center text-white text-2xl m-3 p-3'>
+      <div className='flex flex-col xl:flex-row items-center justify-evenly text-white text-2xl p-3 bg-black/80'>
+        <Image src={musicIcon} alt="floating_music_image" />
+        <p className="p-1 w-90 text-[1rem] xl:text-[1.6rem] text-center leading-normal">
       A unique blend of woodwinds, flute, audio-production, sound engineering and playback-vocal master level classes and specialization.
+      </p>
       </div>
       <div className="content mt-40 mb-40" id='about'>
         
