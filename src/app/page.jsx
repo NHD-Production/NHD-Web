@@ -17,7 +17,7 @@ import About_humtoo from "@/components/About_humtoo";
 import AudioPlayerLarge from "@/components/AudioPlayerLarge";
 import SocialMediaContainer from "@/components/SocialMediaContainer";
 import NhdImageGallery from "@/components/NhdImageGalley";
-import {FaArrowUp} from 'react-icons/fa'
+import { FaArrowUp } from "react-icons/fa";
 import {
   FaFacebookSquare,
   FaTwitterSquare,
@@ -26,6 +26,7 @@ import {
   FaSpotify,
   FaYoutube,
 } from "react-icons/fa";
+import Announcements from "@/components/Announcements";
 
 function Home() {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -52,7 +53,6 @@ function Home() {
     });
   };
 
-
   const images = [
     "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090758/Nhd/Nhd%20live/_90A3708_d6ndhi.jpg",
     "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691147366/_90A4147_cut_rmqj3t.jpg",
@@ -71,7 +71,7 @@ function Home() {
     "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090778/Nhd/sendgb-kQgRcOs18SH/1_jq9d9h.jpg",
     "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692383798/Nhd/Landing%20page/_MG_0203_cmwvfs.jpg",
     "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515468/the_club_sandwitch_zext9v.jpg",
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515444/nhd_invitation_the_music_of_satyajit_ray_zfi3xq.jpg"
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515444/nhd_invitation_the_music_of_satyajit_ray_zfi3xq.jpg",
   ];
   const data = [
     {
@@ -134,7 +134,17 @@ function Home() {
       <div className="mt-10">
         <SocialMediaContainer data={data} />
       </div>
-      <div className="content mt-28">
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="w-[90%] sm:w-[80%] md:w-[60%]">
+        <h1 className="text-white text-center text-4xl mb-10">Announcements</h1>
+          <Announcements />
+          <div className="flex items-center justify-center m-10"> 
+        <a href="/bestmoments" target="_blank">  <button className="pl-4 pr-4 p-2 bg-fuchsia-400 text-white rounded-lg ">Best Moments</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div className="content mt-10">
         <ZigBox data={Nhd_data} />
       </div>
       <div className="h-[50vh] w-[full] mt-16">
@@ -156,15 +166,13 @@ function Home() {
       <ContactUs />
       {/* Scroll to Top Button */}
       {showScrollButton && (
-        <div className='fixed bottom-10 right-10 z-[500]'>
+        <div className="fixed bottom-10 right-10 z-[500]">
           <button
-            className='bg-blue-600/50 text-cyan-50 hover:bg-slate-50 hover:text-black p-2 rounded-full flex justify-evenly items-center'
+            className="bg-blue-600/50 text-cyan-50 hover:bg-slate-50 hover:text-black p-2 rounded-full flex justify-evenly items-center"
             onClick={scrollToTop}
           >
-           <p className="mx-2 hidden md:block">
-             Scroll to Top 
-            </p> 
-             <FaArrowUp size={15} color='white'/>
+            <p className="mx-2 hidden md:block">Scroll to Top</p>
+            <FaArrowUp size={15} color="white" />
           </button>
         </div>
       )}
