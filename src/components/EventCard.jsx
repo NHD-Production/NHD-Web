@@ -1,0 +1,38 @@
+import React from "react";
+
+const EventCard = ({ images, eventName, date, description }) => {
+  return (
+    <div className="max-w-sm bg-purple-700 rounded-2xl shadow-lg p-6 text-white">
+      {/* Image Grid */}
+      <div className="grid grid-cols-2 gap-2 mb-4">
+        {images.slice(0, 3).map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt={`Event Image ${index + 1}`}
+            className="w-full h-24 object-cover rounded-md"
+          />
+        ))}
+        {images.length > 3 && (
+          <div className="relative w-full h-24 rounded-md overflow-hidden">
+            <img
+              src={images[3]}
+              alt="View All"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-lg font-semibold">
+              View All
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Event Details */}
+      <h2 className="text-2xl font-bold">{eventName}</h2>
+      <p className="text-sm text-gray-300">{date}</p>
+      <p className="mt-2 text-sm">{description}</p>
+    </div>
+  );
+};
+
+export default EventCard;
