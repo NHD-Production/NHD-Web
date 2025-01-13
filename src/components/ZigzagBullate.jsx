@@ -10,7 +10,6 @@ const ZigzagBullate = ({ data }) => {
 
   useEffect(() => {
     const handlescroll = () => {
-
     };
 
     window.addEventListener('scroll', handlescroll);

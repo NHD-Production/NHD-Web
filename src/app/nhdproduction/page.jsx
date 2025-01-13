@@ -9,7 +9,10 @@ import React, { useEffect, useState } from "react";
 import ZigBox from "@/components/ZigBox";
 import { useContext } from "react";
 import { FaArrowUp } from "react-icons/fa";
+<<<<<<< HEAD
+=======
 import musicIcon  from "@/assets/music_letters.png";
+>>>>>>> production
 import { demoData } from "@/assets/content";
 import { Nhdprod_data } from "@/assets/content";
 import { GlobalContext } from "@/context/Globalcontext";
