@@ -11,7 +11,7 @@ import ZigzagBullate from "@/components/ZigzagBullate";
 import { useContext } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import { demoData } from "@/assets/content";
-import { Nhdlive_data } from "@/assets/content";
+import musicIcon  from "@/assets/music_letters.png";
 import { nhdlive } from "@/assets/content";
 import { GlobalContext } from "@/context/Globalcontext";
 
@@ -60,8 +60,11 @@ function About() {
       <div id='home' className=" w-full h-[20vh] lg:h-[50vh] relative ">
        <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159922/Artboard_1_oirguz.png" alt='cover'  fill={true} />
       </div>
-      <div className='flex justify-center text-white text-2xl m-3 p-3'>
+      <div className='flex flex-col xl:flex-row items-center justify-evenly text-white text-2xl p-3 bg-black/80'>
+        <Image src={musicIcon} alt="floating_music_image" />
+        <p className="p-1 w-90 text-[1rem] xl:text-[1.6rem] text-center leading-normal">
       A premium band created in collaboration with the finest musicians that caters to the live audience&apos;s classic charm as well as creative wilderness.
+        </p>
       </div>
      <div className=''>
      {/* <ImageSlider imageUrls={imageUrls}/> */}

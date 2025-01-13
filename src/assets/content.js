@@ -71,7 +71,8 @@ export const Nhd_data = [{
         image: 'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090746/Nhd/Landing%20page/Logo_Final__nf78of.png',
         title: 'How NHD operates ?',
         description: 'An expert management  and public relations team indulge in creating a seamless and thriving venture, modelled exclusively according to the need of particular clients. We herein provide services adhering to our well-analysed and documented principles, after a full-fledged agreement between the company and related parties.NHD Live, Studio, Productions and Classes provide industry-level quality services with a hint of exclusive freshness in all genres. ',
-        isCLub: true
+        isCLub: true,
+        imageactions:{brightness:true}
     }
 ]
 
