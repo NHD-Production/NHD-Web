@@ -134,12 +134,12 @@ function Home() {
       <div className="mt-10">
         <SocialMediaContainer data={data} />
       </div>
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="w-[90%] sm:w-[80%] md:w-[60%]">
-        <h1 className="text-white text-center text-4xl mb-10">Announcements</h1>
+      <div className="flex items-center justify-center min-h-screen  bg-gradient-to-l from-violet-900 mt-3 -p-15">
+        <div className="w-[90%] sm:w-[80%] md:w-[60%] bg-gradient-to-l bg-black/50 rounded-lg p-10">
+        <h1 className="text-white text-center text-4xl mb-10 font-mono border-b-2 border-sky-500 bg-gradient-to-l bg-black/50 p-2 rounded-md">Announcements</h1>
           <Announcements />
           <div className="flex items-center justify-center m-10"> 
-        <a href="/bestmoments" target="_blank">  <button className="pl-4 pr-4 p-2 bg-fuchsia-400 text-white rounded-lg ">Best Moments</button></a>
+        <a href="/bestmoments" target="_blank">  <button className="bg-blue-600/50 text-cyan-50 hover:bg-slate-50 hover:text-black p-2 flex justify-center items-center rounded-md ">Click to see Best Moments</button></a>
           </div>
         </div>
       </div>

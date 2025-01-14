@@ -5,7 +5,7 @@ import Image from "next/image";
 import musicIcon from "@/assets/music_letters.png";
 import EventCard from "@/components/EventCard";
 import { FaArrowUp } from "react-icons/fa";
-
+import ContactUs from "@/components/ContactUs";
 function BestMoments() {
   const [showScrollButton, setShowScrollButton] = useState(false);
 
@@ -132,6 +132,7 @@ function BestMoments() {
           />
         ))}
       </div>
+      <ContactUs />
       {/* Scroll to Top Button */}
       {showScrollButton && (
         <div className="fixed bottom-10 right-10 z-[500]">
