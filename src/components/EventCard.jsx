@@ -2,7 +2,7 @@ import React from "react";
 
 const EventCard = ({ images, eventName, date, description }) => {
   return (
-    <div className="max-w-sm bg-purple-700 rounded-2xl shadow-lg p-6 text-white">
+    <div className="max-w-sm bg-purple-700 rounded-2xl shadow-lg p-6 text-white max-h-[25rem] overflow-hidden">
       {/* Image Grid */}
       <div className="grid grid-cols-2 gap-2 mb-4">
         {images.slice(0, 3).map((image, index) => (
@@ -20,7 +20,7 @@ const EventCard = ({ images, eventName, date, description }) => {
               alt="View All"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-lg font-semibold">
+            <div className="absolute inset-0 bg-black hover:bg-opacity-70 hover:text-purple-500 bg-opacity-50 flex items-center justify-center text-lg font-semibold cursor-pointer">
               View All
             </div>
           </div>
@@ -30,7 +30,7 @@ const EventCard = ({ images, eventName, date, description }) => {
       {/* Event Details */}
       <h2 className="text-2xl font-bold">{eventName}</h2>
       <p className="text-sm text-gray-300">{date}</p>
-      <p className="mt-2 text-sm">{description}</p>
+      <p className="mt-2 text-sm">{description.slice(0,150)}</p>
     </div>
   );
 };
