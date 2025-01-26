@@ -50,7 +50,8 @@ const Announcements = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[200px] sm:h-[250px] md:h-[300px] overflow-hidden ">
+   <div>
+     <div className="relative w-full h-[200px] sm:h-[250px] md:h-[300px] overflow-hidden ">
       <div
         className="flex transition-transform duration-500"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -99,13 +100,31 @@ const Announcements = () => {
         />
       </button>
 
-      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      {/* <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2 ">
         {slides.map((_, index) => (
           <button
             key={index}
             className={`w-3 h-3 rounded-full ${
               currentIndex === index ? "bg-blue-500" : "bg-gray-300"
-            }`}
+            }`} 
+            onClick={() => setSlide(index)}
+          >
+            <img
+              src="https://pngimg.com/d/dot_PNG1.png"
+              alt="Dot"
+              className="w-full h-full object-contain"
+            />
+          </button>
+        ))}
+      </div> */}
+    </div>
+    <div className="relative -bottom-4 left-[98%] transform -translate-x-1/2 flex space-x-2">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            className={`w-3 h-3 rounded-full ${
+              currentIndex === index ? "bg-blue-500" : "bg-gray-300"
+            }`} 
             onClick={() => setSlide(index)}
           >
             <img
@@ -116,7 +135,7 @@ const Announcements = () => {
           </button>
         ))}
       </div>
-    </div>
+   </div>
   );
 };
 
