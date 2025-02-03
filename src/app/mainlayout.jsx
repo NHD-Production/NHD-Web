@@ -6,7 +6,7 @@ function mainlayout({children}) {
     <>
      <Navbar/>
      <Loading/>
-      <div className="w-full overflow-hidden">
+      <div className="w-full overflow-hidden main-view-container">
       {children}
       </div>
     </>
