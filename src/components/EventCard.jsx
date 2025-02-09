@@ -11,7 +11,7 @@ const EventCard = ({ images, eventName, date, description , setToggleGallery }) 
   }
   
   return (
-    <div className="max-w-sm bg-purple-700 rounded-2xl shadow-lg p-6 text-white max-h-[25rem] overflow-hidden">
+    <div className="max-w-sm bg-white/20 rounded-2xl shadow-lg p-6 text-white max-h-[25rem] overflow-hidden">
       {/* Image Grid */}
       <div className="grid grid-cols-2 gap-2 mb-4">
         {images.slice(0, 3).map((image, index) => (
