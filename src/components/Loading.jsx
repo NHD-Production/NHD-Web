@@ -1,7 +1,8 @@
-"use client"
-import Image from 'next/image'
-import logo from '@/assets/nhd_logo.png';
-import { useEffect,useState } from 'react';
+"use client";
+import Image from "next/image";
+import logo from "@/assets/nhd_logo.png";
+import { useEffect, useState } from "react";
+
 function Loading() {
     const [loading, setLoading] = useState(true);
     const [iconSize, setIconSize] = useState({

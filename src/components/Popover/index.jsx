@@ -1,10 +1,20 @@
+"use client";
+import "../../assets/popover.css";
 import React, { useEffect, useRef } from "react";
-import ReactDOM from "react-dom";
-import "../assets/style/components/popover.css"; // You can style this file to position and style the popover
+import { createPortal } from "react-dom";
 
 // Popover component
 export default function Popover({ children, showPopover, onClose }) {
+	
 	const popoverRef = useRef(null);
+
+	useEffect(() => {
+		if (showPopover) {
+			document.body.style.overflow = "hidden"; // Prevent scrolling
+		} else {
+			document.body.style.overflow = "auto"; // Allow scrolling
+		}
+	},[showPopover]);
 
 	// Close the popover when clicking outside
 	useEffect(() => {
@@ -32,12 +42,12 @@ export default function Popover({ children, showPopover, onClose }) {
 
 	if (!showPopover) return null;
 
-	return ReactDOM.createPortal(
+	return createPortal(
 		<div className="popover-background">
 			<div ref={popoverRef} className="popover" >
 				{children}
 			</div>
 		</div>,
-		document.getElementsByClassName('main-view-container')[0] // Render in the body
+		document.getElementsByClassName('nhd-app-body')[0] // Render in the body
 	);
 }

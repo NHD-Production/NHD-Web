@@ -1,7 +1,8 @@
-import  GlobalProvider from '@/context/Globalcontext'
-import './globals.css'
-import { Inter } from 'next/font/google'
-import Mainlayout from '@/app/mainlayout'
+import "./globals.css";
+import  GlobalProvider from "@/context/Globalcontext";
+import Mainlayout from "@/app/mainlayout";
+import { Inter } from "next/font/google";
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -13,7 +14,7 @@ export default function RootLayout({ children }) {
   
   return (
     <html lang="en">
-      <body className={`{inter.className} `}>
+      <body className={`${inter.className} nhd-app-body `}>
       <GlobalProvider>
         <Mainlayout>{children}</Mainlayout>
       </GlobalProvider>

@@ -1,13 +1,18 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { GlobalContext } from "@/context/Globalcontext";
-import Image from "next/image";
-import musicIcon from "@/assets/music_letters.png";
-import EventCard from "@/components/EventCard";
-import { FaArrowUp } from "react-icons/fa";
 import ContactUs from "@/components/ContactUs";
+import EventCard from "@/components/EventCard";
+import Image from "next/image";
+import PopGallery from "@/components/PopGallery";
+import Popover from "@/components/Popover";
+import React, { useEffect, useState } from "react";
+import musicIcon from "@/assets/music_letters.png";
+import { FaArrowUp } from "react-icons/fa";
+import { GlobalContext } from "@/context/Globalcontext";
+
 function BestMoments() {
   const [showScrollButton, setShowScrollButton] = useState(false);
+  const defaultGalleryState = { show: false, images: [] };
+  const [toggleGallery, setToggleGallery] = useState(defaultGalleryState);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,6 +53,12 @@ function BestMoments() {
       images: [
       "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089746/live/C0179.MP4.05_25_08_03.Still001_i7ldte.jpg",
         "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089747/live/_90A7040_m2utet.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg",
         "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
         "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg",
       ],
@@ -129,8 +140,13 @@ function BestMoments() {
             eventName={event.eventName}
             date={event.date}
             description={event.description}
+            setToggleGallery={setToggleGallery}
           />
         ))}
+
+      <Popover showPopover={toggleGallery.show} onClose={()=>setToggleGallery(defaultGalleryState)}>
+         <PopGallery images={toggleGallery?.images}/>
+      </Popover>
       </div>
       <ContactUs />
       {/* Scroll to Top Button */}
