@@ -39,87 +39,90 @@ function BestMoments() {
   const events = [
     {
       images: [
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089746/live/C0179.MP4.05_25_08_03.Still001_i7ldte.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089747/live/_90A7040_m2utet.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1743266890/Videoshot_20250316_131634_dkpuy8.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/c_fill,ar_3:4,g_auto/v1743268893/ADDU_1_lrixqr.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/c_fill,ar_1:1,g_auto/v1743266891/IMG_20250211_104546_p5jbrk.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/c_fill,ar_1:1,g_auto/v1743266890/IMG_20250211_102930_mnvhzh.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/c_pad,b_gen_fill,ar_1:1/v1743266890/IMG_20250211_103419_nlemdo.jpg",
       ],
-      eventName: "Event Name 1",
-      date: "13/01/2025",
+      eventName: "RAIGANJ EVENT",
+      date: "03/02/2025",
       description:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+        "Our North Bengal tour was unforgettable, with a warm audience swaying to our melodies. The misty hills and Raiganj’s colonial charm made it magical.",
     },
     {
       images: [
-      "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089746/live/C0179.MP4.05_25_08_03.Still001_i7ldte.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089747/live/_90A7040_m2utet.jpg",
+      "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691147274/_90A3691_picdgk.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692514505/_90A3978_img_qndvji.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090758/Nhd/Landing%20page/_90A4147_wgdsg4.jpg",
         "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089106/live/_90A3853_vl3rgi.jpg",
+       
       ],
-      eventName: "Event Name 2",
-      date: "15/02/2025",
+      eventName: "JU SANSKARI EVENT",
+      date: "24/04/2023",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
+        "This year’s band nights were special—NHD Live’s flute and instrumentals touched souls beyond barriers.",
     },
     {
       images: [
-       "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089746/live/C0179.MP4.05_25_08_03.Still001_i7ldte.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089747/live/_90A7040_m2utet.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
+       "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1721590317/Extra%20images/_E7A3873_ut9h9l.jpg",
         "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089106/live/_E7A3995_opjijl.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089104/live/_E7A3920_zlshod.jpg",
       ],
-      eventName: "Event Name 3",
-      date: "20/03/2025",
+      eventName: "SARAT SADAN EVENT",
+      date: "15/07/2023",
       description:
-        "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.",
+        "A memorable musical night organised and donated for the specially abled and Autistically drown syndrome children.",
     },
     {
       images: [
-       "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089746/live/C0179.MP4.05_25_08_03.Still001_i7ldte.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089747/live/_90A7040_m2utet.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg",
+       "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1743271444/IMG_20241209_233028230_ctxy3v.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1743271516/IMG_20241210_020609726_k5ihiu.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090792/Nhd/sendgb-kQgRcOs18SH/Screenshot_20230608_171103_Video_Player_a4mxmk.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090790/Nhd/sendgb-kQgRcOs18SH/Screenshot_20230608_171101_Video_Player_pjcoyl.jpg",
       ],
-      eventName: "Event Name 3",
-      date: "20/03/2025",
+      eventName: "DEOGHAR EVENT",
+      date: "09/12/2024",
       description:
-        "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.",
+        "Performing in Deoghar, Jharkhand, was unforgettable. The tranquil temple complex turned vibrant as our flutes, mandolins, guitars, drums resonated.",
     },{
       images: [
-       "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089746/live/C0179.MP4.05_25_08_03.Still001_i7ldte.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089747/live/_90A7040_m2utet.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg",
+       "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090773/Nhd/sendgb-kQgRcOs18SH/1.jpeg_miihie.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1743270770/siliguri_ciqi2g.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/c_pad,b_gen_fill,ar_4:3/v1691090779/Nhd/sendgb-kQgRcOs18SH/2.jpeg_ucuirt.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1743270767/asl_mo9rgt.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1743270768/siliguri_2_dpbwjn.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692383798/Nhd/Landing%20page/_MG_0203_cmwvfs.jpg"
       ],
-      eventName: "Event Name 3",
-      date: "20/03/2025",
+      eventName: "ASL JOURNEY",
+      date: "",
       description:
-        "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.",
-    },{
-      images: [
-       "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089746/live/C0179.MP4.05_25_08_03.Still001_i7ldte.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089747/live/_90A7040_m2utet.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg",
-      ],
-      eventName: "Event Name 3",
-      date: "20/03/2025",
-      description:
-        "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.",
+        "Feel the pulse of the  electrifying ASL band where NHD creates pure magic of multiple woodwinds on stage.",
     },
+    {
+      images: [
+       "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1743272105/Screenshot_2025-03-29_at_23.39.42_xushtm.png",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1743272103/Screenshot_2025-03-29_at_23.41.02_ivh2li.png",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1743272103/Screenshot_2025-03-29_at_23.43.00_yaocs5.png",
+         "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090754/Nhd/Nhd%20live/Screen_Shot_2023-07-24_at_11.04.51_PM_dtkdys.png",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1743272105/Screenshot_2025-03-29_at_23.40.19_otzpsp.png",
+       
+       
+      ],
+      eventName: "BALLYGANJ CULTURE EVENT",
+      date: "",
+      description:
+        "NHD Band set the stage ablaze at Ballygunge Culture Club, captivating the audience with soul-stirring instrumentals!",
+    }
   ];
 
   return (
     <div className="h-full w-full">
       <div id="home" className="w-full h-[20vh] lg:h-[50vh] relative">
         <Image
-          src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159922/Artboard_1_oirguz.png"
+          src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1743267223/header_mtqkzr.png"
           alt="cover"
           fill={true}
         />

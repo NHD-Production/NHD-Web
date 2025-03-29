@@ -5,23 +5,23 @@ const Announcements = () => {
     {
       image:
         "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090773/Nhd/sendgb-kQgRcOs18SH/1.jpeg_miihie.jpg",
-      heading: "Slide 1 Heading",
+      heading: "NHD With Arijit Singh",
       description:
-        "Music is the art form that combines rhythm and sound to form a functional melodic line. Music itself transcends time, space, and cultures. Music can carry a mood without speaking any specific words. It can also be captured and recorded in a written universal language unique unto any other art form.",
+        "Sharing the stage with the legendary Arijit Singh was an unforgettable milestone for NHD Band. Our instrumentals blended seamlessly with his soulful voice, creating magic that resonated with every heart in the audience.",
     },
     {
       image:
         "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090770/Nhd/Nhd%20live/_90A7312_tntreg.jpg",
-      heading: "Slide 2 Heading",
+      heading: "NHD at JU",
       description:
-        "Music is the art form that combines rhythm and sound to form a functional melodic line. Music itself transcends time, space, and cultures. Music can carry a mood without speaking any specific words. It can also be captured and recorded in a written universal language unique unto any other art form.",
+        "NHD Band electrifies Jadavpur University with pure instrumental magic! Our melodies echo through the campus, uniting hearts with the rhythm of music. JU, get ready for an unforgettable musical journey!",
     },
     {
       image:
         "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090754/Nhd/Nhd%20live/Screen_Shot_2023-07-24_at_11.04.51_PM_dtkdys.png",
-      heading: "Slide 3 Heading",
+      heading: "Ballyganj Culture Club",
       description:
-        "Music is the art form that combines rhythm and sound to form a functional melodic line. Music itself transcends time, space, and cultures. Music can carry a mood without speaking any specific words. It can also be captured and recorded in a written universal language unique unto any other art form.",
+        "NHD Band brings its instrumental magic to Ballygunge Culture Club! The soulful flute, vibrant mandolin, and dynamic rhythms set the stage ablaze. Music transcended barriers as the crowd swayed to our tunes. A night of pure melody and unforgettable energy!",
     },
   ];
 
