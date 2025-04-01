@@ -9,6 +9,12 @@ const EventCard = ({ images, eventName, date, description , setToggleGallery }) 
     setToggleGallery({show:true,images:images});
 
   }
+
+  const getImageThumbnail = ( imageUrl ) => {
+    let urlArray = imageUrl.split('upload/');
+    let optimizedUrl = urlArray[0] + "upload/w_150/" + urlArray[1];
+    return optimizedUrl;
+  } 
   
   return (
     <div className="max-w-sm bg-white/20 rounded-2xl shadow-lg p-6 text-white max-h-[25rem] overflow-hidden">
@@ -17,7 +23,7 @@ const EventCard = ({ images, eventName, date, description , setToggleGallery }) 
         {images.slice(0, 3).map((image, index) => (
           <img
             key={index}
-            src={image}
+            src={getImageThumbnail(image)}
             alt={`Event Image ${index + 1}`}
             className="w-full h-24 object-cover rounded-md"
           />
