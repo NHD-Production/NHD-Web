@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const Announcements = () => {
   const slides = [
@@ -49,9 +49,9 @@ const Announcements = () => {
   }, []);
 
   return (
-    <div className="relative w-full max-w-5xl mx-auto overflow-hidden  text-white p-4 rounded-lg">
+    <div className="relative w-full max-w-5xl mx-auto overflow-hidden  text-white p-8 bg-black/50 md:bg-transparent">
       <div
-        className="flex transition-transform duration-500"
+        className="flex gap-4 transition-transform duration-500"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {slides.map((slide, index) => (
@@ -85,7 +85,7 @@ const Announcements = () => {
         ❯
       </button>
 
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-4 md:bottom-1 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {slides.map((_, index) => (
           <button
             key={index}

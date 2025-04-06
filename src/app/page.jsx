@@ -1,23 +1,25 @@
 "use client";
-import React, { useEffect, useContext, useState } from "react";
-import { GlobalContext } from "@/context/Globalcontext";
-import ZigBox from "@/components/ZigBox";
-import { data, demoData } from "@/assets/content";
-import { Nhd_data } from "@/assets/content";
-import Welcome from "@/components/Welcome";
-import Nhd_gallery from "@/components/Nhd_gallery";
-import Nhd_section from "@/components/Nhd_section";
+import About_humtoo from "@/components/About_humtoo";
+import About_nhd from "@/app/about/page";
+import Announcements from "@/components/Announcements";
 import AudioPlayer from "@/components/AudioPlayer";
+import AudioPlayerLarge from "@/components/AudioPlayerLarge";
+import ContactUs from "@/components/ContactUs";
 import GalleryApp from "@/components/ImageSlider";
 import ImageSlider from "@/components/ImageSlider";
-import ContactUs from "@/components/ContactUs";
-import Nhd_music from "@/components/Nhd_music";
-import About_nhd from "@/app/about/page";
-import About_humtoo from "@/components/About_humtoo";
-import AudioPlayerLarge from "@/components/AudioPlayerLarge";
-import SocialMediaContainer from "@/components/SocialMediaContainer";
 import NhdImageGallery from "@/components/NhdImageGalley";
+import Nhd_gallery from "@/components/Nhd_gallery";
+import Nhd_music from "@/components/Nhd_music";
+import Nhd_section from "@/components/Nhd_section";
+import React, { useContext, useEffect, useState } from "react";
+import SocialMediaContainer from "@/components/SocialMediaContainer";
+import Welcome from "@/components/Welcome";
+import ZigBox from "@/components/ZigBox";
 import { FaArrowUp } from "react-icons/fa";
+import { data, demoData } from "@/assets/content";
+import { Nhd_data } from "@/assets/content";
+import { GlobalContext } from "@/context/Globalcontext";
+
 import {
   FaFacebookSquare,
   FaTwitterSquare,
@@ -26,7 +28,6 @@ import {
   FaSpotify,
   FaYoutube,
 } from "react-icons/fa";
-import Announcements from "@/components/Announcements";
 
 function Home() {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -134,9 +135,9 @@ function Home() {
       <div className="mt-10">
         <SocialMediaContainer data={data} />
       </div>
-      <div className="flex items-center justify-center min-h-screen  bg-gradient-to-l from-violet-900 mt-3 -p-15">
-        <div className="w-[90%] sm:w-[80%] md:w-[60%] bg-gradient-to-l bg-black/50 rounded-lg p-10">
-        <h1 className="text-white text-center text-4xl mb-10 font-mono border-b-2 border-sky-500 bg-gradient-to-l bg-black/50 p-2 rounded-md">Announcements</h1>
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="w-full bg-gradient-to-lrounded-lg p-0">
+        <h1 className="text-white text-center text-4xl mb-10 font-mono p-2 rounded-md">Announcements</h1>
           <Announcements />
           <div className="flex items-center justify-center m-10"> 
         <a href="/bestmoments" target="_blank">  <button className="bg-blue-600/50 text-cyan-50 hover:bg-slate-50 hover:text-black p-2 flex justify-center items-center rounded-md ">Click to see Best Moments</button></a>
