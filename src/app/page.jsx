@@ -137,7 +137,7 @@ function Home() {
       </div>
       <div className="flex items-center justify-center min-h-screen">
         <div className="w-full bg-gradient-to-lrounded-lg p-0">
-        <h1 className="text-white text-center text-4xl mb-10 font-mono p-2 rounded-md">Announcements</h1>
+        <h1 className="text-white text-center text-4xl p-2 mt-8 rounded-md">Announcements</h1>
           <Announcements />
           <div className="flex items-center justify-center m-10"> 
         <a href="/bestmoments" target="_blank">  <button className="bg-blue-600/50 text-cyan-50 hover:bg-slate-50 hover:text-black p-2 flex justify-center items-center rounded-md ">Click to see Best Moments</button></a>

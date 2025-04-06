@@ -52,7 +52,7 @@ const Announcements = () => {
     <div className="relative w-full max-w-5xl mx-auto overflow-hidden  text-white p-8 bg-black/50 md:bg-transparent">
       <div
         className="flex gap-4 transition-transform duration-500"
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        style={{ transform: `translateX(-${currentIndex * 105}%)` }}
       >
         {slides.map((slide, index) => (
           <div
@@ -73,13 +73,13 @@ const Announcements = () => {
       </div>
 
       <button
-        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/60 p-3 rounded-full"
+        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/60 p-3 "
         onClick={prevSlide}
       >
         ❮
       </button>
       <button
-        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/60 p-3 rounded-full"
+        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/60 p-3"
         onClick={nextSlide}
       >
         ❯
