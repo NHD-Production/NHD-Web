@@ -1,7 +1,7 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { AiOutlineCloseSquare } from "react-icons/ai";
 import Image from "next/image";
+import React, { useEffect, useState } from "react";
+import { AiOutlineCloseSquare } from "react-icons/ai";
 
 const Nhd_gallery = ({ images }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +9,6 @@ const Nhd_gallery = ({ images }) => {
   const [dialogImageLoading, setDialogImageLoading] = useState(true) // Set default to false
 
   const handleShowDialog = (image) => {
-   // console.log("handleShowDialog called");
     setIsOpen(!isOpen);
     setSelectedImage(image);
     setDialogImageLoading(true);

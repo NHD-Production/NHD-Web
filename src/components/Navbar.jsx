@@ -1,22 +1,20 @@
-'use client'
-import { GlobalContext } from '@/context/Globalcontext'
+"use client";
+import Image from "next/image";
+import NextLink from "next/link";
+import React, { useContext, useEffect, useState } from "react";
+import logo from "@/assets/nhd_logo.png";
+import { usePathname } from "next/navigation";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { IoIosCloseCircle } from "react-icons/io";
-import { Link } from "react-scroll"
-import React, { useContext, useEffect, useState } from 'react'
-import Image from 'next/image';
-import logo from '@/assets/nhd_logo.png';
-import { usePathname } from 'next/navigation'
-import {GiHamburgerMenu} from 'react-icons/gi'
-import NextLink from 'next/link';
+import { Link } from "react-scroll";
+import { GlobalContext } from "@/context/Globalcontext";
+
 function Navbar() {
   const { theme } = useContext(GlobalContext)
   const [navbar, setNavbar] = useState(false) // Add navbar state variable
   const [navpos,setNavpos] = useState('sticky')
   const pathname = usePathname()
 
-  useEffect(() => {
-    console.log(pathname)
-  }, [])
   const handlescroll = () => {
     if (window.scrollY > 100) setNavpos('fixed')
      else setNavpos('sticky')
