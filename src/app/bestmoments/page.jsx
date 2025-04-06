@@ -80,8 +80,8 @@ function BestMoments() {
       images: [
        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1743271444/IMG_20241209_233028230_ctxy3v.jpg",
         "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1743271516/IMG_20241210_020609726_k5ihiu.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090792/Nhd/sendgb-kQgRcOs18SH/Screenshot_20230608_171103_Video_Player_a4mxmk.jpg",
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090790/Nhd/sendgb-kQgRcOs18SH/Screenshot_20230608_171101_Video_Player_pjcoyl.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1743955548/deoghor_bju8yu.webp",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1743955548/deoghor_2_tyzrbs.webp",
       ],
       eventName: "DEOGHAR EVENT",
       date: "09/12/2024",
