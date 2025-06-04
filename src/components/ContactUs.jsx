@@ -105,7 +105,7 @@ function ContactUs() {
                     <h2 className='uppercase font-semibold text-[1.3rem] py-5'>Call Us</h2>
                     <p className='text-slate-600 text-xl py-2'>+91 9892727256</p>
                     <p className='text-slate-600 text-xl py-2'>+91 9653494407</p>
-                    <p className='text-slate-600 text-xl py-2'>+91 8582872045</p>
+                    <p className='text-slate-600 text-xl py-2'>+91 9831097973</p>
                     <h2 className='uppercase font-semibold text-[1.3rem] py-5'>Opening</h2>
                     <p className='text-slate-600 text-xl py-2'>24 hours open</p>
                     <p className='uppercase font-semibold text-[1.3rem] py-5'>Mail us</p>
