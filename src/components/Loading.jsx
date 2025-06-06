@@ -43,7 +43,7 @@ function Loading() {
 
   return (
     <div className={`bg-white h-full w-full fixed ${loading ? "-top-[0%]" : "-top-[100%]" }  left-0 z-[1000] flex justify-center items-center transition-all  delay-1000`}>
-        <Image src={logo} alt="loading" width={iconSize.width} height={iconSize.height} quality={100} className="drop-shadow-xl loadinganim "/>
+        <Image src={logo} alt="loading" width={iconSize.width} height={iconSize.height} quality={60} className="drop-shadow-xl loadinganim "/>
     </div>
   )
 }
