@@ -1,8 +1,8 @@
-import React,{useState,useEffect} from 'react'
-import { Formik, Form, Field, ErrorMessage } from 'formik';
-import * as Yup from 'yup';
-import emailjs from '@emailjs/browser';
-import {BiSolidCheckCircle} from "react-icons/bi";
+import * as Yup from "yup";
+import React, { useEffect, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { ErrorMessage, Field, Form, Formik } from "formik";
+import { BiSolidCheckCircle } from "react-icons/bi";
 
 function ContactUs() {
   const [formValue,setFormValue] = useState({ name: '' , email: '', type: '' , subject:'' , body: '' })
@@ -114,7 +114,7 @@ function ContactUs() {
                 </div>
                 <div className="map w-full xl:w-[70%] h-[20rem] xl:h-full bg-slate-200">
 
-                <iframe className="h-full w-full" frameBorder="0"   src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=NHD Productions and studios&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                <iframe className="h-full w-full" frameBorder="0" loading="lazy" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=NHD Productions and studios&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                 </div>
             </div>
         </div>

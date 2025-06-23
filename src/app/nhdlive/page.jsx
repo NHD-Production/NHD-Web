@@ -8,10 +8,10 @@ import Nhd_gallery from "@/components/Nhd_gallery";
 import React, { useEffect, useState } from "react";
 import ZigBox from "@/components/ZigBox";
 import ZigzagBullate from "@/components/ZigzagBullate";
+import musicIcon  from "@/assets/music_letters.png";
 import { useContext } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import { demoData } from "@/assets/content";
-import musicIcon  from "@/assets/music_letters.png";
 import { nhdlive } from "@/assets/content";
 import { GlobalContext } from "@/context/Globalcontext";
 
@@ -43,22 +43,22 @@ function About() {
   };
 
   const imageUrls = [
-    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089746/live/C0179.MP4.05_25_08_03.Still001_i7ldte.jpg',
-    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089747/live/_90A7040_m2utet.jpg',
-    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg',
-    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089752/live/_90A4081_y18iwk.jpg',
-    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089751/live/_90A3739_zes7ux.jpg',
-    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089751/live/_90A3767_nycw2k.jpg',
-    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089104/live/_E7A3920_zlshod.jpg',
-    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089106/live/_E7A3995_opjijl.jpg',
-    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089106/live/_90A3853_vl3rgi.jpg',
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515390/charulata_rlym08.jpg",
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515360/charulata_2_qrumtc.jpg"
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691089746/live/C0179.MP4.05_25_08_03.Still001_i7ldte.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691089747/live/_90A7040_m2utet.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691089720/live/_90A4178_roveoe.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691089752/live/_90A4081_y18iwk.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691089751/live/_90A3739_zes7ux.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691089751/live/_90A3767_nycw2k.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691089104/live/_E7A3920_zlshod.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691089106/live/_E7A3995_opjijl.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691089106/live/_90A3853_vl3rgi.jpg',
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1710515390/charulata_rlym08.jpg",
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1710515360/charulata_2_qrumtc.jpg"
   ];
   return (
     <div className='h-full w-full'>
       <div id='home' className=" w-full h-[20vh] lg:h-[50vh] relative ">
-       <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159922/Artboard_1_oirguz.png" alt='cover'  fill={true} />
+       <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691159922/Artboard_1_oirguz.png" alt='cover'  fill={true} />
       </div>
       <div className='flex flex-col xl:flex-row items-center justify-evenly text-white text-2xl p-3 bg-black/80'>
         <Image src={musicIcon} alt="floating_music_image" />

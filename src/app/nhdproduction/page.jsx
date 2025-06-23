@@ -42,21 +42,21 @@ function About() {
   };
 
   const imageUrls = [
-    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014246/FB_IMG_1691860301318-Enhanced_fcukli.jpg',
-    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014246/FB_IMG_1691860281006_wmli14.jpg',
-    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014245/FB_IMG_1691859991006_msidly.jpg',
-    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014245/FB_IMG_1691860272974_zaszqf.jpg',
-    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014244/FB_IMG_1691859937861_htyzlq.jpg',
-    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014244/FB_IMG_1691860226589-Enhanced_kxm0mk.jpg',
-    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014243/FB_IMG_1691859968447_pawomw.jpg',
-    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014243/FB_IMG_1691859929135_fg5o5h.jpg',
-    'https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692014243/FB_IMG_1691859951612_nafv5i.jpg'
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1692014246/FB_IMG_1691860301318-Enhanced_fcukli.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1692014246/FB_IMG_1691860281006_wmli14.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1692014245/FB_IMG_1691859991006_msidly.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1692014245/FB_IMG_1691860272974_zaszqf.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1692014244/FB_IMG_1691859937861_htyzlq.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1692014244/FB_IMG_1691860226589-Enhanced_kxm0mk.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1692014243/FB_IMG_1691859968447_pawomw.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1692014243/FB_IMG_1691859929135_fg5o5h.jpg',
+    'https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1692014243/FB_IMG_1691859951612_nafv5i.jpg'
 
   ];
   return (
     <div id='home' className='h-full w-full'>
        <div id='home' className=" w-full h-[20vh] lg:h-[50vh] relative ">
-       <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691607683/nhd_production_banner_showreel_usd6hh.png" alt='cover'  fill={true} />
+       <Image src="https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691607683/nhd_production_banner_showreel_usd6hh.png" alt='cover'  fill={true} />
       </div>
       <div className='flex flex-col xl:flex-row items-center justify-evenly text-white text-2xl p-3 bg-black/80'>
         <Image src={musicIcon} alt="floating_music_image" />

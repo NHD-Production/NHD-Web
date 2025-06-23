@@ -34,7 +34,7 @@ function Loading() {
  
 
     useEffect(() => {
-    const timer = setTimeout(() => { setLoading(false) }, 1000);
+    const timer = setTimeout(() => { setLoading(false) }, 10);
         return ()=>{
    clearTimeout(timer)
         }
