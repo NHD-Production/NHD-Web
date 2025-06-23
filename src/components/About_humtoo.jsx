@@ -1,9 +1,9 @@
-import React from 'react';
+import ContactUs from "./ContactUs";
 import Image from "next/image";
-import img from '@/assets/humtoo.jpeg';
-import ContactUs from './ContactUs';
-import Nhd_gallery from '@/components/Nhd_gallery';
-import ImageSlider from './ImageSlider';
+import ImageSlider from "./ImageSlider";
+import Nhd_gallery from "@/components/Nhd_gallery";
+import React from "react";
+import img from "@/assets/humtoo.jpeg";
 
 function About_humtoo() {
   // const images = [
@@ -24,7 +24,7 @@ function About_humtoo() {
         </p>
       </div>
       <div className='flex w-full h-full p-5 xl:w-1/2 md:w-1/2 sm:h-full sm:w-full justify-center items-center'>
-        <img className="w-full" src="https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090751/Nhd/Landing%20page/_90A7443_zrb2vk.jpg" alt="" />
+        <img className="w-full" src="https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691090751/Nhd/Landing%20page/_90A7443_zrb2vk.jpg" alt="" />
       </div>
     </div>
       <div className='flex justify-center items-center flex-col gap-3 mt-16 p-1'>

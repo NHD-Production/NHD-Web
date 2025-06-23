@@ -4,21 +4,21 @@ const Announcements = () => {
   const slides = [
     {
       image:
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090773/Nhd/sendgb-kQgRcOs18SH/1.jpeg_miihie.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691090773/Nhd/sendgb-kQgRcOs18SH/1.jpeg_miihie.jpg",
       heading: "NHD With Arijit Singh",
       description:
         "Sharing the stage with the legendary Arijit Singh was an unforgettable milestone for NHD Band. Our instrumentals blended seamlessly with his soulful voice, creating magic that resonated with every heart in the audience.",
     },
     {
       image:
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090770/Nhd/Nhd%20live/_90A7312_tntreg.jpg",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691090770/Nhd/Nhd%20live/_90A7312_tntreg.jpg",
       heading: "NHD at JU",
       description:
         "NHD Band electrifies Jadavpur University with pure instrumental magic! Our melodies echo through the campus, uniting hearts with the rhythm of music. JU, get ready for an unforgettable musical journey!",
     },
     {
       image:
-        "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090754/Nhd/Nhd%20live/Screen_Shot_2023-07-24_at_11.04.51_PM_dtkdys.png",
+        "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691090754/Nhd/Nhd%20live/Screen_Shot_2023-07-24_at_11.04.51_PM_dtkdys.png",
       heading: "Ballyganj Culture Club",
       description:
         "NHD Band brings its instrumental magic to Ballygunge Culture Club! The soulful flute, vibrant mandolin, and dynamic rhythms set the stage ablaze. Music transcended barriers as the crowd swayed to our tunes. A night of pure melody and unforgettable energy!",

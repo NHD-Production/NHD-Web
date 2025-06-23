@@ -55,24 +55,24 @@ function Home() {
   };
 
   const images = [
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090758/Nhd/Nhd%20live/_90A3708_d6ndhi.jpg",
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691147366/_90A4147_cut_rmqj3t.jpg",
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090757/Nhd/Landing%20page/_90A3794_okzf8t.jpg",
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691147274/_90A3691_picdgk.jpg",
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691090758/Nhd/Nhd%20live/_90A3708_d6ndhi.jpg",
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691147366/_90A4147_cut_rmqj3t.jpg",
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691090757/Nhd/Landing%20page/_90A3794_okzf8t.jpg",
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691147274/_90A3691_picdgk.jpg",
   ];
   const imageUrls = [
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090773/Nhd/sendgb-kQgRcOs18SH/1.jpeg_miihie.jpg",
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090770/Nhd/Nhd%20live/_90A7312_tntreg.jpg",
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090754/Nhd/Nhd%20live/Screen_Shot_2023-07-24_at_11.04.51_PM_dtkdys.png",
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691159271/_E7A3547-HDR-min_b0rvp0.jpg",
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691609412/8.jpeg_eee3hw.jpg",
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691158793/_E7A3716-min_bam3zn.jpg",
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692514505/_90A3978_img_qndvji.jpg",
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691089720/live/_90A4178_roveoe.jpg",
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1691090778/Nhd/sendgb-kQgRcOs18SH/1_jq9d9h.jpg",
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1692383798/Nhd/Landing%20page/_MG_0203_cmwvfs.jpg",
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515468/the_club_sandwitch_zext9v.jpg",
-    "https://res.cloudinary.com/dmv3vi7ks/image/upload/v1710515444/nhd_invitation_the_music_of_satyajit_ray_zfi3xq.jpg",
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691090773/Nhd/sendgb-kQgRcOs18SH/1.jpeg_miihie.jpg",
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691090770/Nhd/Nhd%20live/_90A7312_tntreg.jpg",
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691090754/Nhd/Nhd%20live/Screen_Shot_2023-07-24_at_11.04.51_PM_dtkdys.png",
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691159271/_E7A3547-HDR-min_b0rvp0.jpg",
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691609412/8.jpeg_eee3hw.jpg",
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691158793/_E7A3716-min_bam3zn.jpg",
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1692514505/_90A3978_img_qndvji.jpg",
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691089720/live/_90A4178_roveoe.jpg",
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1691090778/Nhd/sendgb-kQgRcOs18SH/1_jq9d9h.jpg",
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1692383798/Nhd/Landing%20page/_MG_0203_cmwvfs.jpg",
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1710515468/the_club_sandwitch_zext9v.jpg",
+    "https://res.cloudinary.com/dmv3vi7ks/image/upload/q_10/v1710515444/nhd_invitation_the_music_of_satyajit_ray_zfi3xq.jpg",
   ];
   const data = [
     {
