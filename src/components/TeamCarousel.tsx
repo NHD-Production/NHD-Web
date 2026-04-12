@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback, useEffect } from "react";
-import { TeamMember } from "@/data/teamMembers";
+import { TeamMember } from "@/assets/content";
 import TeamMemberCard from "./TeamMemberCard";
 
 interface TeamCarouselProps {

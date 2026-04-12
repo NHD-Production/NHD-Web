@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { TeamMember, SocialLink } from "@/data/teamMembers";
+import { TeamMember, SocialLink } from "@/assets/content";
 
 interface TeamMemberCardProps {
     member: TeamMember;

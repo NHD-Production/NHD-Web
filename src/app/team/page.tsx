@@ -20,7 +20,7 @@ export default function Home() {
                     Crafting musical excellence with
                 </h1>
                 <p className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-light italic text-[#D4A030] mt-1 sm:mt-2 tracking-tight">
-                    the industry's premier artists
+                    the industry&apos;s premier artists
                 </p>
             </div>
 
