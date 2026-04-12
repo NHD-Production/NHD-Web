@@ -3,7 +3,7 @@ import { teamMembers } from "@/assets/content";
 
 export default function Home() {
     return (
-        <>
+        <div className="flex flex-col items-center justify-center py-10 sm:py-10 lg:py-20 px-4 relative overflow-hidden" >
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[500px] pointer-events-none opacity-[0.07] z-0 flex items-center justify-center" >
                 <svg viewBox="0 0 800 200" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full text-[#D4A030]">
                     <path d="M50 100 Q 100 50, 150 100 T 250 100 T 350 100 T 450 100 T 550 100 T 650 100 T 750 100" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.4" />
@@ -28,6 +28,6 @@ export default function Home() {
             <div className="relative z-10 w-full">
                 <TeamCarousel members={teamMembers} />
             </div>
-        </>
+        </div>
     );
 }
