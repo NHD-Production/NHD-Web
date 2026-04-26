@@ -59,12 +59,12 @@ export default function TeamMemberCard({ member, resetKey }: TeamMemberCardProps
 
             {/* Swipe-Up Overlay Container (z-20) */}
             <div
-                className={`absolute inset-x-0 bottom-0 h-[55%] z-20 flex flex-col justify-end bg-gradient-to-t from-[#070b24] via-[#070b24]/95 to-transparent backdrop-blur-sm border-t border-[#D4A030]/20 transition-transform duration-500 ease-out 
-                group-hover:translate-y-0 pb-[88px] px-4 sm:px-5 
+                className={`absolute inset-x-0 bottom-0 h-[100%] z-20 flex flex-col justify-start bg-gradient-to-t from-[#070b24] via-[#070b24]/95 to-transparent backdrop-blur-sm border-t border-[#D4A030]/20 transition-transform duration-500 ease-out 
+                group-hover:translate-y-0 pb-[88px] p-2 sm:px-5 
                 ${isFlipped ? "translate-y-0" : "translate-y-[101%]"}`}
             >
                 {/* Social Links */}
-                <div className={`flex gap-3 justify-center py-1 text-white/50 mb-3 transition-opacity duration-700 ease-in-out delay-100 group-hover:opacity-100 ${isFlipped ? "opacity-100" : "opacity-0"}`}>
+                <div className={`flex gap-3 justify-center items-start py-1 text-white/50 mb-2 transition-opacity duration-700 ease-in-out delay-100 group-hover:opacity-100 ${isFlipped ? "opacity-100" : "opacity-0"}`}>
                     {member.socials.map((social) => (
                         <a
                             key={social.platform}
@@ -81,29 +81,28 @@ export default function TeamMemberCard({ member, resetKey }: TeamMemberCardProps
                 </div>
 
                 {/* Bio text */}
-                <p className="text-white/80 text-xs sm:text-sm leading-relaxed line-clamp-3 sm:line-clamp-4">
+                <p className="text-white/80 text-xs sm:text-sm leading-relaxed line-clamp-8 sm:line-clamp-8">
                     {member.bio}
                 </p>
 
-                {/* Featured Works */}
-                {/* {member.featuredWorks && member.featuredWorks.length > 0 && (
-                    <div className="mt-4 border-t border-white/10 pt-3">
+                {member.featuredWorks && member.featuredWorks.length > 0 && (
+                    <div className="mt-4 border-t border-white/10 pt-2">
                         <p className="text-white/40 text-[9px] sm:text-[10px] uppercase tracking-widest font-semibold mb-2">
                             Featured Works
                         </p>
-                        <div className="flex flex-wrap gap-1.5">
-                            {member.featuredWorks.map((work, idx) => (
+                        <div className="flex flex-wrap gap-1">
+                            {[...member.featuredWorks].sort((a, b) => a.length - b.length).map((work, idx) => (
                                 <span key={idx} className="bg-white/5 text-white/90 text-[10px] sm:text-xs px-2.5 py-1 rounded-full border border-white/10">
                                     {work}
                                 </span>
                             ))}
                         </div>
                     </div>
-                )} */}
+                )}
             </div>
 
             {/* Static Name Container (z-30) - ALWAYS VISIBLE AT BOTTOM */}
-            <div className="absolute inset-x-0 bottom-0 p-4 sm:p-5 flex flex-col justify-end h-[88px] z-30 pointer-events-none">
+            <div className="absolute inset-x-0 bottom-0 p-4 sm:p-5 flex flex-col justify-end h-[88px] z-10 pointer-events-none">
                 <h3 className="text-white text-base sm:text-lg font-bold tracking-wide">
                     {member.name}
                 </h3>
